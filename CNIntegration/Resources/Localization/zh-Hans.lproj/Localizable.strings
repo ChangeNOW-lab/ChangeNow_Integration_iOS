@@ -1,0 +1,142 @@
+// MARK: - Global
+
+"Ok" = "确定";
+"Cancel" = "取消";
+"Yes" = "是";
+"No" = "否";
+"Done" = "完成";
+"Error" = "错误";
+"Copied" = "复制好";
+
+"Error.Mail" = "需要设置邮箱软件";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "正在载入…请查看网络连接状态";
+"InternetError.Refresh" = "哎呀！请查看网络连接状态，然后往下拉一下以刷新页面";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "您兑换的金额";
+"Exchange.Get" = "您收到的金额";
+"Exchange.MinimumAmount" = "兑换最低金额为 %1$@ %2$@";
+"Exchange.Exchange" = "兑换";
+"Exchange.RecipientAddress" = "到收款人地址上";
+"Exchange.Address" = "添加地址 %@";
+"Exchange.ExtraId" = "%@ (非必填项）";
+
+"Exchange.ExpectedRate.Title" = "这是预测的汇率";
+"Exchange.ExpectedRate.Description" = "兑换时ChangeNOW能选择对您最有利的汇率。";
+"Exchange.ExpectedRate.Description.Best" = "有利的汇率";
+"Exchange.ExpectedRate.NoExtraCosts" = "我们在任何情况下都不会向您收取任何额外费用";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "任何额外费用";
+"Exchange.ExpectedRate.Fees" = "该平台的兑换佣金和其它任何费用都包括在牌价内。";
+"Exchange.ExpectedRate.Fees.Included" = "所有的费用都包括在牌价内";
+
+"Exchange.IncorrectRecipientAddress" = "收款人地址无效";
+
+"Exchange.PairNotAvailable" = "该加密货币对兑换不了";
+"Exchange.UnavailablePair" = "暂时不可将 %1$@ 兑换为 %2$@ 。请稍候再试。";
+"Exchange.UnavailableSwitch.Text" = "%1$@ 兑换成 %2$@ 失败因为该加密货币对兑换不了。";
+
+"Exchange.NoAddress.Title" = "缺少收款人地址";
+"Exchange.NoAddress.Text" = "添加要汇款的钱包地址";
+
+"Exchange.NoAmount.Text" = "输入你要兑换的金额。";
+
+"Exchange.NoData.Title" = "信息有误或丢失";
+"Exchange.NoData.Text" = "检查兑换金额和收件人的地址，然后再试。";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "扫描您想要获得加密货币的钱包的二维码";
+"Scanner.ErrorTitle" = "不支持二维码扫描";
+"Scanner.ErrorMessage" = "您的设备不支持二维码扫描。请使用带摄像头的设备。";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "输入货币或交易符号";
+"ChooseCurrency.From" = "将 %@";
+"ChooseCurrency.To" = "兑换成 %@";
+"ChooseCurrency.Popular" = "热门货币";
+"ChooseCurrency.Fiat" = "法定币种";
+"ChooseCurrency.Other" = "其它币种";
+"ChooseCurrency.Empty" = "在支持的货币和交易品种列表中未找到";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "数值无效%@";
+"CurrencyValidationRule.Error.InvalidAddress" = "地址无效%@";
+"CurrencyValidationRule.Error.RegexNotFound" = "数据检查失败";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "将 %1$@ 兑换成 %2$@";
+"Transaction.Id" = "交易代码";
+
+"Transaction.Cancel.Title" = "取消交易";
+"Transaction.Cancel.Text" = "您确定要取消该兑换交易并开始新的交易？";
+
+"Transaction.Deposit.Title" = "使用您的钱包将您的押金转移到%@";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "汇款：";
+"Transaction.Deposit.Address" = "汇款地址：";
+"Transaction.Deposit.ViaApps" = "使用 %@ 进行汇款";
+"Transaction.Deposit.ViaApps.OneTap" = "单击即可";
+"Transaction.Deposit.ShowQR" = "显示二维码";
+"Transaction.Deposit.Share" = "分享地址";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "TrustWallet不支持该币种 %@";
+
+"Transaction.YouSend" = "您要汇付的金额：";
+"Transaction.YouSent" = "您已汇付的金额：";
+"Transaction.YouGet" = "您将收到的金额：";
+"Transaction.Received" = "您已收到的金额：";
+"Transaction.Refunded" = "退款的金额：";
+"Transaction.RecipientAddress" = "收款人地址%@：";
+
+"Transaction.Status.Deposit" = "等待缴纳佣金";
+"Transaction.Status.Deposit.Description" = "您越快汇付佣金，收到被预测的金额的可能性就越高。";
+
+"Transaction.Status.Exchanging" = "正在兑换";
+"Transaction.Status.Exchanging.Description" = "我们正在寻找最有利可图的方式来兑换这一数额并将之汇款给您。";
+
+"Transaction.Status.Finished" = "完成啦";
+
+"Transaction.Status.Refunded" = "退款成功";
+"Transaction.Status.Refunded.Description" = "我们以加密货币给您退款了。让我们开始一个新的兑换交易并完成它。";
+
+"Transaction.Status.Failed" = "兑换失败";
+
+"Transaction.Support.Title" = "您的交易出了问题。";
+"Transaction.Support.Text" = "我们正在处理问题。您可以通过邮箱联系我们来随时关注最新的信息或提供任何补充信息。
+邮箱：%@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "是否要开始新的兑换交易？";
+"Transaction.StartNew.Failure" = "我要开始新的兑换交易";
+"Transaction.StartNew.Action" = "开始吧！";
+"Transaction.StartNew.Alert" = "您确定要取开始新的兑换交易？";
+
+"Transaction.RateUs.TitleMore" = "哇，真棒！您收到的金额比被预测的多一些。
+这是咱们积极配合的成果。";
+"Transaction.RateUs.Title" = "恭喜恭喜！兑换交易成功了。我们期待着新的交易。";
+"Transaction.RateUs.Button" = "请在App Store 给我们评价";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "钱包 %@";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "到您的%@钱包上";
+"ChooseCurrency.GetSpecific" = "将这种币种兑换成%1$@ %2$@";
+"Transaction.Status.FinishedMore.Description" = "哇，真棒！您收到的金额比被预测的多一些。
+使用ChangeNOW来兑换其他的加密货币对。";
+"Transaction.Status.Finished.Description" = "恭喜恭喜！兑换交易成功了。
+使用ChangeNOW来兑换其他的加密货币对。";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "可以把200多币种兑换成Litecoin\n快捷可靠的兑换\n不用注册";

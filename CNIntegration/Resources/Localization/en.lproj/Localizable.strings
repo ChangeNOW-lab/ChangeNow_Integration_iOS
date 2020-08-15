@@ -1,0 +1,138 @@
+// MARK: - Global
+
+"Ok" = "Okay";
+"Cancel" = "Cancel";
+"Yes" = "Yes";
+"No" = "No";
+"Done" = "Done";
+"Error" = "Error";
+"Copied" = "Copied";
+
+"Error.Mail" = "You need to set up a Mail application";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "Waiting for network... Please check your internet connection";
+"InternetError.Refresh" = "Oops! Please check your internet connection and pull to refresh";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "You send";
+"Exchange.Get" = "You get";
+"Exchange.MinimumAmount" = "Minimum amount is %1$@ %2$@";
+"Exchange.Exchange" = "Exchange";
+"Exchange.RecipientAddress" = "To Recipient Address";
+"Exchange.Address" = "Add %@ Address";
+"Exchange.ExtraId" = "%@ (optional)";
+
+"Exchange.ExpectedRate.Title" = "This is an Expected Rate";
+"Exchange.ExpectedRate.Description" = "ChangeNOW will pick the best rate for you at the moment of the exchange.";
+"Exchange.ExpectedRate.Description.Best" = "best";
+"Exchange.ExpectedRate.NoExtraCosts" = "We guarantee no extra costs.";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "guarantee";
+"Exchange.ExpectedRate.Fees" = "Network fees and all other exchange expenses are included in the rate.";
+"Exchange.ExpectedRate.Fees.Included" = "included";
+
+"Exchange.IncorrectRecipientAddress" = "Incorrect Recipient Address";
+
+"Exchange.PairNotAvailable" = "Pair Not Available";
+"Exchange.UnavailablePair" = "Pair %1$@ to %2$@ is currently not available for exchange. Try later.";
+"Exchange.UnavailableSwitch.Text" = "Can't switch to %1$@-%2$@ because the pair is unavailable for exchange.";
+
+"Exchange.NoAddress.Title" = "No Recipient Address";
+"Exchange.NoAddress.Text" = "Please add the wallet address where you would like us to send your money.";
+
+"Exchange.NoAmount.Text" = "Please specify the amount of funds you would like to exchange.";
+
+"Exchange.NoData.Title" = "Incorrect or missing info";
+"Exchange.NoData.Text" = "Please re-check the amount you want to exchange and the recipient address and try again.";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "Please scan the QR address of the wallet where you want to receive crypto";
+"Scanner.ErrorTitle" = "Scanning not supported";
+"Scanner.ErrorMessage" = "Your device does not support scanning of QR codes. Please use a device with a camera.";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "Type in a currency or ticker";
+"ChooseCurrency.From" = "from %@";
+"ChooseCurrency.To" = "to %@";
+"ChooseCurrency.Popular" = "Popular currencies";
+"ChooseCurrency.Fiat" = "Fiat currencies";
+"ChooseCurrency.Other" = "Other currencies";
+"ChooseCurrency.Empty" = "Doesn't match any currencies or tickers that we support for exchange";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "The %@ value is not valid";
+"CurrencyValidationRule.Error.InvalidAddress" = "The %@ address is not valid";
+"CurrencyValidationRule.Error.RegexNotFound" = "Failed to validate data";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "%1$@ to %2$@";
+"Transaction.Id" = "Transaction ID";
+
+"Transaction.Cancel.Title" = "Cancel transaction";
+"Transaction.Cancel.Text" = "Are you sure want to cancel this transaction and start a new one?";
+
+"Transaction.Deposit.Title" = "Use your wallet to send deposit to %@";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "Send money:";
+"Transaction.Deposit.Address" = "To address:";
+"Transaction.Deposit.ViaApps" = "Send deposit in %@ via:";
+"Transaction.Deposit.ViaApps.OneTap" = "one tap";
+"Transaction.Deposit.ShowQR" = "Show QR code";
+"Transaction.Deposit.Share" = "Share address";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ coin is not supported by TrustWallet";
+
+"Transaction.YouSend" = "You send:";
+"Transaction.YouSent" = "You sent:";
+"Transaction.YouGet" = "You get:";
+"Transaction.Received" = "Received:";
+"Transaction.Refunded" = "Refunded:";
+"Transaction.RecipientAddress" = "To Recipient %@ Address:";
+
+"Transaction.Status.Deposit" = "Awaiting deposit";
+"Transaction.Status.Deposit.Description" = "The sooner you send a deposit, the higher chance of receiving the expected amount.";
+
+"Transaction.Status.Exchanging" = "Exchanging";
+"Transaction.Status.Exchanging.Description" = "We are looking for the best way to exchange this amount and send you the money.";
+
+"Transaction.Status.Finished" = "Finished";
+
+"Transaction.Status.Refunded" = "Refunded";
+"Transaction.Status.Refunded.Description" = "So you get your crypto back. Now let's start a new exchange and bring it to the end.";
+
+"Transaction.Status.Failed" = "Failed";
+
+"Transaction.Support.Title" = "Something went wrong with your transaction.";
+"Transaction.Support.Text" = "We are working on the problem. Contact us to get updates or provide any additional information to %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "Ready to start a new exchange?";
+"Transaction.StartNew.Failure" = "I want to start a new exchange";
+"Transaction.StartNew.Action" = "Go!";
+"Transaction.StartNew.Alert" = "Are you sure to start a new transaction?";
+
+"Transaction.RateUs.TitleMore" = "Wow! You have received more than expected.\nThat's how good we are at trading.";
+"Transaction.RateUs.Title" = "Congratulations! Exchange completed successfully. Can't\U00A0wait to start a new one.";
+"Transaction.RateUs.Button" = "Rate us on the App store";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ Wallet";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "To your %@ wallet";
+"ChooseCurrency.GetSpecific" = "Get %1$@ from %2$@";
+"Transaction.Status.FinishedMore.Description" = "Wow! You have received more than expected. That's how good we are at trading.";
+"Transaction.Status.Finished.Description" = "Congratulations! Exchange completed successfully. Can't wait to start a new one.";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "・Get Litecoin from 200+ crypto currencies\n・Fast and secure exchanges\n・No account needed";

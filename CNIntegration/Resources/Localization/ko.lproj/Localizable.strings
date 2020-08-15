@@ -1,0 +1,139 @@
+// MARK: - Global
+
+"Ok" = "괜찮아";
+"Cancel" = "취소";
+"Yes" = "예";
+"No" = "아니";
+"Done" = "완료 되었습니다";
+"Error" = "오류";
+"Copied" = "복사";
+
+"Error.Mail" = "메일 응용 프로그램을 설정해야합니다";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "네트워크... 을 기다리고 있는 중입니다. 당신의 인터넷 연결 상태를 확인하세요.";
+"InternetError.Refresh" = "아차! 인터넷 연결을 확인 하 고 새로 고침을 당겨 주시기 바랍니다";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "보냄";
+"Exchange.Get" = "받음";
+"Exchange.MinimumAmount" = "최소 금액은 %1$@ %2$@ 입니다";
+"Exchange.Exchange" = "교환";
+"Exchange.RecipientAddress" = "받는 사람 주소로";
+"Exchange.Address" = "주소 %@ 추가";
+"Exchange.ExtraId" = "%@ (선택 과목)";
+
+"Exchange.ExpectedRate.Title" = "예상 속도입니다";
+"Exchange.ExpectedRate.Description" = "ChangeNOW 는 교환의 순간에 당신을 위한 제일 비율을 쑤실 것입니다";
+"Exchange.ExpectedRate.Description.Best" = "베스트";
+"Exchange.ExpectedRate.NoExtraCosts" = "추가 비용은 보장하지 않습니다";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "보증";
+"Exchange.ExpectedRate.Fees" = "네트워크 요금 및 기타 모든 교환 비용은 요금에 포함되어 있습니다";
+"Exchange.ExpectedRate.Fees.Included" = "포함 된";
+
+"Exchange.IncorrectRecipientAddress" = "잘못된 수신자 주소";
+
+"Exchange.PairNotAvailable" = "쌍을 사용할 수 없음";
+"Exchange.UnavailablePair" = " 현재 %1$@ 에서 %2$@ 까지 쌍을 교환 할 수 없습니다.  나중에 시도";
+"Exchange.UnavailableSwitch.Text" = "%1$@-%2$@ 로 전환할 수 없습니다.교환할 수 없기 때문에 쌍을 사용할 수 없습니다";
+
+"Exchange.NoAddress.Title" = "받는 사람 주소 없음";
+"Exchange.NoAddress.Text" = "당신이 당신의 돈을 보낼 우리가 원하는 지갑 주소를 추가하십시오";
+
+"Exchange.NoAmount.Text" = "교환하고자하는 금액을 지정하십시오";
+
+"Exchange.NoData.Title" = "잘못된 정보 또는 누락 된 정보";
+"Exchange.NoData.Text" = "당신이 교환 할 금액과받는 사람 주소를 다시 확인하고 다시 시도하십시오";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "당신이 동전을 수신 할 지갑의 QR 주소를 스캔하십시오";
+"Scanner.ErrorTitle" = "스캔이 지원되지 않습니다";
+"Scanner.ErrorMessage" = "이 장치는 QR 코드 스캔을 지원하지 않습니다. 카메라가있는 장치를 사용하십시오.";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "통화를 입력하십시오";
+"ChooseCurrency.From" = "출발 %@";
+"ChooseCurrency.To" = "도착 %@";
+"ChooseCurrency.Popular" = "통용 통화";
+"ChooseCurrency.Fiat" = "지시 통화";
+"ChooseCurrency.Other" = "기타 통화";
+"ChooseCurrency.Empty" = "우리가 교환을 위해 지원하는 모든 통화와 일치하지 않습니다";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "%@ 값이 유효하지 않습니다";
+"CurrencyValidationRule.Error.InvalidAddress" = "%@ 주소가 유효하지 않습니다";
+"CurrencyValidationRule.Error.RegexNotFound" = "데이터 유효성 검사에 실패했습니다";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "%1$@ 에서 %2$@";
+"Transaction.Id" = "거래 ID";
+
+"Transaction.Cancel.Title" = "거래 취소";
+"Transaction.Cancel.Text" = "이 거래를 취소하고 새 거래를 시작 하시겠습니까?";
+
+"Transaction.Deposit.Title" = "지갑을 사용하여 예금을 %@ 에 보내십시오";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "돈을 보내다:";
+"Transaction.Deposit.Address" = "주소 :";
+"Transaction.Deposit.ViaApps" = "%@ 로 예금을 보내십시오 :";
+"Transaction.Deposit.ViaApps.OneTap" = "하나의 탭";
+"Transaction.Deposit.ShowQR" = "QR 코드";
+"Transaction.Deposit.Share" = "공유";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ 코인은 TrustWallet에서 지원되지 않습니다";
+
+"Transaction.YouSend" = "보냄";
+"Transaction.YouSent" = "당신이 보낸:";
+"Transaction.YouGet" = "받음";
+"Transaction.Received" = "받았습니다";
+"Transaction.Refunded" = "환불";
+"Transaction.RecipientAddress" = "수신자 %@ 주소:";
+
+"Transaction.Status.Deposit" = "예금 대기 중";
+"Transaction.Status.Deposit.Description" = "예금을 빨리 보내면 예상 금액을받을 확률이 높아집니다";
+
+"Transaction.Status.Exchanging" = "교환";
+"Transaction.Status.Exchanging.Description" = "우리는 이 총계를 교환하고 당신에게 돈을 보내는 제일 방법을 찾고 있습니다.";
+
+"Transaction.Status.Finished" = "종료";
+
+"Transaction.Status.Refunded" = "환불";
+"Transaction.Status.Refunded.Description" = "그래서 당신은 당신의 동전을 다시 얻을. 이제 새로운 교환을 시작하고 끝까지 가져 보자.";
+
+"Transaction.Status.Failed" = "실패";
+
+"Transaction.Support.Title" = "거래에 문제가 있습니다.";
+"Transaction.Support.Text" = "우리는 문제를 해결하고 있습니다. 에 대한 추가 정보를 업데이트를 얻거나 제공하기 위해 저희에게 연락 %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "새로운 교환을 시작할 준비가 되셨습니까?";
+"Transaction.StartNew.Failure" = "새로운 교환을 시작하고 싶습니다";
+"Transaction.StartNew.Action" = "가다!";
+"Transaction.StartNew.Alert" = "새로운 거래를 시작 하시겠습니까?";
+
+"Transaction.RateUs.TitleMore" = "와우! 당신은 예상보다 더 많은 것을 받았습니다.\n이것은 우리가 거래를 잘하는 것입니다.";
+"Transaction.RateUs.Title" = "축하합니다! 교환이 성공적으로 완료되었습니다. 새 것을 시작하기 위해\U00A0을 기다릴 수 없습니다.";
+"Transaction.RateUs.Button" = "앱 스토어에서 우리를 평가";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ 지갑";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "당신의 %@ 지갑에";
+"ChooseCurrency.GetSpecific" = "%1$@ 에서 LTC를 가져옵니다 %2$@";
+"Transaction.Status.FinishedMore.Description" = "와우! 예상보다 많은 것을 받았습니다.\nChangeNOW 앱과 다른 암호화 쌍을 교환하십시오";
+"Transaction.Status.Finished.Description" = "축하합니다! 교환이 성공적으로 완료되었습니다.\n다른 암호화 쌍을 ChangeNOW 앱으로 교체하십시오.";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "・200 개 암호화 통화 에서 라이트 코인을 얻을\n・빠르고 안전한 교환\n・어떤 계정이 필요하지 않습니다";
+

@@ -1,0 +1,110 @@
+disabled_rules: # rule identifiers to exclude from running
+  - custom_rules
+  # Should be enabled, but now it is impossible
+  - cyclomatic_complexity
+  - file_header
+  - file_length
+    # Should be enabled, but now it is impossible
+  - force_cast
+  - identifier_name
+    # Should be enabled, but now it is impossible
+  - force_unwrapping
+  - function_body_length
+  - function_parameter_count
+  - line_length
+  - missing_docs
+  - nesting
+  - prohibited_super_call
+  - redundant_string_enum_value
+  - todo
+  - trailing_newline
+  - trailing_whitespace
+  - type_body_length
+  - redundant_nil_coalescing
+  # Should be enabled, but bugged
+  - valid_docs
+  - superfluous_disable_command
+  - unused_setter_value
+  - legacy_hashing
+
+opt_in_rules: # some rules are only opt-in
+  - attributes
+  - closure_end_indentation
+  - closure_spacing
+  - empty_count
+  - nimble_operator
+  - operator_usage_whitespace
+  - overridden_super_call
+  - private_outlet
+  - private_action
+  - private_unit_test
+  - strict_private
+  - contains_over_first_not_nil
+  - fatal_error_message
+  - first_where
+  - multiline_arguments
+  - single_test_class
+
+excluded:
+   - CNExchange/CNExchange/Resources
+   - Pods
+
+  # Find all the available rules by running:
+  # swiftlint rules
+
+# warning_threshold: 1
+
+# configurable rules can be customized from this configuration file
+# binary rules can set their severity level
+force_cast: warning # implicitly
+force_try:
+  severity: warning # explicitly
+# rules that have both warning and error levels, can set just the warning level
+# implicitly
+line_length: 110
+# they can set both implicitly with an array
+type_body_length:
+  - 300 # warning
+  - 400 # error
+# or they can set both explicitly
+file_length:
+  warning: 500
+  error: 1200
+# naming rules can set warnings/errors for min_length and max_length
+# additionally they can set excluded names
+type_name:
+  min_length: 4 # only warning
+  max_length: # warning and error
+    warning: 60
+    error: 100
+  excluded:
+  - App
+  - API
+  - Box
+  - iPhone # excluded via string
+identifier_name:
+  min_length: # only min_length
+    warning: 1
+    error: 1 # only error
+  max_length:
+      warning: 80
+      error: 100
+  excluded: # excluded via string array
+    - ID
+    - id
+    - URL
+    - Box
+    - to
+    - Tax
+    - on
+    - off
+    - ok
+    - no
+    - fb
+    - vk
+
+generic_type_name:
+  max_length:
+    warning: 30
+    error: 40
+reporter: "xcode" # reporter type (xcode, json, csv, checkstyle, junit, html, emoji)

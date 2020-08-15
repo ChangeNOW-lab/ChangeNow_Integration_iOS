@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "kmd.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,139 @@
+// MARK: - Global
+
+"Ok" = "حاجة تمام";
+"Cancel" = "إلغاء";
+"Yes" = "نعم";
+"No" = "لا";
+"Done" = "تم";
+"Error" = "خطأ";
+"Copied" = "مثال";
+
+"Error.Mail" = "تحتاج إلى إعداد تطبيق بريد";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "في انتظار الشبكة...، تحقق من اتصال الانترنت لديك";
+"InternetError.Refresh" = "رجاء تفقد الإنترنت اتصال و سحب إلى تحديث";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "ترسل";
+"Exchange.Get" = "تحصل على";
+"Exchange.MinimumAmount" = "%2$@ %1$@ لمبلغ الأدنى هو";
+"Exchange.Exchange" = "التداول";
+"Exchange.RecipientAddress" = "إلى عنوان المستلم";
+"Exchange.Address" = "إضافة %@ عنوان";
+"Exchange.ExtraId" = "%@ (اختياري)";
+
+"Exchange.ExpectedRate.Title" = "هذا سعر متوقع";
+"Exchange.ExpectedRate.Description" = ".سيختار ChangeNOW أفضل سعر لك في لحظة التبادل";
+"Exchange.ExpectedRate.Description.Best" = "الأفضل";
+"Exchange.ExpectedRate.NoExtraCosts" = ".نحن لا نضمن أي تكاليف إضافية";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "ضمان";
+"Exchange.ExpectedRate.Fees" = ".يتم تضمين رسوم الشبكة وجميع رسوم الصرف الأخرى في السعر";
+"Exchange.ExpectedRate.Fees.Included" = "متضمن";
+
+"Exchange.IncorrectRecipientAddress" = "عنوان المستلم غير صحيح";
+
+"Exchange.PairNotAvailable" = "ثنائي غير متاح";
+"Exchange.UnavailablePair" = "الزوج %1$@ إلى %2$@ غير متاح حاليًا للتبادل. حاول لاحقا.";
+"Exchange.UnavailableSwitch.Text" = ".لا يمكن التبديل إلى %1$@ %2$@ لأن الزوج غير متاح للتبادل";
+
+"Exchange.NoAddress.Title" = "لا يوجد عنوان المستلم";
+"Exchange.NoAddress.Text" = ".يرجى إضافة عنوان المحفظة حيث تريد أن نرسل أموالك";
+
+"Exchange.NoAmount.Text" = ".يرجى تحديد مبلغ الأموال التي ترغب في استبدالها";
+
+"Exchange.NoData.Title" = "معلومات غير صحيحة أو مفقودة";
+"Exchange.NoData.Text" = "يرجى إعادة التحقق من المبلغ الذي تريد استبداله وعنوان المستلم والمحاولة مرة أخرى";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "يرجى تصفح عنوان QR للمحفظة حيث تريد استلام التشفير";
+"Scanner.ErrorTitle" = "المسح غير معتمد";
+"Scanner.ErrorMessage" = ".جهازك لا يدعم تصفح رموز QR. يرجى استخدام جهاز مزود بكاميرا";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "اكتب العملة أو القراد";
+"ChooseCurrency.From" = "%@ من";
+"ChooseCurrency.To" = " %@ إلى";
+"ChooseCurrency.Popular" = "العملات المشهورة";
+"ChooseCurrency.Fiat" = "العملات الورقية";
+"ChooseCurrency.Other" = "عملات أخرى";
+"ChooseCurrency.Empty" = "لا تتطابق مع أي عملات أو عملات معدنية ندعمها للتبادل";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "القيمة %@ غير صالحة";
+"CurrencyValidationRule.Error.InvalidAddress" = "العنوان %@ غير صالح";
+"CurrencyValidationRule.Error.RegexNotFound" = "فشل التحقق من صحة البيانات";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "%2$@ - %1$@";
+"Transaction.Id" = "عملية تجارية ID";
+
+"Transaction.Cancel.Title" = "ألغ الصفقة";
+"Transaction.Cancel.Text" = "هل أنت متأكد من أنك تريد إلغاء هذه الصفقة وبدء واحدة جديدة ؟ ";
+
+"Transaction.Deposit.Title" = "استخدم محفظتك لإرسال الإيداع إلى %@";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "إرسال الأموال";
+"Transaction.Deposit.Address" = "إلى عنوان:";
+"Transaction.Deposit.ViaApps" = "أرسل إيداع في %@ via:";
+"Transaction.Deposit.ViaApps.OneTap" = "نقرة واحدة";
+"Transaction.Deposit.ShowQR" = "كود QR";
+"Transaction.Deposit.Share" = "مشاركة";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ coin غير مدعوم بواسطة TrustWallet";
+
+"Transaction.YouSend" = "ترسل:";
+"Transaction.YouSent" = ":أنت أرسلت";
+"Transaction.YouGet" = ":تحصل على";
+"Transaction.Received" = ":تم الاستلام";
+"Transaction.Refunded" = ":تم رد النقود";
+"Transaction.RecipientAddress" = ":إلى المستلم %@ العنوان";
+
+"Transaction.Status.Deposit" = "في انتظار الإيداع";
+"Transaction.Status.Deposit.Description" = ".كلما أرسلت إيداعًا أسرع ، زادت فرصة تلقي المبلغ المتوقع";
+
+"Transaction.Status.Exchanging" = "جاري التداول";
+"Transaction.Status.Exchanging.Description" = ".نحن نبحث عن أفضل طريقة لتبادل هذا المبلغ وإرسال الأموال إليك";
+
+"Transaction.Status.Finished" = "تم الانتهاء";
+
+"Transaction.Status.Refunded" = "تم رد النقود";
+"Transaction.Status.Refunded.Description" = ".حتى تحصل على سرداب الخاص بك مرة أخرى. الآن دعونا نبدأ تبادل جديد وننهيها";
+
+"Transaction.Status.Failed" = "فشل";
+
+"Transaction.Support.Title" = ".حدث خطأ في معاملتك";
+"Transaction.Support.Text" = "نحن نعمل على حل المشكلة. اتصل بنا للحصول على تحديثات أو تقديم أي معلومات إضافية لـ %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "على استعداد لبدء بورصة جديدة؟";
+"Transaction.StartNew.Failure" = "أريد أن أبدأ تبادل جديد";
+"Transaction.StartNew.Action" = "!اذهب";
+"Transaction.StartNew.Alert" = "هل أنت متأكد من بدء معاملة جديدة؟";
+
+"Transaction.RateUs.TitleMore" = ".نجاح باهر!  لقد تلقيت أكثر مما كان متوقعًا. \nهذه هي مدى جودتنا في التداول";
+"Transaction.RateUs.Title" = "تهانينا!  اكتمل الصرف بنجاح.  لا يمكن\U00A0 الانتظار لبدء واحدة جديدة.";
+"Transaction.RateUs.Button" = "قم بتقييمنا على متجر التطبيقات";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ محفظة";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "إلى محفظتك %@";
+"ChooseCurrency.GetSpecific" = "احصل على %@ من %@";
+"Transaction.Status.FinishedMore.Description" = "نجاح باهر!  لقد تلقيت أكثر من المتوقع.\nقم بتبديل أزواج التشفير الأخرى باستخدام تطبيق ChangeNOW.";
+"Transaction.Status.Finished.Description" = "تهانينا!  اكتمل التبادل بنجاح.\nقم بتبديل أزواج التشفير الأخرى باستخدام تطبيق ChangeNOW.";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "・احصل على Litecoin من أكثر من 200+ عملة تشفير\n・تبادلات سريعة وآمنة \n・لا حاجة إلى حساب";
+

@@ -1,0 +1,138 @@
+// MARK: - Global
+
+"Ok" = "Okay";
+"Cancel" = "Cancelar";
+"Yes" = "Sí";
+"No" = "No";
+"Done" = "Listo";
+"Error" = "Error";
+"Copied" = "Copiado";
+
+"Error.Mail" = "Tiene que configurar la aplicación del correo electrónico";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "Esperando red... Compruebe su conexión a Internet";
+"InternetError.Refresh" = "¡Uy! Compruebe la conexión a Internet y deslice el dedo hacia abajo para actualizar la página";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "Usted transfiere";
+"Exchange.Get" = "Usted recibe";
+"Exchange.MinimumAmount" = "La cantidad mínima es %1$@ %2$@";
+"Exchange.Exchange" = "Cambio";
+"Exchange.RecipientAddress" = "A la dirección del destinatario";
+"Exchange.Address" = "Añadir una dirección %@";
+"Exchange.ExtraId" = "%@ (opcional)";
+
+"Exchange.ExpectedRate.Title" = "Esta es la tasa de cambio pronosticada";
+"Exchange.ExpectedRate.Description" = "ChangeNOW elegirá la tasa más ventajosa para usted en el momento del cambio.";
+"Exchange.ExpectedRate.Description.Best" = "la tasa de cambio más ventajosa";
+"Exchange.ExpectedRate.NoExtraCosts" = "No le cobraremos ninguna cuota adicional bajo ninguna circunstancia.";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "ninguna comisión adicional";
+"Exchange.ExpectedRate.Fees" = "La comisión de la red y otros costos relacionados con el cambio ya están incluidos en la tasa de cambio";
+"Exchange.ExpectedRate.Fees.Included" = "Todos los costos están incluidos en la tasa de cambio";
+
+"Exchange.IncorrectRecipientAddress" = "Dirección del destinatario incorrecta";
+
+"Exchange.PairNotAvailable" = "El par no está disponible";
+"Exchange.UnavailablePair" = "El par %1$@ a %2$@ no está disponible para el cambio en este momento. Inténtelo de nuevo más tarde.";
+"Exchange.UnavailableSwitch.Text" = "No se pudo cambiar %1$@ a %2$@ debido al par no disponible para el cambio.";
+
+"Exchange.NoAddress.Title" = "No está indicada la dirección del destinatario";
+"Exchange.NoAddress.Text" = "Añade la dirección de la cartera a la que quiere hacer una transferencia.";
+
+"Exchange.NoAmount.Text" = "Introduzca la cantidad a cambiar.";
+
+"Exchange.NoData.Title" = "Información incorrecta o faltante";
+"Exchange.NoData.Text" = "Compruebe la cantidad a cambiar y la dirección del destinatario e inténtelo de nuevo.";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "Escanee el código QR de la cartera a la que quiere enviar criptomoneda";
+"Scanner.ErrorTitle" = "El escaneo no es compatible";
+"Scanner.ErrorMessage" = "Su dispositivo no es compatible con el escaneo de código QR. Use un dispositivo con cámara.";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "Introduce la divisa o el símbolo comercial";
+"ChooseCurrency.From" = "de %@";
+"ChooseCurrency.To" = "a %@";
+"ChooseCurrency.Popular" = "Divisas populares";
+"ChooseCurrency.Fiat" = "Divisas fiat";
+"ChooseCurrency.Other" = "Otras divisas";
+"ChooseCurrency.Empty" = "No se encuentra en la lista de divisas y símbolos comerciales soportables";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "Contenido %@ no válido";
+"CurrencyValidationRule.Error.InvalidAddress" = "Dirección %@ no válida";
+"CurrencyValidationRule.Error.RegexNotFound" = "No se pudo comprobar los datos";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "De %1$@ a %2$@";
+"Transaction.Id" = "Código de transacción";
+
+"Transaction.Cancel.Title" = "Cancelar la transacción";
+"Transaction.Cancel.Text" = "¿Está seguro de que quiere cancelar esta transacción y comenzar una nueva?";
+
+"Transaction.Deposit.Title" = "Use su cartera para transferir un depósito a %@";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "Transferir el dinero:";
+"Transaction.Deposit.Address" = "A la dirección:";
+"Transaction.Deposit.ViaApps" = "Transferir el depósito en %@";
+"Transaction.Deposit.ViaApps.OneTap" = "en un solo clic";
+"Transaction.Deposit.ShowQR" = "Mostrar el código QR";
+"Transaction.Deposit.Share" = "Compartir la dirección";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "TrustWallet no soporta la divisa %@";
+
+"Transaction.YouSend" = "Usted transfiere:";
+"Transaction.YouSent" = "Usted ha transferido:";
+"Transaction.YouGet" = "Usted recibe:";
+"Transaction.Received" = "Recibido:";
+"Transaction.Refunded" = "Devuelto:";
+"Transaction.RecipientAddress" = "A la dirección %@ del destinatario:";
+
+"Transaction.Status.Deposit" = "Esperando el depósito";
+"Transaction.Status.Deposit.Description" = "Cuanto antes se transfiera el depósito, mayor será la probabilidad de recibir la cantidad pronosticada.";
+
+"Transaction.Status.Exchanging" = "Cambiando";
+"Transaction.Status.Exchanging.Description" = "Estamos buscando la forma más ventajosa de cambiar esta cantidad y transferirle el dinero.";
+
+"Transaction.Status.Finished" = "Terminado";
+
+"Transaction.Status.Refunded" = "Devuelto";
+"Transaction.Status.Refunded.Description" = "Le devolvimos su dinero en criptomoneda. Comencemos un nuevo cambio y terminémoslo.";
+
+"Transaction.Status.Failed" = "No se pudo cambiar";
+
+"Transaction.Support.Title" = "Algo salió mal con su transacción.";
+"Transaction.Support.Text" = "Estamos trabajando en una solución. Contacte con nosotros para mantenerse informado o proporcionar cualquier información adicional en %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "¿Listo para comenzar un nuevo cambio?";
+"Transaction.StartNew.Failure" = "Quiero comenzar un nuevo cambio.";
+"Transaction.StartNew.Action" = "¡Vamos!";
+"Transaction.StartNew.Alert" = "¿Está seguro de que quiere iniciar una nueva transacción?";
+
+"Transaction.RateUs.TitleMore" = "¡Vaya! Recibió más de lo previsto.\nEs posible gracias a nuestro trabajo coordinado.";
+"Transaction.RateUs.Title" = "¡Felicidades! El cambio se ha completado con éxito. Esperamos con\U00A0impaciencia el próximo.";
+"Transaction.RateUs.Button" = "Califícanos en App Store";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "Cartera %@";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "A su cartera %@";
+"ChooseCurrency.GetSpecific" = "Recibir %1$@ de %2$@";
+"Transaction.Status.FinishedMore.Description" = "¡Vaya! Recibió más de lo previsto.\nCambie otros pares de criptomoneda en la aplicación ChangeNOW.";
+"Transaction.Status.Finished.Description" = "¡Felicidades! El cambio se ha completado con éxito.\nCambie otros pares de criptomoneda en la aplicación ChangeNOW.";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "ã»Recibir Litecoin de 200+ criptomonedas\nã»Cambio rápido y fiable\nã»Sin inscripción";

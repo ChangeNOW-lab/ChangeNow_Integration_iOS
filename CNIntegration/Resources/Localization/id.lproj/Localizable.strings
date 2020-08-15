@@ -1,0 +1,139 @@
+// MARK: - Global
+
+"Ok" = "Meng-oke-kan";
+"Cancel" = "Batalkan";
+"Yes" = "Iya";
+"No" = "Tidak";
+"Done" = "Selesai";
+"Error" = "Galat";
+"Copied" = "Disalin";
+
+"Error.Mail" = "Anda perlu mengatur aplikasi Mail";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "Menunggu jaringan... periksa koneksi internet anda";
+"InternetError.Refresh" = "UPS! Silakan periksa koneksi internet Anda dan tarik ke penyegaran";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "Anda mengirimkan";
+"Exchange.Get" = "Anda mendapatkan";
+"Exchange.MinimumAmount" = "Jumlah minimum adalah %1$@ %2$@";
+"Exchange.Exchange" = "Pertukaran";
+"Exchange.RecipientAddress" = "Ke alamat Penerima";
+"Exchange.Address" = "Tambahkan Alamat %@";
+"Exchange.ExtraId" = "%@ (pilihan)";
+
+"Exchange.ExpectedRate.Title" = "Ini adalah Tingkat yang Diharapkan";
+"Exchange.ExpectedRate.Description" = "Ubah sekarang akan memilih nilai terbaik untuk Anda pada saat pertukaran";
+"Exchange.ExpectedRate.Description.Best" = "terbaik";
+"Exchange.ExpectedRate.NoExtraCosts" = "Kami menjamin tidak ada biaya tambahan";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "menjamin";
+"Exchange.ExpectedRate.Fees" = "Biaya jaringan dan semua pengeluaran lain termasuk dalam rate";
+"Exchange.ExpectedRate.Fees.Included" = "termasuk";
+
+"Exchange.IncorrectRecipientAddress" = "Alamat Penerima salah";
+
+"Exchange.PairNotAvailable" = "Pasangan Tidak Tersedia";
+"Exchange.UnavailablePair" = "Pair %1$@ hingga %2$@ saat ini tidak tersedia untuk ditukar. Coba lagi nanti.";
+"Exchange.UnavailableSwitch.Text" = "Tidak dapat mengganti ke %1$@-%2$@ karena pasangan tidak tersedia untuk pertukaran.";
+
+"Exchange.NoAddress.Title" = "Tidak Ada Alamat Penerima";
+"Exchange.NoAddress.Text" = "Silakan tambahkan alamat dompet tempat Anda ingin kami mengirim uang Anda";
+
+"Exchange.NoAmount.Text" = "Silakan tentukan jumlah dana yang ingin anda tukar";
+
+"Exchange.NoData.Title" = "Info salah atau hilang";
+"Exchange.NoData.Text" = "Tolong periksa kembali jumlah yang ingin Anda ganti dan alamat penerima dan coba lagi";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "Silakan pindai alamat QR dompet tempat Anda ingin menerima crypto";
+"Scanner.ErrorTitle" = "Memindai tak didukung";
+"Scanner.ErrorMessage" = "Perangkat Anda tidak mendukung pemindaian kode QR. Silakan gunakan perangkat dengan kamera";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "Ketikkan mata uang atau ticker";
+"ChooseCurrency.From" = "Dari %@";
+"ChooseCurrency.To" = "Ke %@";
+"ChooseCurrency.Popular" = "Mata uang populer";
+"ChooseCurrency.Fiat" = "Mata uang fiat";
+"ChooseCurrency.Other" = "Mata uang lainnya";
+"ChooseCurrency.Empty" = "Tidak cocok dengan mata uang atau gelitik yang kita dukung untuk pertukaran";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "Nilai %@ tidak valid";
+"CurrencyValidationRule.Error.InvalidAddress" = "%@ Address tidak valid";
+"CurrencyValidationRule.Error.RegexNotFound" = "Gagal memvalidasi data";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "%1$@ hingga %2$@";
+"Transaction.Id" = "ID transaksi";
+
+"Transaction.Cancel.Title" = "Batalkan transaksi";
+"Transaction.Cancel.Text" = "Apakah Anda yakin ingin membatalkan transaksi ini dan memulai yang baru?";
+
+"Transaction.Deposit.Title" = "Gunakan dompet Anda untuk mengirim setoran ke %@?";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "Mengirim uang";
+"Transaction.Deposit.Address" = "Ke alamat:";
+"Transaction.Deposit.ViaApps" = "Kirim setoran dalam %@ melalui:";
+"Transaction.Deposit.ViaApps.OneTap" = "satu ketukan";
+"Transaction.Deposit.ShowQR" = "Kode QR";
+"Transaction.Deposit.Share" = "Bagikan";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ coin tidak didukung oleh TrustWallet";
+
+"Transaction.YouSend" = "Anda mengirimkan:";
+"Transaction.YouSent" = "Kau Mengirim:";
+"Transaction.YouGet" = "Anda mendapatkan:";
+"Transaction.Received" = "Diterima:";
+"Transaction.Refunded" = "Dana dikembalikan:";
+"Transaction.RecipientAddress" = "Untuk Penerima %@ Alamat:";
+
+"Transaction.Status.Deposit" = "Bertukar";
+"Transaction.Status.Deposit.Description" = "Semakin cepat Anda mengirim deposit, kesempatan yang lebih tinggi menerima jumlah yang diharapkan.";
+
+"Transaction.Status.Exchanging" = "Sedang Bertukar";
+"Transaction.Status.Exchanging.Description" = "Semakin cepat Anda mengirim deposit, semakin tinggi kemungkinan menerima jumlah yang diharapkan.";
+
+"Transaction.Status.Finished" = "Selesai";
+
+"Transaction.Status.Refunded" = "Dana dikembalikan";
+"Transaction.Status.Refunded.Description" = "Jadi Anda mendapatkan kembali crypto anda. Sekarang mari kita mulai pertukaran baru dan membawanya ke akhir.";
+
+"Transaction.Status.Failed" = "Gagal";
+
+"Transaction.Support.Title" = "Ada yang salah dengan transaksimu.";
+"Transaction.Support.Text" = "Kami sedang mengerjakan masalah. Hubungi kami untuk mendapatkan pembaruan atau memberikan informasi tambahan kepada %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "Siap memulai pertukaran baru?";
+"Transaction.StartNew.Failure" = "Saya ingin memulai pertukaran baru";
+"Transaction.StartNew.Action" = "Pergilah!";
+"Transaction.StartNew.Alert" = "Apakah Anda yakin untuk memulai transaksi baru?";
+
+"Transaction.RateUs.TitleMore" = "Wow! Kau telah menerima lebih dari yang diharapkan. Itulah hebatnya kita di trading.";
+"Transaction.RateUs.Title" = "Selamat! Pertukaran selesai dengan sukses. Tidak sabar untuk memulai yang baru.";
+"Transaction.RateUs.Button" = "Nilai kami di App store";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "Dompet %@";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "Untuk dompet %@ anda";
+"ChooseCurrency.GetSpecific" = "Dapatkan %1$@ dari %2$@";
+"Transaction.Status.FinishedMore.Description" = "Wow! Kau telah menerima lebih dari yang diharapkan.\nTukar pasangan kripto lain dengan aplikasi ChangeNOW.";
+"Transaction.Status.Finished.Description" = "Selamat! Pertukaran berhasil diselesaikan.\nTukar pasangan crypto lainnya dengan aplikasi ChangeNOW.";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "・Dapatkan Litecoin dari 200+ mata uang kripto\n ・ Pertukaran cepat dan aman\n ・ Tidak perlu akun";
+

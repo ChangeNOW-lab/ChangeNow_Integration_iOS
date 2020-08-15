@@ -1,0 +1,139 @@
+// MARK: - Global
+
+"Ok" = "好";
+"Cancel" = "取消";
+"Yes" = "是的";
+"No" = "不";
+"Done" = "完成";
+"Error" = "錯誤";
+"Copied" = "複製";
+
+"Error.Mail" = "您需要設置郵件應用程式";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "等待網路...請檢查您的互聯網連接";
+"InternetError.Refresh" = "哎呀!請檢查您的網路連接並拉刷新";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "您發送";
+"Exchange.Get" = "你得到";
+"Exchange.MinimumAmount" = "最低金額為 %1$@ %2$@";
+"Exchange.Exchange" = "交換";
+"Exchange.RecipientAddress" = "收件者位址";
+"Exchange.Address" = "新增 %@ 位址";
+"Exchange.ExtraId" = "%@ (選擇性的)";
+
+"Exchange.ExpectedRate.Title" = "這是預期匯率";
+"Exchange.ExpectedRate.Description" = "ChangeNow 將在兌換時選擇最適合您匯率.";
+"Exchange.ExpectedRate.Description.Best" = "最好";
+"Exchange.ExpectedRate.NoExtraCosts" = "我们保证没有额外的费用.";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "保證";
+"Exchange.ExpectedRate.Fees" = "房价包括网络费和所有其他交换费用.";
+"Exchange.ExpectedRate.Fees.Included" = "包括在内";
+
+"Exchange.IncorrectRecipientAddress" = "不正確的收件者位址.";
+
+"Exchange.PairNotAvailable" = "配对不可用";
+"Exchange.UnavailablePair" = "目前無法將 %1$@ 與 %2$@ 配對。 稍後再試.";
+"Exchange.UnavailableSwitch.Text" = "無法切換到 %1$@ - %2$@ 因為配對無法交換.";
+
+"Exchange.NoAddress.Title" = "無收件者位址.";
+"Exchange.NoAddress.Text" = "請添加您希望我們匯款的錢包地址.";
+
+"Exchange.NoAmount.Text" = "請指定您要兌換的資金金額.";
+
+"Exchange.NoData.Title" = "資訊不正確或缺失.";
+"Exchange.NoData.Text" = "請重新檢查要兌換的金額。請重新檢查收件者地址,然後重試.";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "請掃描您要接收加密貨幣的錢包的QR地址";
+"Scanner.ErrorTitle" = "不支持掃描";
+"Scanner.ErrorMessage" = "您的裝置不支援掃描 QR 代碼。請使用帶攝像頭的設備";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "鍵入貨幣";
+"ChooseCurrency.From" = "從 %@";
+"ChooseCurrency.To" = "至 %@";
+"ChooseCurrency.Popular" = "熱門貨幣";
+"ChooseCurrency.Fiat" = "菲亞特貨幣";
+"ChooseCurrency.Other" = "其他貨幣";
+"ChooseCurrency.Empty" = "與我們支持兌換的任何貨幣或股票代碼不匹配";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "%@ 值無效";
+"CurrencyValidationRule.Error.InvalidAddress" = "%@ 地址無效";
+"CurrencyValidationRule.Error.RegexNotFound" = "驗證數據失敗";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "%1$@ 至 %2$@";
+"Transaction.Id" = "Transaction ID";
+
+"Transaction.Cancel.Title" = "取消交易";
+"Transaction.Cancel.Text" = "是否確實要取消此事務並開始新的事務?";
+
+"Transaction.Deposit.Title" = "使用您的錢包將存款發送到 %@";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "寄錢";
+"Transaction.Deposit.Address" = "要解決:";
+"Transaction.Deposit.ViaApps" = "透過 %@ 送出存款:";
+"Transaction.Deposit.ViaApps.OneTap" = "一鍵式";
+"Transaction.Deposit.ShowQR" = "顯示二維碼";
+"Transaction.Deposit.Share" = "分享地址";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ 硬幣不受信任錢包支援.";
+
+"Transaction.YouSend" = "你發送:";
+"Transaction.YouSent" = "你發送:";
+"Transaction.YouGet" = "你得到:";
+"Transaction.Received" = "收到:";
+"Transaction.Refunded" = "退款:";
+"Transaction.RecipientAddress" = "收件者 %@ 位址:";
+
+"Transaction.Status.Deposit" = "等待存款";
+"Transaction.Status.Deposit.Description" = "越早寄出存款,收到預期金額的機會就越高.";
+
+"Transaction.Status.Exchanging" = "交換";
+"Transaction.Status.Exchanging.Description" = "我們要尋找交換此金額並向您發送資金的最佳方式.";
+
+"Transaction.Status.Finished" = "完成";
+
+"Transaction.Status.Refunded" = "退款";
+"Transaction.Status.Refunded.Description" = "所以你得到你的加密回來。現在,讓我們開始一個新的交換,並把它帶到最後";
+
+"Transaction.Status.Failed" = "失敗";
+
+"Transaction.Support.Title" = "您的交易出了問題";
+"Transaction.Support.Text" = "我們正在處理這個問題。聯繫我們獲取更新或向 %@ 提供任何附加資訊";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "準備好開始新的交易所了嗎?";
+"Transaction.StartNew.Failure" = "我想開始一個新的交流";
+"Transaction.StartNew.Action" = "走!";
+"Transaction.StartNew.Alert" = "您確定要開始新交易嗎?";
+
+"Transaction.RateUs.TitleMore" = "哇!您收到的交易比預期的要多.";
+"Transaction.RateUs.Title" = "恭喜你!交換成功完成。無法\U00A0 等待啟動新的.";
+"Transaction.RateUs.Button" = "在應用商店中評價我們";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ 錢包";
+
+// MARK: - LTC Wallet
+
+"Exchange.ToSpecific" = "到你的 %@ 錢包";
+"ChooseCurrency.GetSpecific" = "從 %1$@ 取得 %2$@";
+"Transaction.Status.FinishedMore.Description" = "哇！您收到的收益超出預期.\n使用ChangeNOW應用程序交換其他加密對.";
+"Transaction.Status.Finished.Description" = "恭喜你！交換已成功完成.\n使用ChangeNOW應用交換其他加密對";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "・從200多種加密貨幣中獲取萊特幣\n·快速安全的交易\n·無需帳戶";
+

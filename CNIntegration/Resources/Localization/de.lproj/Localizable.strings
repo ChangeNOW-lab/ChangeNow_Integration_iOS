@@ -1,0 +1,138 @@
+// MARK: - Global
+
+"Ok" = "OK";
+"Cancel" = "Storno";
+"Yes" = "Ja";
+"No" = "Nein";
+"Done" = "Fertig";
+"Error" = "Fehler";
+"Copied" = "Kopiert";
+
+"Error.Mail" = "Email-App ist einzustellen";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "Warten auf Netzwerk… Bitte prüfen Sie Ihre Internetverbindung ";
+"InternetError.Refresh" = "Ups! Bitte prüfen Sie Ihre  Internetverbindung Verbindung und ziehen Sie nach unten, um die Seite zu aktualisieren";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "Sie überweisen";
+"Exchange.Get" = "Sie erhalten";
+"Exchange.MinimumAmount" = "Der Mindestbetrag beträgt %1$@ %2$@";
+"Exchange.Exchange" = "Umtausch";
+"Exchange.RecipientAddress" = "An die Empfängeradresse";
+"Exchange.Address" = "Adresse %@ hinzufügen";
+"Exchange.ExtraId" = "%@ (Kein Pflichtfeld)";
+
+"Exchange.ExpectedRate.Title" = "Dies ist der erwartbare Kurs";
+"Exchange.ExpectedRate.Description" = "ChangeNOW wird für Sie den günstigsten Kurs beim Umtausch wählen.";
+"Exchange.ExpectedRate.Description.Best" = "Günstiger Kurs";
+"Exchange.ExpectedRate.NoExtraCosts" = "Wir stellen Ihnen unter keinen Umständen zusätzliche Gebühren in Rechnung.";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "Keine zusätzlichen Gebühren";
+"Exchange.ExpectedRate.Fees" = "Die Netzwerkprovision und andere Umtauschkosten sind im Wechselkurs eingeschlossen.";
+"Exchange.ExpectedRate.Fees.Included" = "Alle Kosten sind im Wechselkurs eingeschlossen.";
+
+"Exchange.IncorrectRecipientAddress" = "Falsche Empfängeradresse";
+
+"Exchange.PairNotAvailable" = "Das Paar ist unzugänglich";
+"Exchange.UnavailablePair" = "Das %1$@ / %2$@ Paar ist für den Umtausch momentan nicht zugänglich. Versuchen Sie es später noch einmal.";
+"Exchange.UnavailableSwitch.Text" = "Der Umtausch von %1$@ in %2$@ ist gescheitert, weil das Paar für den Umtausch nicht zugänglich ist.";
+
+"Exchange.NoAddress.Title" = "Keine Empfängeradresse ";
+"Exchange.NoAddress.Text" = "Fügen Sie die Wallet-Adresse ein, an die das Geldmittel geschickt werden müssen";
+
+"Exchange.NoAmount.Text" = "Geben Sie den Umtauschbetrag an";
+
+"Exchange.NoData.Title" = "Falsche oder unzureichende Angaben";
+"Exchange.NoData.Text" = "Prüfen Sie den Umtauschbetrag, die Empfängeradresse und versuchen Sie es noch einmal";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "Scannen Sie den QR-Code des Wallets, auf das die Kryptowährung  überwiesen werden soll";
+"Scanner.ErrorTitle" = "Das Scannen wird nicht unterstützt";
+"Scanner.ErrorMessage" = "Das Scannen von QR-Codes wird von Ihrem Gerät nicht unterstützt. Verwenden Sie das Gerät mit der Kamera";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "Geben Sie die Währung oder die Handelsmarke ein";
+"ChooseCurrency.From" = "aus %@";
+"ChooseCurrency.To" = "in %@";
+"ChooseCurrency.Popular" = "Gängige Währungen";
+"ChooseCurrency.Fiat" = "Fiatwährungen";
+"ChooseCurrency.Other" = "Andere Währungen";
+"ChooseCurrency.Empty" = "In der Liste der unterstützenden Währungen und Handelsmarken nicht gefunden";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "Kein gültiger Wert %@";
+"CurrencyValidationRule.Error.InvalidAddress" = "Ungültige Adresse %@";
+"CurrencyValidationRule.Error.RegexNotFound" = "Die Daten konnten nicht überprüft werden";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "Von %1$@ in %2$@";
+"Transaction.Id" = "Transaktionscode";
+
+"Transaction.Cancel.Title" = "Transaktion stornieren";
+"Transaction.Cancel.Text" = "Sind Sie sicher, dass Sie diese Transaktion stornieren und eine neue einleiten wollen?";
+
+"Transaction.Deposit.Title" = "Nutzen Sie Ihr Wallet, um Depositengeld auf %@ zu überweisen";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "Geld überweisen:";
+"Transaction.Deposit.Address" = "An die Adresse:";
+"Transaction.Deposit.ViaApps" = "Depositengeld auf %@ ";
+"Transaction.Deposit.ViaApps.OneTap" = "auf einen Knopfdruck überweisen";
+"Transaction.Deposit.ShowQR" = "QR-Code zeigen";
+"Transaction.Deposit.Share" = "Adresse mitteilen";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "Die Währung wird von TrustWallet nicht unterstützt %@";
+
+"Transaction.YouSend" = "Sie überweisen:";
+"Transaction.YouSent" = "Sie haben überwiesen:";
+"Transaction.YouGet" = "Sie erhalten:";
+"Transaction.Received" = "Erhaltener Betrag:";
+"Transaction.Refunded" = "Rückbetrag:";
+"Transaction.RecipientAddress" = "An die Empfängeradresse %@:";
+
+"Transaction.Status.Deposit" = "Warten auf Depositengeld";
+"Transaction.Status.Deposit.Description" = "Je schneller das Depositengeld von Ihnen überwiesen wird, desto höher ist die Wahrscheinlichkeit, dass der erwartbare Betrag ankommt.";
+
+"Transaction.Status.Exchanging" = "Der Umtausch ist im Gange";
+"Transaction.Status.Exchanging.Description" = "Wir sind auf der Suche nach günstigstem Weg für den Umtausch dieses Betrages und die Geldüberweisung an Sie";
+
+"Transaction.Status.Finished" = "Abgeschlossen";
+
+"Transaction.Status.Refunded" = "Zurückerstattet";
+"Transaction.Status.Refunded.Description" = "Wir haben Ihnen Ihre Geldmittel in Kryptowährung zurückerstattet Lassen Sie uns einen neuen Umtausch starten und abschließen.";
+
+"Transaction.Status.Failed" = "Der Umtausch ist gescheitert";
+
+"Transaction.Support.Title" = "Mit Ihrer Transaktion lief etwas schief.";
+"Transaction.Support.Text" = "Wir arbeiten an der Problemlösung. Kontaktieren Sie uns, um informiert zu sein oder jede zusätzliche Information per Adresse %@ zu übermitteln";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "Sind Sie bereit, den neuen Umtausch einzuleiten?";
+"Transaction.StartNew.Failure" = "Ich möchte den neuen Umtausch einleiten";
+"Transaction.StartNew.Action" = "Los geht es!";
+"Transaction.StartNew.Alert" = "Sind Sie sicher, dass Sie die neue Transaktion einleiten möchten?";
+
+"Transaction.RateUs.TitleMore" = "Toll! Sie haben sogar mehr als Erwartetes erhalten.\n Es ist dank unserer gut organisierten Teamarbeit möglich.";
+"Transaction.RateUs.Title" = "Glückwunsch! Der Umtausch ist erfolgreich abgeschlossen. Wir erwarten mit Ungeduld \U00A0 den nächsten Umtausch.";
+"Transaction.RateUs.Button" = "Bewerten Sie uns im App Store";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "Brieftasche %@";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "Auf Ihr %@-Wallet";
+"ChooseCurrency.GetSpecific" = "%1$@ von %2$@ erhalten";
+"Transaction.Status.FinishedMore.Description" = "Toll! Sie haben sogar mehr als Erwartetes erhalten.\nTauschen Sie auch andere Kryptowährungspaare auf ChangeNOW App um.";
+"Transaction.Status.Finished.Description" = "Glückwunsch! Der Umtausch ist erfolgreich abgeschlossen.\n Tauschen Sie auch andere Kryptowährungspaare über ChangeNOW App um.";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "ãƒ»Litecoin von 200+ Kryptowährungen erhalten\nãƒ»Schneller und sicherer Umtausch\nãƒ»Ohne Registrierung";

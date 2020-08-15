@@ -1,0 +1,138 @@
+// MARK: - Global
+
+"Ok" = "ОК";
+"Cancel" = "Отмена";
+"Yes" = "Да";
+"No" = "Нет";
+"Done" = "Готово";
+"Error" = "Ошибка";
+"Copied" = "Скопировано";
+
+"Error.Mail" = "Необходимо настроить приложение электронной почты";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "Ожидание сети... Проверьте интернет-соединение";
+"InternetError.Refresh" = "Ой! Проверьте интернет-соединение и потяните вниз, чтобы обновить страницу";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "Вы переводите";
+"Exchange.Get" = "Вы получаете";
+"Exchange.MinimumAmount" = "Минимальная сумма составляет %1$@ %2$@";
+"Exchange.Exchange" = "Обмен";
+"Exchange.RecipientAddress" = "На адрес получателя";
+"Exchange.Address" = "Добавить адрес %@";
+"Exchange.ExtraId" = "%@ (необязательное поле)";
+
+"Exchange.ExpectedRate.Title" = "Это прогнозируемый курс";
+"Exchange.ExpectedRate.Description" = "ChangeNOW выберет для вас наиболее выгодный курс в момент обмена.";
+"Exchange.ExpectedRate.Description.Best" = "выгодный курс";
+"Exchange.ExpectedRate.NoExtraCosts" = "Мы ни при каких обстоятельствах не взимаем с вас никакие дополнительные сборы.";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "никаких дополнительных сборов";
+"Exchange.ExpectedRate.Fees" = "Комиссия сети и другие расходы, связанные с обменом, включены в курс.";
+"Exchange.ExpectedRate.Fees.Included" = "все расходы включены в курс";
+
+"Exchange.IncorrectRecipientAddress" = "Неверный адрес получателя";
+
+"Exchange.PairNotAvailable" = "Пара недоступна";
+"Exchange.UnavailablePair" = "Пара %1$@ / %2$@ недоступна для обмена в данный момент. Повторите попытку позже.";
+"Exchange.UnavailableSwitch.Text" = "Не удалось обменять %1$@ в %2$@, поскольку пара недоступна для обмена.";
+
+"Exchange.NoAddress.Title" = "Отсутствует адрес получателя";
+"Exchange.NoAddress.Text" = "Добавьте адрес кошелька, на который требуется отправить денежные средства.";
+
+"Exchange.NoAmount.Text" = "Укажите сумму для обмена.";
+
+"Exchange.NoData.Title" = "Неверная или недостающая информация";
+"Exchange.NoData.Text" = "Проверьте сумму для обмена и адрес получателя и повторите попытку.";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "Отсканируйте QR-код кошелька, на который требуется получить криптовалюту";
+"Scanner.ErrorTitle" = "Сканирование не поддерживается";
+"Scanner.ErrorMessage" = "Ваше устройство не поддерживает сканирование QR-кодов. Используйте устройство с камерой.";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "Введите валюту или торговый символ";
+"ChooseCurrency.From" = "из %@";
+"ChooseCurrency.To" = "в %@";
+"ChooseCurrency.Popular" = "Популярные валюты";
+"ChooseCurrency.Fiat" = "Фиатные валюты";
+"ChooseCurrency.Other" = "Другие валюты";
+"ChooseCurrency.Empty" = "Не найдено в списке поддерживаемых валют и торговых символов";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "Значение %@ недействительно";
+"CurrencyValidationRule.Error.InvalidAddress" = "Адрес %@ недействителен";
+"CurrencyValidationRule.Error.RegexNotFound" = "Не удалось проверить данные";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "Из %1$@ в %2$@";
+"Transaction.Id" = "Код транзакции";
+
+"Transaction.Cancel.Title" = "Отменить транзакцию";
+"Transaction.Cancel.Text" = "Вы уверены, что хотите отменить эту транзакцию и начать новую?";
+
+"Transaction.Deposit.Title" = "Используйте ваш кошелек, чтобы перевести депозит на %@";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "Перевести деньги:";
+"Transaction.Deposit.Address" = "На адрес:";
+"Transaction.Deposit.ViaApps" = "Перевести депозит в %@ с помощью";
+"Transaction.Deposit.ViaApps.OneTap" = "одного нажатия";
+"Transaction.Deposit.ShowQR" = "Показать QR-код";
+"Transaction.Deposit.Share" = "Поделиться адресом";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "TrustWallet не поддерживает валюту %@";
+
+"Transaction.YouSend" = "Вы переводите:";
+"Transaction.YouSent" = "Вы перевели:";
+"Transaction.YouGet" = "Вы получаете:";
+"Transaction.Received" = "Получено:";
+"Transaction.Refunded" = "Возвращено:";
+"Transaction.RecipientAddress" = "На адрес %@ получателя:";
+
+"Transaction.Status.Deposit" = "Ожидание депозита";
+"Transaction.Status.Deposit.Description" = "Чем быстрее вы переведете депозит, тем выше вероятность получения прогнозируемой суммы.";
+
+"Transaction.Status.Exchanging" = "Идет обмен";
+"Transaction.Status.Exchanging.Description" = "Мы ищем наиболее выгодный способ обмена этой суммы и перевода денег вам.";
+
+"Transaction.Status.Finished" = "Завершено";
+
+"Transaction.Status.Refunded" = "Возвращено";
+"Transaction.Status.Refunded.Description" = "Мы вернули вам ваши средства в криптовалюте. Давайте начнем новый обмен и завершим его.";
+
+"Transaction.Status.Failed" = "Не удалось обменять";
+
+"Transaction.Support.Title" = "С вашей транзакцией что-то пошло не так.";
+"Transaction.Support.Text" = "Мы работаем над решением проблемы. Свяжитесь с нами, чтобы оставаться в курсе или предоставить любую дополнительную информацию, по адресу %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "Готовы начать новый обмен?";
+"Transaction.StartNew.Failure" = "Я хочу начать новый обмен";
+"Transaction.StartNew.Action" = "Поехали!";
+"Transaction.StartNew.Alert" = "Вы уверены, что хотите начать новую транзакцию?";
+
+"Transaction.RateUs.TitleMore" = "Вот это да! Вы получили даже больше, чем прогнозировалось.\nЭто возможно благодаря нашей слаженной работе.";
+"Transaction.RateUs.Title" = "Поздравляем! Обмен успешно завершен. Мы с нетерпением\U00A0ждем следующего.";
+"Transaction.RateUs.Button" = "Оцените нас в App Store";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ Кошелек";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "На ваш кошелек %@";
+"ChooseCurrency.GetSpecific" = "Получить %1$@ из %2$@";
+"Transaction.Status.FinishedMore.Description" = "Вот это да! Вы получили даже больше, чем прогнозировалось.\nОбменивайте другие криптовалютные пары в приложении ChangeNOW.";
+"Transaction.Status.Finished.Description" = "Поздравляем! Обмен успешно завершен.\nОбменивайте другие криптовалютные пары в приложении ChangeNOW.";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "a?»Получить Litecoin из 200+ криптовалют\na?»Быстрый и надежный обмен\na?»Без регистрации";

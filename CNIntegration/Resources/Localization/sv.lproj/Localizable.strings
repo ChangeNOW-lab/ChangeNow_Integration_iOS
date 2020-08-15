@@ -1,0 +1,139 @@
+// MARK: - Global
+
+"Ok" = "Okej";
+"Cancel" = "Avbryt";
+"Yes" = "Ja";
+"No" = "Nej";
+"Done" = "Klart";
+"Error" = "Fel";
+"Copied" = "Kopierat";
+
+"Error.Mail" = "Du måste ställa in en e-postapplikation";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "Väntar på nätverk... Kolla din internetanslutning";
+"InternetError.Refresh" = "Oj! Kontrollera din internetanslutning och dra för att uppdatera";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "Du skickar";
+"Exchange.Get" = "Du får";
+"Exchange.MinimumAmount" = "Minsta belopp är %1$@ %2$@";
+"Exchange.Exchange" = "Växling";
+"Exchange.RecipientAddress" = "Till mottagarens adress";
+"Exchange.Address" = "Lägg till %@ adress";
+"Exchange.ExtraId" = "%@ (valfritt)";
+
+"Exchange.ExpectedRate.Title" = "Detta är en förväntad ränta";
+"Exchange.ExpectedRate.Description" = "ChangeNOW väljer den bästa kursen för dig vid tidpunkten för utbytet";
+"Exchange.ExpectedRate.Description.Best" = "Bäst";
+"Exchange.ExpectedRate.NoExtraCosts" = "Vi garanterar inga extra kostnader.";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "Garanti";
+"Exchange.ExpectedRate.Fees" = "Nätverksavgifter och alla andra växlingskostnader ingår i kursen. ";
+"Exchange.ExpectedRate.Fees.Included" = "Omfattade";
+
+"Exchange.IncorrectRecipientAddress" = "Felaktig mottagaradress";
+
+"Exchange.PairNotAvailable" = "Par inte tillgängligt";
+"Exchange.UnavailablePair" = "Par %1$@ till %2$@ är för närvarande inte tillgängligt för utbyte. Försök senare.";
+"Exchange.UnavailableSwitch.Text" = "Kan inte växla till %1$@-%2$@ eftersom paret inte är tillgängligt för utbyte.";
+
+"Exchange.NoAddress.Title" = "Ingen mottagaradress";
+"Exchange.NoAddress.Text" = "Lägg till plånbokadressen där du vill att vi ska skicka dina pengar.";
+
+"Exchange.NoAmount.Text" = "Ange hur mycket medel du vill utbyta.";
+
+"Exchange.NoData.Title" = "Felaktig eller saknad information.";
+"Exchange.NoData.Text" = "Kontrollera igen det belopp du vill byta och mottagaradressen och försök igen.";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "Vänligen skanna QR-adressen till plånboken där du vill få krypto.";
+"Scanner.ErrorTitle" = "Skanning stöds inte.";
+"Scanner.ErrorMessage" = "Din enhet stöder inte skanning av QR-koder. Använd en enhet med en kamera.";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "Skriv in en valuta eller ticker";
+"ChooseCurrency.From" = "Från %@";
+"ChooseCurrency.To" = "Till %@";
+"ChooseCurrency.Popular" = "Populära valutor";
+"ChooseCurrency.Fiat" = "Fiatvalutor";
+"ChooseCurrency.Other" = "Andra valutor";
+"ChooseCurrency.Empty" = "Stämmer inte med valutor eller tickers som vi stöder för utbyte";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "%@ Värdet är inte giltigt";
+"CurrencyValidationRule.Error.InvalidAddress" = "%@ Adressen är inte giltig";
+"CurrencyValidationRule.Error.RegexNotFound" = "Det gick inte att validera data";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "%1$@ till %2$@";
+"Transaction.Id" = "Transaktions ID";
+
+"Transaction.Cancel.Title" = "Avbryt transaktion";
+"Transaction.Cancel.Text" = "Är du säker på att du vill avbryta denna transaktion och starta en ny?";
+
+"Transaction.Deposit.Title" = "Använd din plånbok för att skicka insättning till %@";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "Skicka pengar";
+"Transaction.Deposit.Address" = "Itu";
+"Transaction.Deposit.ViaApps" = "Skicka insättning i %@ via:";
+"Transaction.Deposit.ViaApps.OneTap" = "ett tryck";
+"Transaction.Deposit.ShowQR" = "QR-kod";
+"Transaction.Deposit.Share" = "Dela";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ mynt stöds inte av TrustWallet";
+
+"Transaction.YouSend" = "Du skickar";
+"Transaction.YouSent" = "Du skickade";
+"Transaction.YouGet" = "Du får";
+"Transaction.Received" = "Mottagen:";
+"Transaction.Refunded" = "Återbetalad";
+"Transaction.RecipientAddress" = "Till mottagare %@ adress:";
+
+"Transaction.Status.Deposit" = "Väntar på insättning";
+"Transaction.Status.Deposit.Description" = "Ju tidigare du skickar en insättning, desto större chans att få det förväntade beloppet.";
+
+"Transaction.Status.Exchanging" = "Växlar";
+"Transaction.Status.Exchanging.Description" = "Vi letar efter det bästa sättet att byta ut detta belopp och skicka pengarna till dig.";
+
+"Transaction.Status.Finished" = "Avslutad";
+
+"Transaction.Status.Refunded" = "Återbetalad";
+"Transaction.Status.Refunded.Description" = "Så du får tillbaka din krypto. Låt oss nu börja ett nytt utbyte och ta det till slutet.";
+
+"Transaction.Status.Failed" = "Misslyckades";
+
+"Transaction.Support.Title" = "Något gick fel med din transaktion.";
+"Transaction.Support.Text" = "Vi arbetar med problemet. Kontakta oss för att få uppdateringar eller ge ytterligare information till %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "Redo att starta ett nytt utbyte?";
+"Transaction.StartNew.Failure" = "Jag vill starta ett nytt utbyte";
+"Transaction.StartNew.Action" = "Gå!";
+"Transaction.StartNew.Alert" = "Är du säker på att starta en ny transaktion?";
+
+"Transaction.RateUs.TitleMore" = "Wow! Du har fått mer än väntat. \nThat är hur bra vi är på handeln";
+"Transaction.RateUs.Title" = "Grattis! Exchange har slutförts. Kan inte\U00A0 vänta på att starta en ny";
+"Transaction.RateUs.Button" = "Betygsätt oss i App Store";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ Plånbok";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "Till din %@-plånbok ";
+"ChooseCurrency.GetSpecific" = "Få %1$@ från %2$@";
+"Transaction.Status.FinishedMore.Description" = "Wow! Du har fått mer än väntat.\nByt ut andra kryptopar med ChangeNOW-appen.";
+"Transaction.Status.Finished.Description" = "Grattis! Exchange har slutförts framgångsrikt.\n Byt andra kryptopar med ChangeNOW-appen.";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "Hämta Litecoin från 200+ kryptovalutor\n・Snabba och säkra utbyten\n・Inget konto behövs";
+

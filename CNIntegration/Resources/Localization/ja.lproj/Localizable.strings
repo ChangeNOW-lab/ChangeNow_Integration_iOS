@@ -1,0 +1,139 @@
+// MARK: - Global
+
+"Ok" = "はい";
+"Cancel" = "取り消し";
+"Yes" = "はい";
+"No" = "いいえ";
+"Done" = "完了";
+"Error" = "エラー";
+"Copied" = "コピーされました";
+
+"Error.Mail" = "メールアプリケーションを設定する必要があります。";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "ネットワ&... ークを待っています。";
+"InternetError.Refresh" = "Oops! インターネット接続を確認してください。";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "あなたが送る";
+"Exchange.Get" = "あなたが";
+"Exchange.MinimumAmount" = "";
+"Exchange.Exchange" = "取引所";
+"Exchange.RecipientAddress" = "宛先アドレス";
+"Exchange.Address" = "追加 %@ アドレス";
+"Exchange.ExtraId" = "%@ (オプション)";
+
+"Exchange.ExpectedRate.Title" = "これは予想レートです";
+"Exchange.ExpectedRate.Description" = "ChangeNOWは、交換の瞬間に最適なレートを選択します。";
+"Exchange.ExpectedRate.Description.Best" = "ベスト です。";
+"Exchange.ExpectedRate.NoExtraCosts" = "余分な費用がかからないことを保証します";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "保証";
+"Exchange.ExpectedRate.Fees" = "ネットワーク手数料およびその他すべての交換費用はレートに含まれています";
+"Exchange.ExpectedRate.Fees.Included" = "同梱";
+
+"Exchange.IncorrectRecipientAddress" = "間違った受取人の住所";
+
+"Exchange.PairNotAvailable" = "ペアは利用できません";
+"Exchange.UnavailablePair" = "ペア %1$@ to %2$@ は現在交換できません。後で試してみてください。";
+"Exchange.UnavailableSwitch.Text" = "ペアが交換できないので、%1$@-%2$@ に切り替えることはできません。";
+
+"Exchange.NoAddress.Title" = "受取人アドレスがありません。";
+"Exchange.NoAddress.Text" = "送金を希望するウォレットアドレスを追加してください。";
+
+"Exchange.NoAmount.Text" = "交換したい資金の金額を指定してください。";
+
+"Exchange.NoData.Title" = "情報が間違っているか、不足しています。";
+"Exchange.NoData.Text" = "交換する金額と受取人の住所を再確認して、もう一度お試しください。";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "暗号を受け取りたいウォレットのQRアドレスをスキャンしてください ";
+"Scanner.ErrorTitle" = "スキャンはサポートされていません。";
+"Scanner.ErrorMessage" = "お使いのデバイスはQRコードのスキャンをサポートしていません。カメラ付きのデバイスを使用してください。";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "通貨またはティッカーを入力してください";
+"ChooseCurrency.From" = "から %@";
+"ChooseCurrency.To" = "はい、 %@";
+"ChooseCurrency.Popular" = "人気通貨";
+"ChooseCurrency.Fiat" = "フィアット通貨";
+"ChooseCurrency.Other" = "その他の通貨";
+"ChooseCurrency.Empty" = "私たちが交換をサポートしている通貨やティッカーとは一致しません";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "%@ 値が有効ではありません。";
+"CurrencyValidationRule.Error.InvalidAddress" = "%@ アドレスが有効ではありません。";
+"CurrencyValidationRule.Error.RegexNotFound" = "データの検証に失敗しました";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "％1$@ から ％2$@";
+"Transaction.Id" = "トランザクションID";
+
+"Transaction.Cancel.Title" = "トランザクションをキャンセルします";
+"Transaction.Cancel.Text" = "この取引をキャンセルして新しい取引を開始してもよろしいですか？";
+
+"Transaction.Deposit.Title" = "あなたの財布を使って預金を ％@ に送金してください";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "送金する";
+"Transaction.Deposit.Address" = "アドレスへ：";
+"Transaction.Deposit.ViaApps" = "を経由して% @の預金を送信します。:";
+"Transaction.Deposit.ViaApps.OneTap" = "ワンタップ";
+"Transaction.Deposit.ShowQR" = "QRコード";
+"Transaction.Deposit.Share" = "シェア";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "％@ コインはTrustWalletでサポートされていません";
+
+"Transaction.YouSend" = "あなたが送る";
+"Transaction.YouSent" = "あなたが送信しました：";
+"Transaction.YouGet" = "あなたが";
+"Transaction.Received" = "受け取りました:";
+"Transaction.Refunded" = "払い戻す";
+"Transaction.RecipientAddress" = "受取人へ %@ 住所 :";
+
+"Transaction.Status.Deposit" = "入金待ち";
+"Transaction.Status.Deposit.Description" = "入金を送るのが早ければ早いほど、期待した金額を受け取れる可能性が高くなります。";
+
+"Transaction.Status.Exchanging" = "交換";
+"Transaction.Status.Exchanging.Description" = "私たちは、この金額を交換し、あなたにお金を送るための最良の方法を探しています";
+
+"Transaction.Status.Finished" = "完了しました";
+
+"Transaction.Status.Refunded" = "払い戻す";
+"Transaction.Status.Refunded.Description" = "だから、あなたの暗号を取り戻す。 さて、新しい交換を始めて、それを最後まで持っていきましょう。";
+
+"Transaction.Status.Failed" = "失敗";
+
+"Transaction.Support.Title" = "何かがあなたのトランザクションに問題が発生しました。";
+"Transaction.Support.Text" = "問題に取り組んでいます。更新を得るか、または追加情報を提供するために私達に連絡してください %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "新しい取引を開始する準備はできていますか？";
+"Transaction.StartNew.Failure" = "新しい取引を開始したい";
+"Transaction.StartNew.Action" = "行け！";
+"Transaction.StartNew.Alert" = "新しいトランザクションを開始してよろしいですか？";
+
+"Transaction.RateUs.TitleMore" = "うわっ! 予想より多くを受け取った。\nそれは私たちが取引でどのように良いです";
+"Transaction.RateUs.Title" = "おめでとうございます！交換は正常に完了しました。\U00A0新しいものを開始するのを待つことができません。";
+"Transaction.RateUs.Button" = "App storeでの評価をお願いします";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ 財布";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "%@のお財布へ";
+"ChooseCurrency.GetSpecific" = "%2$@ から%1$@をゲット";
+"Transaction.Status.FinishedMore.Description" = "うわー！予想以上の数を受け取りました。\nChangeNOWアプリで他の暗号ペアを交換してください。";
+"Transaction.Status.Finished.Description" = "おめでとう！交換は正常に完了しました。\nChangeNOWアプリで他の暗号ペアを交換してください。";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "からLitecoinを取得200+暗号通貨\n・高速かつ安全な交換\n・アカウントは必要ありません";
+

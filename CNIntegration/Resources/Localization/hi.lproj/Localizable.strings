@@ -1,0 +1,139 @@
+// MARK: - Global
+
+"Ok" = "ठीक है";
+"Cancel" = "रद्द करें";
+"Yes" = "हाँ";
+"No" = "नहीं";
+"Done" = "हो गया";
+"Error" = "रुटि";
+"Copied" = "की नकल की";
+
+"Error.Mail" = "आपको एक मेल एप्लिकेशन सेट करना होगा";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "नेटवर्क की प्रतीक्षा में&... अपने इंटरनेट कनेक्शन की जांच करें";
+"InternetError.Refresh" = "ऊप्स! कृपया अपना इंटरनेट कनेक्शन जांचें और रीफ़्रेश करने के लिए खींचें";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "आपके द्वारा भेजी गई";
+"Exchange.Get" = "आपके द्वारा प्राप्त";
+"Exchange.MinimumAmount" = "यूनतम राशि %1$@ %2$@ है";
+"Exchange.Exchange" = "विनिमय (एक्सचेंज)";
+"Exchange.RecipientAddress" = "प्राप्तकर्ता पते पर";
+"Exchange.Address" = "%@ पता जोड़ें";
+"Exchange.ExtraId" = "%@ (वैकल्पिक)";
+
+"Exchange.ExpectedRate.Title" = "यह एक प्रत्याशित दर है";
+"Exchange.ExpectedRate.Description" = "ChangeNOW एक्सचेंज के क्षण में आपके लिए सबसे अच्छी दर चुनेगी.";
+"Exchange.ExpectedRate.Description.Best" = "श्रेष्ठ";
+"Exchange.ExpectedRate.NoExtraCosts" = "हम बिना किसी अतिरिक्त लागत की गारंटी देते हैं.";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "गारंटी";
+"Exchange.ExpectedRate.Fees" = "नेटवर्क शुल्क और अन्य सभी विनिमय व्यय दर में शामिल हैं";
+"Exchange.ExpectedRate.Fees.Included" = "शामिल";
+
+"Exchange.IncorrectRecipientAddress" = "गलत प्राप्तकर्ता का पता";
+
+"Exchange.PairNotAvailable" = "जोड़ी उपलब्ध नहीं है";
+"Exchange.UnavailablePair" = "जोड़ी %1$@ करने के लिए %2$@ विनिमय के लिए वर्तमान में उपलब्ध नहीं है. बाद में प्रयास करें.";
+"Exchange.UnavailableSwitch.Text" = "%1$@ - %2$@ पर स्विच नहीं किया जा सकता क्योंकि जोड़ी विनिमय के लिए उपलब्ध नहीं है।.";
+
+"Exchange.NoAddress.Title" = "कोई प्राप्तकर्ता का पता नहीं";
+"Exchange.NoAddress.Text" = "कृपया वह बटुआ पता जोड़ें जहाँ आप हमें अपना पैसा भेजना चाहते हैं.";
+
+"Exchange.NoAmount.Text" = "कृपया उन धनराशि को निर्दिष्ट करें जिन्हें आप विनिमय करना चाहते हैं।.";
+
+"Exchange.NoData.Title" = "गलत या गुम जानकारी";
+"Exchange.NoData.Text" = "कृपया उस राशि की पुनः जाँच करें जिसे आप विनिमय करना चाहते हैं। और प्राप्तकर्ता का पता और फिर से प्रयास करें।.";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "कृपया उस वॉलेट के QR पते को स्कैन करें जहां आप क्रिप्टो प्राप्त करना चाहते हैं";
+"Scanner.ErrorTitle" = "स्कैनिंग समर्थित नहीं है";
+"Scanner.ErrorMessage" = "आपका डिवाइस QR कोड की स्कैनिंग का समर्थन नहीं करता है। कृपया कैमरे के साथ डिवाइस का उपयोग करें।.";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "एक मुद्रा या टिकर में टाइप करें";
+"ChooseCurrency.From" = "प्रेषक %@";
+"ChooseCurrency.To" = "सेवा में %@";
+"ChooseCurrency.Popular" = "लोकप्रिय मुद्राएँ";
+"ChooseCurrency.Fiat" = "फ़िएट मुद्राएँ";
+"ChooseCurrency.Other" = "अन्य मुद्राएँ";
+"ChooseCurrency.Empty" = "हम विनिमय के लिए समर्थन करने वाले किसी भी मुद्राओं या टिकट से मेल नहीं खाता";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "%@ मान मान्य नहीं है";
+"CurrencyValidationRule.Error.InvalidAddress" = "%@ पता मान्य नहीं है";
+"CurrencyValidationRule.Error.RegexNotFound" = "डेटा को मान्य करने में विफल";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "%1$@ से %2$@";
+"Transaction.Id" = "लेनदेन आईडी ID";
+
+"Transaction.Cancel.Title" = "लेनदेन रद्द करें";
+"Transaction.Cancel.Text" = "क्या आप वाकई इस लेनदेन को रद्द करना चाहते हैं और एक नई शुरुआत करना चाहते हैं?";
+
+"Transaction.Deposit.Title" = "%@ के लिए जमा भेजने के लिए अपने बटुए का उपयोग करें";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "पैसे भेजो:";
+"Transaction.Deposit.Address" = "संबोधित करना:";
+"Transaction.Deposit.ViaApps" = "%@ के माध्यम से जमा भेजें:";
+"Transaction.Deposit.ViaApps.OneTap" = "एक नल";
+"Transaction.Deposit.ShowQR" = "QR-कोड";
+"Transaction.Deposit.Share" = "साझा करें";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ सिक्का TrustWallet द्वारा समर्थित नहीं है";
+
+"Transaction.YouSend" = "आपके द्वारा भेजी गई:";
+"Transaction.YouSent" = "आपने भेजा:";
+"Transaction.YouGet" = "आपके द्वारा प्राप्:त";
+"Transaction.Received" = "राप्त किया:";
+"Transaction.Refunded" = "रिफंड प्राप्त हुआ:";
+"Transaction.RecipientAddress" = "प्राप्तकर्ता% %@ पता:";
+
+"Transaction.Status.Deposit" = "जमा करने का इंतजार";
+"Transaction.Status.Deposit.Description" = "जल्दी ही आप एक जमा, उम्मीद की राशि प्राप्त करने का उच्च मौका भेजें.";
+
+"Transaction.Status.Exchanging" = "विनिमय किया जा रहा है";
+"Transaction.Status.Exchanging.Description" = "हम इस राशि का आदान-प्रदान और आप पैसे भेजने के लिए सबसे अच्छा तरीका है के लिए देख रहे हैं.";
+
+"Transaction.Status.Finished" = "समाप्त";
+
+"Transaction.Status.Refunded" = "रिफंड प्राप्त हुआ";
+"Transaction.Status.Refunded.Description" = "तो अगर आप अपने क्रिप्टो वापस मिलता है ।  अब हम एक नया आदान-प्रदान शुरू करते हैं और अंत करने के लिए इसे लाने.";
+
+"Transaction.Status.Failed" = "विफल";
+
+"Transaction.Support.Title" = "कुछ अपने सौदे के साथ गलत हो गया था.";
+"Transaction.Support.Text" = "हम इस समस्या पर काम कर रहे हैं ।  अपडेट प्राप्त या करने के लिए किसी भी अतिरिक्त जानकारी प्रदान करने के लिए हमसे संपर्क करें %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "एक नया आदान-प्रदान शुरू करने के लिए तैयार हैं?";
+"Transaction.StartNew.Failure" = "मैं एक नया आदान-प्रदान शुरू करना चाहते हैं";
+"Transaction.StartNew.Action" = "जाओ!";
+"Transaction.StartNew.Alert" = "आप एक नया लेन-देन शुरू करने के लिए सुनिश्चित कर रहे हैं?";
+
+"Transaction.RateUs.TitleMore" = "वाह! आप उम्मीद से अधिक प्राप्त हुआ है.\nयही कारण है कि हम व्यापार में कितना अच्छा कर रहे हैं";
+"Transaction.RateUs.Title" = "मुबारक हो! एक्सचेंज सफलतापूर्वक पूरा किया. एक\U00A0नया एक शुरू करने के लिए इंतजार नहीं कर सकता";
+"Transaction.RateUs.Button" = "हमें ऐप स्टोर पर रेट करें";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ वॉलेट";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "अपने %@ बटुए को";
+"ChooseCurrency.GetSpecific" = "से %1$@ करें %2$@";
+"Transaction.Status.FinishedMore.Description" = "वाह! आप उम्मीद से अधिक प्राप्त हुआ है.\nविनिमय अन्य क्रिप्टो-मुद्रा जोड़े के साथ ChangeNOW app है ।";
+"Transaction.Status.Finished.Description" = "मुबारक हो! एक्सचेंज सफलतापूर्वक पूरा किया.\nसेस्वाप चांगनोव अनुप्रयोग के साथ अन्य क्रिप्टो जोड़े";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "200+ क्रिप्टो मुद्राओं\एन फास्ट और सुरक्षित आदान\n・प्रदान\एन से में\n・कोई खाता नहीं की जरूरत";
+

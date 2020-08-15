@@ -1,0 +1,139 @@
+// MARK: - Global
+
+"Ok" = "Oké";
+"Cancel" = "Annuleren";
+"Yes" ="Ja";
+"No" = "Nee";
+"Done" = "Gedaan";
+"Error" = "Fout";
+"Copied" = "Gekopieerd";
+
+"Error.Mail" = "Je moet een Mail-applicatie opzetten.";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "Wachten op het netwerk... Check uw internet connectie";
+"InternetError.Refresh" = "Oeps! Controleer uw internetverbinding en trek om te verversen";
+
+// MARK: - Exchange
+
+"Exchange.Send" = "U verzendt";
+"Exchange.Get" = "U krijgt";
+"Exchange.MinimumAmount" = "Minimumbedrag is %1$@ %2$@";
+"Exchange.Exchange" = "Uitwisseling";
+"Exchange.RecipientAddress" = "Adres ontvanger";
+"Exchange.Address" = "Voeg %@ Adres toe";
+"Exchange.ExtraId" = "%@ (optioneel)";
+
+"Exchange.ExpectedRate.Title" = "Dit is een verwacht tarief";
+"Exchange.ExpectedRate.Description" = "ChangeNOW zal de beste koers voor u kiezen op het moment van de uitwisseling.";
+"Exchange.ExpectedRate.Description.Best" = "beste";
+"Exchange.ExpectedRate.NoExtraCosts" = "Wij garanderen geen extra kosten.";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "garantie";
+"Exchange.ExpectedRate.Fees" = "Netwerkkosten en alle andere wisselkosten zijn in de koers inbegrepen.";
+"Exchange.ExpectedRate.Fees.Included" = "inbegrepen";
+
+"Exchange.IncorrectRecipientAddress" = "Onjuist Ontvanger Adres.";
+
+"Exchange.PairNotAvailable" = "Paar niet beschikbaar";
+"Exchange.UnavailablePair" = "Paar %1$@ tot %2$@ is momenteel niet beschikbaar voor omwisseling. Probeer het later.";
+"Exchange.UnavailableSwitch.Text" = "Kan niet overschakelen naar %1$@-%2$@ omdat het paar niet beschikbaar is om te ruilen.";
+
+"Exchange.NoAddress.Title" = "Geen Ontvanger Adres";
+"Exchange.NoAddress.Text" = "Voeg het portemonnee-adres toe waar u wilt dat wij uw geld naartoe sturen.";
+
+"Exchange.NoAmount.Text" = "Geef het bedrag aan dat u wilt ruilen";
+
+"Exchange.NoData.Title" = "Onjuiste of ontbrekende informatie";
+"Exchange.NoData.Text" = "Controleer het bedrag dat u wilt ruilen en het ontvangstadres opnieuw en probeer het opnieuw.";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "Scan het QR-adres van de portemonnee waar u crypto wilt ontvangen";
+"Scanner.ErrorTitle" = "Scannen niet ondersteund";
+"Scanner.ErrorMessage" = "Uw apparaat ondersteunt het scannen van QR-codes niet. Gebruik een apparaat met een camera.";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "Typ een valuta of tikker in";
+"ChooseCurrency.From" = "Van %@";
+"ChooseCurrency.To" = "Naar %@";
+"ChooseCurrency.Popular" = "Populaire valuta";
+"ChooseCurrency.Fiat" = "Fiat-valuta";
+"ChooseCurrency.Other" = "Andere valuta's";
+"ChooseCurrency.Empty" = "Komt niet overeen met de valuta's of tikkers die wij ondersteunen voor het wisselen";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "De %@ waarde is niet geldig";
+"CurrencyValidationRule.Error.InvalidAddress" = "Het %@ adres is niet geldig";
+"CurrencyValidationRule.Error.RegexNotFound" = "De gegevens zijn niet gevalideerd";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "%1$@ tot %2$@";
+"Transaction.Id" = "Transactie-ID";
+
+"Transaction.Cancel.Title" = "Transactie annuleren";
+"Transaction.Cancel.Text" = "Weet je zeker dat je deze transactie wilt annuleren en een nieuwe wilt beginnen?";
+
+"Transaction.Deposit.Title" = "Gebruik uw portemonnee om een storting te sturen naar %@";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "Manda dei soldi:";
+"Transaction.Deposit.Address" = "Om te adresseren:";
+"Transaction.Deposit.ViaApps" = "Stuur storting in %@ via";
+"Transaction.Deposit.ViaApps.OneTap" = "één tik";
+"Transaction.Deposit.ShowQR" = "Toon QR-code";
+"Transaction.Deposit.Share" = "Delen";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ munt wordt niet ondersteund door TrustWallet";
+
+"Transaction.YouSend" = "U verzendt";
+"Transaction.YouSent" = "U stuurt:";
+"Transaction.YouGet" = "U krijgt:";
+"Transaction.Received" = "Ontvangen:";
+"Transaction.Refunded" = "Terugbetaald";
+"Transaction.RecipientAddress" = "Naar Ontvanger %@ Adres:";
+
+"Transaction.Status.Deposit" = "Wachtende aanbetaling";
+"Transaction.Status.Deposit.Description" = "Hoe eerder u een aanbetaling doet, hoe groter de kans dat u het verwachte bedrag ontvangt";
+
+"Transaction.Status.Exchanging" = "Uitwisselen";
+"Transaction.Status.Exchanging.Description" = "We zoeken naar de beste manier om dit bedrag om te wisselen en u het geld te sturen.";
+
+"Transaction.Status.Finished" = "Klaar";
+
+"Transaction.Status.Refunded" = "Terugbetaald";
+"Transaction.Status.Refunded.Description" = "Dus je krijgt je crypto terug. Laten we nu een nieuwe ruil beginnen en het tot het einde brengen.";
+
+"Transaction.Status.Failed" = "Mislukt";
+
+"Transaction.Support.Title" = "Er is iets misgegaan met je transactie.";
+"Transaction.Support.Text" = "We werken aan het probleem. Neem contact met ons op om updates te krijgen of om extra informatie te geven op %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "Klaar om een nieuwe ruil te beginnen?";
+"Transaction.StartNew.Failure" = "Ik wil een nieuwe ruil beginnen";
+"Transaction.StartNew.Action" = "Ga!";
+"Transaction.StartNew.Alert" = "Weet je zeker dat je een nieuwe transactie wilt beginnen?";
+
+"Transaction.RateUs.TitleMore" = "Wow! Je hebt meer ontvangen dan verwacht.\nZo goed zijn we in de handel.";
+"Transaction.RateUs.Title" = "Gefeliciteerd! Uitwisseling succesvol afgerond. Kan niet wachten om een nieuwe te beginnen";
+"Transaction.RateUs.Button" = "Beoordeel ons op de App store.";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ Portemonnee";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "Naar je %@-portemonnee";
+"ChooseCurrency.GetSpecific" = "Haal %1$@ van %2$@";
+"Transaction.Status.FinishedMore.Description" = "Wow! Je hebt meer ontvangen dan verwacht.\nExchange andere crypto paren met ChangeNOW app.";
+"Transaction.Status.Finished.Description" = "Gefeliciteerd! Exchange succesvol afgerond.\nWissel andere crypto-paren uit met ChangeNOW app";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "・Krijg Litecoin van 200+ crypto valuta's\n・Fast en beveiligde uitwisseling\n・Geen rekening nodig";
+

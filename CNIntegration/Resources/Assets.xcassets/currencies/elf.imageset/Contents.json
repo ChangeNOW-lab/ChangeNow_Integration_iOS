@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "elf.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,138 @@
+// MARK: - Global
+
+"Ok" = "Okay";
+"Cancel" = "Afbestille";
+"Yes" = "Ja";
+"No" = "Ingen";
+"Done" = "Færdig";
+"Error" = "Fejl";
+"Copied" = "Kopieret";
+
+"Error.Mail" = "Du skal konfigurere en Mail-applikation";
+
+// MARK: - Internet
+
+"InternetError.Waiting" = "Venter på netværk... Tjek din internetforbindelse";
+"InternetError.Refresh" = "Ups! Tjek venligst din internetforbindelse og træk for at genopfriske";
+// MARK: - Exchange
+
+"Exchange.Send" = "Du sender";
+"Exchange.Get" = "Du får";
+"Exchange.MinimumAmount" = "Minimumsbeløb er %1$@ %2$@";
+"Exchange.Exchange" = "Udveksle";
+"Exchange.RecipientAddress" = "Til modtageradresse";
+"Exchange.Address" = "Tilføj %@ adresse";
+"Exchange.ExtraId" = "%@ (valgfri)";
+
+"Exchange.ExpectedRate.Title" = "Dette er en forventet sats";
+"Exchange.ExpectedRate.Description" = "ChangeNOW vælger den bedste kurs for dig på udvekslingsøjeblikket.";
+"Exchange.ExpectedRate.Description.Best" = "bedst";
+"Exchange.ExpectedRate.NoExtraCosts" = "Vi garanterer ingen ekstra omkostninger.";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "garanti";
+"Exchange.ExpectedRate.Fees" = "Netværksgebyrer og alle andre bytteudgifter er indgår i kursen.";
+"Exchange.ExpectedRate.Fees.Included" = "inkluderet";
+
+"Exchange.IncorrectRecipientAddress" = "Forkert modtageradresse";
+
+"Exchange.PairNotAvailable" = "Par Ikke Tilgængelig";
+"Exchange.UnavailablePair" = "Par %1$@ til %2$@ er i øjeblikket ikke tilgængeligt til udveksling. Prøv senere.";
+"Exchange.UnavailableSwitch.Text" = "Kan ikke skifte til %1$@-%2$@ fordi parret ikke er tilgængeligt til udveksling.";
+
+"Exchange.NoAddress.Title" = "Ingen modtageradresse";
+"Exchange.NoAddress.Text" = "Tilføj venligst pungeadressen, hvor du vil have os til at sende dine penge.";
+
+"Exchange.NoAmount.Text" = "Angiv det beløb, du vil udveksle.";
+
+"Exchange.NoData.Title" = "Forkert eller manglende info";
+"Exchange.NoData.Text" = "Tjek venligst det beløb, du ønsker at bytte, og modtageradressen og prøv igen.";
+
+// MARK: - Scanner
+
+"Scanner.Description" = "Scan QR-adressen på tegnebogen, hvor du vil modtage krypto";
+"Scanner.ErrorTitle" = "Scanning understøttes ikke";
+"Scanner.ErrorMessage" = "Din enhed understøtter ikke scanning af QR-koder. Brug en enhed med et kamera.";
+
+// MARK: - ChooseCurrency
+
+"ChooseCurrency.Search.Placeholder" = "Indtast en valuta eller ticker";
+"ChooseCurrency.From" = "Fra %@";
+"ChooseCurrency.To" = "Til %@";
+"ChooseCurrency.Popular" = "Populære valutaer";
+"ChooseCurrency.Fiat" = "Fiat valutaer";
+"ChooseCurrency.Other" = "Andre valutaer";
+"ChooseCurrency.Empty" = "Det matcher ikke nogle valutaer eller tickers, som vi støtter til udveksling";
+
+
+// MARK: - CurrencyValidationRule
+
+"CurrencyValidationRule.Error.InvalidExtraId" = "Værdien %@ er ikke gyldig";
+"CurrencyValidationRule.Error.InvalidAddress" = "Adressen %@ er ikke gyldig";
+"CurrencyValidationRule.Error.RegexNotFound" = "Kunne ikke validere data";
+
+// MARK: - Transaction
+
+"Transaction.Title" = "%1$@ til %2$@";
+"Transaction.Id" = "Transaktions ID";
+
+"Transaction.Cancel.Title" = "Annuller transaktion";
+"Transaction.Cancel.Text" = "Er du sikker på, at du vil annullere denne transaktion og starte en ny?";
+
+"Transaction.Deposit.Title" = "Brug din tegnebog til at sende indbetaling til %@";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Money" = "Send penge";
+"Transaction.Deposit.Address" = "At adressere:";
+"Transaction.Deposit.ViaApps" = "Send indbetaling i %@ via:";
+"Transaction.Deposit.ViaApps.OneTap" = "et tap";
+"Transaction.Deposit.ShowQR" = "QR kode";
+"Transaction.Deposit.Share" = "Del";
+
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ mønt understøttes ikke af Trust Wallet";
+
+"Transaction.YouSend" = "Du sender:";
+"Transaction.YouSent" = "Du sendte:";
+"Transaction.YouGet" = "Du får:";
+"Transaction.Received" = "Modtaget:";
+"Transaction.Refunded" = "Refunderet:";
+"Transaction.RecipientAddress" = "Modtager %@ adresse:";
+
+"Transaction.Status.Deposit" = "Afventer depositum";
+"Transaction.Status.Deposit.Description" = "Jo før du sender en indbetaling, jo større er chancen for at modtage det forventede beløb.";
+
+"Transaction.Status.Exchanging" = "Udveksling";
+"Transaction.Status.Exchanging.Description" = "Vi leder efter den bedste måde at udveksle dette beløb og sende dig pengene.";
+
+"Transaction.Status.Finished" = "Færdig";
+
+"Transaction.Status.Refunded" = "refunderet";
+"Transaction.Status.Refunded.Description" = "Så du får din krypto tilbage. Lad os nu starte en ny udveksling og bringe den til slutningen.";
+
+"Transaction.Status.Failed" = "Mislykkedes";
+
+"Transaction.Support.Title" = "Der gik noget galt med din transaktion";
+"Transaction.Support.Text" = "Vi arbejder på problemet. Kontakt os for at få opdateringer eller give yderligere oplysninger til %@";
+"Transaction.Support.Button" = "Contact support";
+
+"Transaction.StartNew.Success" = "Klar til at starte en ny udveksling?";
+"Transaction.StartNew.Failure" = "Jeg vil starte en ny udveksling";
+"Transaction.StartNew.Action" = "Gå!";
+"Transaction.StartNew.Alert" = "Er du sikker på at starte en ny transaktion?";
+
+"Transaction.RateUs.TitleMore" = "Wow! Du har modtaget mere end forventet.\nDet er hvor gode vi handler med.";
+"Transaction.RateUs.Title" = "Tillykke! Exchange blev fuldført. Kan\U00A0ikke vente med at starte en ny.";
+"Transaction.RateUs.Button" = "Bedøm os i App store";
+
+// MARK: - DepositQR
+
+"DepositQR.Wallet" = "%@ Tegnebog";
+
+// MARK: - External
+
+"Exchange.ToSpecific" = "Til din %@-tegnebog";
+"ChooseCurrency.GetSpecific" = "Hent %1$@ fra %2$@";
+"Transaction.Status.FinishedMore.Description" = "Wow! Du har modtaget mere end forventet. \nUdveksle andre kryptopar med ChangeNOW-appen.";
+"Transaction.Status.Finished.Description" = "Tillykke! Exchange blev fuldført. \nByt andre kryptopar med ChangeNOW-appen.";
+
+// MARK: - ChangeNow
+
+"BuyVia.ChangeNow.Description" = "Hent Litecoin fra 200+ kryptovalutaer\n・Hurtig og sikker udveksling\n・Ingen konto nødvendig";
+
