@@ -132,7 +132,3 @@
 "Transaction.Status.FinishedMore.Description" = "Wow! Du har modtaget mere end forventet. \nUdveksle andre kryptopar med ChangeNOW-appen.";
 "Transaction.Status.Finished.Description" = "Tillykke! Exchange blev fuldført. \nByt andre kryptopar med ChangeNOW-appen.";
 
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "Hent Litecoin fra 200+ kryptovalutaer\n・Hurtig og sikker udveksling\n・Ingen konto nødvendig";
-

@@ -41,7 +41,7 @@ final class ExchangeDefaultService: ExchangeService {
         return nil
     }()
 
-    private let exchangeDataLocalPath = Filename(name: "ExchangeData", fileExtension: .plist)
+    private let exchangeDataLocalPath = Filename(name: "CNExchangeData", fileExtension: .plist)
 
     // MARK: - Public
 

@@ -8,8 +8,8 @@
 
 class MainField: DefaultTextField {
 
-    private let validColor: UIColor = .certainMain
-    private let selectedColor: UIColor = .certainMain
+    private let validColor: UIColor = .primarySelection
+    private let selectedColor: UIColor = .primarySelection
 
     private var currentValidState: Bool = false {
         didSet {

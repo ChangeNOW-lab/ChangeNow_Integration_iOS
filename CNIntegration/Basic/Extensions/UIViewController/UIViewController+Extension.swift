@@ -11,7 +11,7 @@ import NVActivityIndicatorView
 extension UIViewController {
 
     func showActivityIndicator() {
-        let activityData = ActivityData(type: .ballSpinFadeLoader, color: .certainMain, backgroundColor: .clear)
+        let activityData = ActivityData(type: .ballSpinFadeLoader, color: .primarySelection, backgroundColor: .clear)
         NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
     }
 

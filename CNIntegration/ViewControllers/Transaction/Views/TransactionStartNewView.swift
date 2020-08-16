@@ -59,10 +59,10 @@ final class TransactionStartNewView: TapActionView {
     func set(style: Style) {
         switch style {
         case .success:
-            layer.borderColor = UIColor.certainMain.withAlphaComponent(0.2).cgColor
-            actionLabel.backgroundColor = UIColor.certainMain.withAlphaComponent(0.76)
-            backgroundColor = UIColor.certainMain.withAlphaComponent(0.05)
-            titleLabel.textColor = .certainMain
+            layer.borderColor = UIColor.primarySelection.withAlphaComponent(0.2).cgColor
+            actionLabel.backgroundColor = UIColor.primarySelection.withAlphaComponent(0.76)
+            backgroundColor = UIColor.primarySelection.withAlphaComponent(0.05)
+            titleLabel.textColor = .primarySelection
             titleLabel.text = R.string.localizable.transactionStartNewSuccess()
         case .failure:
             layer.borderColor = UIColor.background.withAlphaComponent(0.4).cgColor

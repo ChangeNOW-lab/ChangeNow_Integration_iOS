@@ -52,7 +52,7 @@ final class ExchangeViewController: UIViewController {
 
     private lazy var refreshControl: UIRefreshControl = {
         let view = UIRefreshControl()
-        view.tintColor = .certainMain
+        view.tintColor = .primarySelection
         view.addTarget(self, action: #selector(refreshControlAction), for: .valueChanged)
         return view
     }()
@@ -626,6 +626,7 @@ final class ExchangeViewController: UIViewController {
 
     private let fromAmountScheduler = ActionScheduler(dispatch: .main)
     private func set(fromAmountString: String) {
+        guard let fromAmount = Decimal(string: fromAmountString), presenter.fromAmount != fromAmount else { return }
         presenter.stopUpdateEstimatedExchangeAmount()
         fromAmountScheduler.execute(after: 0.3) { [weak self] in
             self?.presenter.set(fromAmountString: fromAmountString)

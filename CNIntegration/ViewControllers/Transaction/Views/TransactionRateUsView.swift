@@ -27,7 +27,7 @@ final class TransactionRateUsView: UIView {
     private lazy var rateUsButton: DefaultButton = {
         let view = DefaultButton()
         view.titleLabel?.font = .normalTitle
-        view.imageView?.tintColor = .certainMain
+        view.imageView?.tintColor = .primarySelection
         view.setImage(R.image.like(), for: .normal)
         view.setTitleColor(.background, for: .normal)
         view.setTitle(R.string.localizable.transactionRateUsButton(), for: .normal)

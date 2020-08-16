@@ -14,8 +14,8 @@ extension UIColor {
     }
 
     /// red: 0.827, green: 0.843, blue: 0.855
-    static var slightlyGray: UIColor {
-        return ThemeManager.current.colors.slightlyGray
+    static var primaryGray: UIColor {
+        return ThemeManager.current.colors.primaryGray
     }
 
     /// red: 0.153, green: 0.153, blue: 0.251
@@ -34,8 +34,8 @@ extension UIColor {
     }
 
     /// red: 0.388, green: 0.388, blue: 0.455
-    static var mainDark: UIColor {
-        return ThemeManager.current.colors.mainDark
+    static var mainLight: UIColor {
+        return ThemeManager.current.colors.mainLight
     }
 
     /// red: 0.502, green: 0.502, blue: 0.745
@@ -44,8 +44,8 @@ extension UIColor {
     }
 
     /// red: 0, green: 0.761, blue: 0.435
-    static var certainMain: UIColor {
-        return ThemeManager.current.colors.certainMain
+    static var primarySelection: UIColor {
+        return ThemeManager.current.colors.primarySelection
     }
 
     /// red: 1, green: 1, blue: 1, alpha: 0.5
@@ -53,22 +53,21 @@ extension UIColor {
         return ThemeManager.current.colors.placeholder
     }
 
-    /// red: 0.208, green: 0.208, blue: 0.298
-    static var sertainGrayLight: UIColor {
-        return ThemeManager.current.colors.sertainGrayLight
-    }
-
     /// red: 0.941, green: 0.729, blue: 0.047
-    static var certainOrange: UIColor {
-        return ThemeManager.current.colors.certainOrange
+    static var primaryOrange: UIColor {
+        return ThemeManager.current.colors.primaryOrange
     }
 
     /// red: 0.882, green: 0.384, blue: 0.384
-    static var certainRed: UIColor {
-        return ThemeManager.current.colors.certainRed
+    static var primaryRed: UIColor {
+        return ThemeManager.current.colors.primaryRed
     }
 
     // MARK: - Special
+
+    static var transactionSubTitle: UIColor {
+        return ThemeManager.current.colors.transactionSubTitle
+    }
 
     static var transactionBackground: UIColor {
         return ThemeManager.current.colors.transactionBackground

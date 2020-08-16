@@ -99,7 +99,7 @@ final class TransactionDepositView: UIView {
         view.backgroundColor = .white
         view.layer.cornerRadius = 6
         view.layer.borderWidth = 2
-        view.layer.borderColor = UIColor.certainMain.cgColor
+        view.layer.borderColor = UIColor.primarySelection.cgColor
         view.layer.masksToBounds = true
         return view
     }()
@@ -345,7 +345,7 @@ final class TransactionDepositView: UIView {
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.alignment = UIView.isLTR ? .left : .right
         attributedText.addAttributes([
-            .foregroundColor: UIColor.certainMain,
+            .foregroundColor: UIColor.primarySelection,
             .paragraphStyle: paragraphStyle
         ], range: NSRange(location: 0, length: attributedText.length))
         return attributedText

@@ -132,8 +132,3 @@
 "ChooseCurrency.GetSpecific" = "से %1$@ करें %2$@";
 "Transaction.Status.FinishedMore.Description" = "वाह! आप उम्मीद से अधिक प्राप्त हुआ है.\nविनिमय अन्य क्रिप्टो-मुद्रा जोड़े के साथ ChangeNOW app है ।";
 "Transaction.Status.Finished.Description" = "मुबारक हो! एक्सचेंज सफलतापूर्वक पूरा किया.\nसेस्वाप चांगनोव अनुप्रयोग के साथ अन्य क्रिप्टो जोड़े";
-
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "200+ क्रिप्टो मुद्राओंएन फास्ट और सुरक्षित आदान\n・प्रदानएन से में\n・कोई खाता नहीं की जरूरत";
-

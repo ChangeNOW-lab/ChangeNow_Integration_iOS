@@ -173,7 +173,7 @@
 		5A9F6B3A24CD746F008B5762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F6A7E24CD746F008B5762 /* Assets.xcassets */; };
 		5A9F6B3B24CD746F008B5762 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F6A8024CD746F008B5762 /* Localizable.strings */; };
 		5A9F6B3C24CD746F008B5762 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6A9324CD746F008B5762 /* Global.swift */; };
-		5A9F6B7224CD76BB008B5762 /* CNIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B7124CD76BB008B5762 /* CNIntegration.swift */; };
+		5A9F6B7224CD76BB008B5762 /* CNModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B7124CD76BB008B5762 /* CNModule.swift */; };
 		5A9F6B7E24CD81C3008B5762 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B7D24CD81C3008B5762 /* Theme.swift */; };
 		5A9F6B8024CDAE86008B5762 /* ExchangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B7F24CDAE86008B5762 /* ExchangeType.swift */; };
 		5A9F6B8224CDAE99008B5762 /* NavigationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B8124CDAE99008B5762 /* NavigationType.swift */; };
@@ -384,7 +384,7 @@
 		5A9F6A9124CD746F008B5762 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5A9F6A9224CD746F008B5762 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5A9F6A9324CD746F008B5762 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		5A9F6B7124CD76BB008B5762 /* CNIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNIntegration.swift; sourceTree = "<group>"; };
+		5A9F6B7124CD76BB008B5762 /* CNModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNModule.swift; sourceTree = "<group>"; };
 		5A9F6B7D24CD81C3008B5762 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		5A9F6B7F24CDAE86008B5762 /* ExchangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeType.swift; sourceTree = "<group>"; };
 		5A9F6B8124CDAE99008B5762 /* NavigationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationType.swift; sourceTree = "<group>"; };
@@ -448,7 +448,7 @@
 			children = (
 				5A9F69AC24CD746E008B5762 /* Export.swift */,
 				5A9F6A9324CD746F008B5762 /* Global.swift */,
-				5A9F6B7124CD76BB008B5762 /* CNIntegration.swift */,
+				5A9F6B7124CD76BB008B5762 /* CNModule.swift */,
 				5A9F6B7D24CD81C3008B5762 /* Theme.swift */,
 				5A9F6B8324CDAFB9008B5762 /* DefaultTheme.swift */,
 				5A9F6B7F24CDAE86008B5762 /* ExchangeType.swift */,
@@ -1206,7 +1206,7 @@
 				5A9F6B2024CD746F008B5762 /* ChooseCurrencySegmentControl.swift in Sources */,
 				5A9F6ADD24CD746F008B5762 /* ValidationRuleLatinSymbols.swift in Sources */,
 				5A9F6B3624CD746F008B5762 /* SVGProcessor.swift in Sources */,
-				5A9F6B7224CD76BB008B5762 /* CNIntegration.swift in Sources */,
+				5A9F6B7224CD76BB008B5762 /* CNModule.swift in Sources */,
 				5A9F6AD524CD746F008B5762 /* TapActionView.swift in Sources */,
 				5A9F6A9624CD746F008B5762 /* Export.swift in Sources */,
 				5A9F6AE324CD746F008B5762 /* ValidationRuleContains.swift in Sources */,
@@ -1536,7 +1536,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1569,7 +1569,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1695,7 +1695,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.0;
+				MARKETING_VERSION = 0.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -133,7 +133,3 @@
 "Transaction.Status.FinishedMore.Description" = "Wow! Hai ricevuto più del previsto. Scambia altre coppie di crittografia con l'app ChangeNOW";
 "Transaction.Status.Finished.Description" = "Congratulazioni! Scambio completato con successo. Scambia altre coppie di crittografia con l'app ChangeNOW.";
 
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "・Ricevi Litecoin da oltre 200+ valute criptate\n・Scambi veloci e sicuri\n・Non è necessario un conto";
-

@@ -11,14 +11,14 @@ private func >=~ (lhs: CGFloat, rhs: CGFloat) -> Bool {
     return round(lhs * UIScreen.main.scale) >= round(rhs * UIScreen.main.scale)
 }
 
-public enum KeyboardStatus {
+enum KeyboardStatus {
     case hiding
     case hidden
     case showing
     case shown
 }
 
-public typealias KeyboardHeightBlock = (_ height: CGFloat, _ status: KeyboardStatus) -> Void
+typealias KeyboardHeightBlock = (_ height: CGFloat, _ status: KeyboardStatus) -> Void
 
 class KeyboardTracker {
     private(set) var keyboardStatus: KeyboardStatus = .hidden

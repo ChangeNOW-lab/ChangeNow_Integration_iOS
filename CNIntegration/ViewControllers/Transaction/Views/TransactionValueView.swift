@@ -19,7 +19,7 @@ final class TransactionValueView: UIView {
             case .normal:
                 return UIColor.clear.cgColor
             case .green:
-                return UIColor.certainMain.cgColor
+                return UIColor.primarySelection.cgColor
             }
         }
     }

@@ -1680,7 +1680,7 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 89 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 88 localization keys.
     struct localizable {
       /// en translation: %1$@ to %2$@
       ///
@@ -2034,10 +2034,6 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
       static let chooseCurrencyTo = Rswift.StringResource(key: "ChooseCurrency.To", tableName: "Localizable", bundle: R.hostingBundle, locales: ["de", "ar", "zh-Hans", "ja", "en", "es", "da", "it", "ms", "sv", "ko", "zh-Hant", "ru", "fr", "id", "nl", "pt", "hi"], comment: nil)
-      /// en translation: ・Get Litecoin from 200+ crypto currencies ・Fast and secure exchanges ・No account needed
-      ///
-      /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
-      static let buyViaChangeNowDescription = Rswift.StringResource(key: "BuyVia.ChangeNow.Description", tableName: "Localizable", bundle: R.hostingBundle, locales: ["de", "ar", "zh-Hans", "ja", "en", "es", "da", "it", "ms", "sv", "ko", "zh-Hant", "ru", "fr", "id", "nl", "pt", "hi"], comment: nil)
 
       /// en translation: %1$@ to %2$@
       ///
@@ -3393,21 +3389,6 @@ struct R: Rswift.Validatable {
 
         let format = NSLocalizedString("ChooseCurrency.To", bundle: bundle, comment: "")
         return String(format: format, locale: locale, value1)
-      }
-
-      /// en translation: ・Get Litecoin from 200+ crypto currencies ・Fast and secure exchanges ・No account needed
-      ///
-      /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
-      static func buyViaChangeNowDescription(preferredLanguages: [String]? = nil) -> String {
-        guard let preferredLanguages = preferredLanguages else {
-          return NSLocalizedString("BuyVia.ChangeNow.Description", bundle: hostingBundle, comment: "")
-        }
-
-        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
-          return "BuyVia.ChangeNow.Description"
-        }
-
-        return NSLocalizedString("BuyVia.ChangeNow.Description", bundle: bundle, comment: "")
       }
 
       fileprivate init() {}

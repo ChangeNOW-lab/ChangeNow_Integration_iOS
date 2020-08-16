@@ -133,7 +133,3 @@
 "ChooseCurrency.GetSpecific" = "Recevoir %1$@ de %2$@";
 "Transaction.Status.FinishedMore.Description" = "Whaou! Vous avez reçu encore plus que prévu \nÉchangez d'autres paires de cryptomonnaies avec l'application ChangeNOW.";
 "Transaction.Status.Finished.Description" = "Félicitations! L'échange est réussi. \nÉchangez d'autres paires de cryptomonnaies avec l'application ChangeNOW.";
-
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "Recevoir Litecoin à partir de plus de 200 cryptomonnaies\n Échange rapide et fiable \n Sans inscription";

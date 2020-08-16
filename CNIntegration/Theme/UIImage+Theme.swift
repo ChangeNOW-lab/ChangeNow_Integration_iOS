@@ -9,11 +9,11 @@
 extension UIImage {
 
     static var certainGreenImage: UIImage = {
-        return UIImage.imageWithColor(.certainMain)
+        return UIImage.imageWithColor(.primarySelection)
     }()
 
     static var slightlyGreenImage: UIImage = {
-        return UIImage.imageWithColor(UIColor.certainMain.withAlphaComponent(0.08))
+        return UIImage.imageWithColor(UIColor.primarySelection.withAlphaComponent(0.08))
     }()
 
     static var mainImage = {

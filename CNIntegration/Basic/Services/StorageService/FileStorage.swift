@@ -6,34 +6,34 @@
 //  Copyright © 2018 Pavel Pronin. All rights reserved.
 //
 
-public enum Directory: CaseIterable {
+enum Directory: CaseIterable {
     case documents
     case cache
 }
 
-public enum FilenameExtension: String {
+enum FilenameExtension: String {
     case json
     case plist
 }
 
-public struct Filename {
-    public let name: String
-    public let fileExtension: FilenameExtension
+struct Filename {
+    let name: String
+    let fileExtension: FilenameExtension
 
-    public var path: String {
+    var path: String {
         return "\(name).\(fileExtension.rawValue)"
     }
 
-    public init(name: String, fileExtension: FilenameExtension) {
+    init(name: String, fileExtension: FilenameExtension) {
         self.name = name
         self.fileExtension = fileExtension
     }
 }
 
-public enum FileStorageError: Error, LocalizedError {
+enum FileStorageError: Error, LocalizedError {
     case fileNotFound(path: String)
 
-    public var errorDescription: String? {
+    var errorDescription: String? {
         switch self {
         case let .fileNotFound(path):
             return "File with path: \(path) not found"

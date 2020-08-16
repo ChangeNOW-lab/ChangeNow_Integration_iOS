@@ -53,7 +53,7 @@ final class ScannerViewController: UIViewController {
     private lazy var zoneImageView: UIImageView = {
         let view = UIImageView()
         view.image = R.image.captureZone()
-        view.tintColor = .certainMain
+        view.tintColor = .primarySelection
         return view
     }()
 

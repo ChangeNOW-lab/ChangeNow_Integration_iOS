@@ -62,7 +62,7 @@ final class ValidatorDefaultService: ValidatorService {
 
     private var listenersContainer = ListenerContainer<ValidatorServiceDelegate>()
 
-    private let validationDataLocalPath = Filename(name: "CurrenciesValidationData", fileExtension: .plist)
+    private let validationDataLocalPath = Filename(name: "CNCurrenciesValidationData", fileExtension: .plist)
 
     private var isUpdatingValidationData = false
 

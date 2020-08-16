@@ -109,10 +109,10 @@ final class CurrenciesDefaultService: CurrenciesService {
 
     private var listenersContainer = ListenerContainer<CurrenciesServiceDelegate>()
 
-    private let currenciesLocalPath = Filename(name: "Currencies", fileExtension: .plist)
-    private let pairsLocalPath = Filename(name: "Pairs", fileExtension: .plist)
-    private let amountsLocalPath = Filename(name: "Amounts", fileExtension: .plist)
-    private let anonymsLocalPath = Filename(name: "Anonyms", fileExtension: .plist)
+    private let currenciesLocalPath = Filename(name: "CNCurrencies", fileExtension: .plist)
+    private let pairsLocalPath = Filename(name: "CNPairs", fileExtension: .plist)
+    private let amountsLocalPath = Filename(name: "CNAmounts", fileExtension: .plist)
+    private let anonymsLocalPath = Filename(name: "CNAnonyms", fileExtension: .plist)
 
     private var isUpdatingCurrencies = false
     private var isUpdatingPairs = false
@@ -124,6 +124,7 @@ final class CurrenciesDefaultService: CurrenciesService {
                                                selector: #selector(applicationDidBecomeActive),
                                                name: UIApplication.didBecomeActiveNotification,
                                                object: nil)
+        updateAll()
     }
 
     deinit {

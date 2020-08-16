@@ -25,17 +25,18 @@ public protocol Theme {
 public protocol ThemeColors {
 
     var lightBackground: UIColor { get }
-    var slightlyGray: UIColor { get }
+    var primaryGray: UIColor { get }
     var darkBackground: UIColor { get }
     var background: UIColor { get }
     var main: UIColor { get }
-    var mainDark: UIColor { get }
+    var mainLight: UIColor { get }
     var mainSelection: UIColor { get }
-    var certainMain: UIColor { get }
+    var primarySelection: UIColor { get }
     var placeholder: UIColor { get }
-    var sertainGrayLight: UIColor { get }
-    var certainOrange: UIColor { get }
-    var certainRed: UIColor { get }
+    var primaryOrange: UIColor { get }
+    var primaryRed: UIColor { get }
+
+    var transactionSubTitle: UIColor { get }
     var transactionBackground: UIColor { get }
 }
 

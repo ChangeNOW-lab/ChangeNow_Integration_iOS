@@ -1,6 +1,6 @@
 //
-//  CNIntegration.swift
-//  CNIntegration
+//  CNModule.swift
+//  CNModule
 //
 //  Created by Pavel Pronin on 26.07.2020.
 //  Copyright © 2020 Pavel Pronin. All rights reserved.
@@ -12,7 +12,7 @@ protocol ModuleManager: AnyObject {
     func stop()
 }
 
-public class CNIntegration: ModuleManager {
+public class CNModule: ModuleManager {
 
     private weak var resolverScopeCache: ResolverScopeCache?
 

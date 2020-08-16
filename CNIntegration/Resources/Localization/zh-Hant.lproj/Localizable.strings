@@ -133,7 +133,3 @@
 "Transaction.Status.FinishedMore.Description" = "哇！您收到的收益超出預期.\n使用ChangeNOW應用程序交換其他加密對.";
 "Transaction.Status.Finished.Description" = "恭喜你！交換已成功完成.\n使用ChangeNOW應用交換其他加密對";
 
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "・從200多種加密貨幣中獲取萊特幣\n·快速安全的交易\n·無需帳戶";
-

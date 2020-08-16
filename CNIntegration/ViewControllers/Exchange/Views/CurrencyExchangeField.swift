@@ -29,7 +29,7 @@ final class CurrencyExchangeField: UIView {
     private lazy var field: UITextField = {
         let view = UITextField()
         view.font = .largeTitle
-        view.tintColor = .certainMain
+        view.tintColor = .primarySelection
         view.keyboardType = .decimalPad
         view.textAlignment = UIView.isLTR ? .left : .right
         view.addTarget(self, action: #selector(editingDidBeginAction), for: .editingDidBegin)
@@ -126,7 +126,7 @@ final class CurrencyExchangeField: UIView {
         field.delegate = fieldDelegate
         field.isUserInteractionEnabled = fieldIsEditable
         if fieldIsEditable {
-            titleLabel.textColor = UIColor.sertainGrayLight.withAlphaComponent(0.4)
+            titleLabel.textColor = UIColor.transactionSubTitle.withAlphaComponent(0.4)
             fieldContainer.backgroundColor = .white
             field.textColor = .black
             updateFieldSelection()
@@ -266,11 +266,11 @@ final class CurrencyExchangeField: UIView {
 
     private func updateFieldSelection() {
         if isFieldSelected {
-            layer.borderColor = UIColor.certainOrange.withAlphaComponent(0.63).cgColor
+            layer.borderColor = UIColor.primaryOrange.withAlphaComponent(0.63).cgColor
             layer.borderWidth = 2
         } else {
             if isFirstResponder {
-                layer.borderColor = UIColor.certainMain.cgColor
+                layer.borderColor = UIColor.primarySelection.cgColor
                 layer.borderWidth = 2
             } else {
                 layer.borderColor = nil

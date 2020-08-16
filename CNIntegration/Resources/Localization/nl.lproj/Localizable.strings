@@ -133,7 +133,3 @@
 "Transaction.Status.FinishedMore.Description" = "Wow! Je hebt meer ontvangen dan verwacht.\nExchange andere crypto paren met ChangeNOW app.";
 "Transaction.Status.Finished.Description" = "Gefeliciteerd! Exchange succesvol afgerond.\nWissel andere crypto-paren uit met ChangeNOW app";
 
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "・Krijg Litecoin van 200+ crypto valuta's\n・Fast en beveiligde uitwisseling\n・Geen rekening nodig";
-

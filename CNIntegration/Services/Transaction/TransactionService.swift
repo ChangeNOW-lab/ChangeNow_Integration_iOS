@@ -44,7 +44,7 @@ final class TransactionDefaultService: TransactionService {
         return nil
     }()
 
-    private let transactionStatusDataLocalPath = Filename(name: "TransactionStatusData", fileExtension: .plist)
+    private let transactionStatusDataLocalPath = Filename(name: "CNTransactionStatusData", fileExtension: .plist)
 
     // MARK: - Public
 

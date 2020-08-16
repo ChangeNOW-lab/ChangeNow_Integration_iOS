@@ -17,55 +17,23 @@ public struct DefaultTheme: Theme {
 
 public struct DefaultThemeColors: ThemeColors {
 
-    public var lightBackground: UIColor {
-        return UIColor(red: 0.969, green: 0.969, blue: 0.969, alpha: 1)
-    }
-
-    public var slightlyGray: UIColor {
-        return UIColor(red: 0.827, green: 0.843, blue: 0.855, alpha: 1)
-    }
-
-    public var darkBackground: UIColor {
-        return UIColor(red: 0.153, green: 0.153, blue: 0.251, alpha: 1)
-    }
-
-    public var background: UIColor {
-        return UIColor(red: 0.208, green: 0.208, blue: 0.298, alpha: 1)
-    }
-
-    public var main: UIColor {
-        return UIColor(red: 0.285, green: 0.285, blue: 0.425, alpha: 1)
-    }
-
-    public var mainDark: UIColor {
-        return UIColor(red: 0.388, green: 0.388, blue: 0.455, alpha: 1)
-    }
-
-    public var mainSelection: UIColor {
-        return UIColor(red: 0.502, green: 0.502, blue: 0.745, alpha: 1)
-    }
-
-    public var certainMain: UIColor {
-        return UIColor(red: 0, green: 0.761, blue: 0.435, alpha: 1)
-    }
-
-    public var placeholder: UIColor {
-        return UIColor(red: 1, green: 1, blue: 1, alpha: 0.5)
-    }
-
-    public var sertainGrayLight: UIColor {
-        return UIColor(red: 0.208, green: 0.208, blue: 0.298, alpha: 1)
-    }
-
-    public var certainOrange: UIColor {
-        return UIColor(red: 0.941, green: 0.729, blue: 0.047, alpha: 1)
-    }
-
-    public var certainRed: UIColor {
-        return UIColor(red: 0.882, green: 0.384, blue: 0.384, alpha: 1)
-    }
+    public let lightBackground = UIColor(red: 0.969, green: 0.969, blue: 0.969, alpha: 1)
+    public let primaryGray = UIColor(red: 0.827, green: 0.843, blue: 0.855, alpha: 1)
+    public let darkBackground = UIColor(red: 0.153, green: 0.153, blue: 0.251, alpha: 1)
+    public let background = UIColor(red: 0.208, green: 0.208, blue: 0.298, alpha: 1)
+    public let main = UIColor(red: 0.285, green: 0.285, blue: 0.425, alpha: 1)
+    public let mainLight = UIColor(red: 0.388, green: 0.388, blue: 0.455, alpha: 1)
+    public let mainSelection = UIColor(red: 0.502, green: 0.502, blue: 0.745, alpha: 1)
+    public let primarySelection = UIColor(red: 0, green: 0.761, blue: 0.435, alpha: 1)
+    public let placeholder = UIColor(red: 1, green: 1, blue: 1, alpha: 0.5)
+    public let primaryOrange = UIColor(red: 0.941, green: 0.729, blue: 0.047, alpha: 1)
+    public let primaryRed = UIColor(red: 0.882, green: 0.384, blue: 0.384, alpha: 1)
 
     // MARK: Special
+
+    public var transactionSubTitle: UIColor {
+        return background
+    }
 
     public var transactionBackground: UIColor {
         return background
@@ -75,109 +43,42 @@ public struct DefaultThemeColors: ThemeColors {
 public struct DefaultThemeFonts: ThemeFonts {
 
     // MARK: Description
-
-    public var minorDescription: UIFont {
-        return .systemFont(ofSize: 10, weight: .light)
-    }
-
-    public var normalDescription: UIFont {
-        return .systemFont(ofSize: 14, weight: .light)
-    }
-
-    public var regularDescription: UIFont {
-        return .systemFont(ofSize: 16, weight: .light)
-    }
-
-    public var mediumDescription: UIFont {
-        return .systemFont(ofSize: 18, weight: .light)
-    }
+    public let minorDescription = UIFont.systemFont(ofSize: 10, weight: .light)
+    public let normalDescription = UIFont.systemFont(ofSize: 14, weight: .light)
+    public let regularDescription = UIFont.systemFont(ofSize: 16, weight: .light)
+    public let mediumDescription = UIFont.systemFont(ofSize: 18, weight: .light)
 
     // MARK: Text
-
-    public var minorText: UIFont {
-        return .systemFont(ofSize: 10, weight: .regular)
-    }
-
-    public var smallText: UIFont {
-        return .systemFont(ofSize: 12, weight: .regular)
-    }
-
-    public var normalText: UIFont {
-        return .systemFont(ofSize: 14, weight: .regular)
-    }
-
-    public var regularText: UIFont {
-        return .systemFont(ofSize: 16, weight: .regular)
-    }
-
-    public var mediumText: UIFont {
-        return .systemFont(ofSize: 18, weight: .regular)
-    }
+    public let minorText = UIFont.systemFont(ofSize: 10, weight: .regular)
+    public let smallText = UIFont.systemFont(ofSize: 12, weight: .regular)
+    public let normalText = UIFont.systemFont(ofSize: 14, weight: .regular)
+    public let regularText = UIFont.systemFont(ofSize: 16, weight: .regular)
+    public let mediumText = UIFont.systemFont(ofSize: 18, weight: .regular)
 
     // MARK: Title
-
-    public var minorTitle: UIFont {
-        return .systemFont(ofSize: 10, weight: .medium)
-    }
-
-    public var smallTitle: UIFont {
-        return .systemFont(ofSize: 12, weight: .medium)
-    }
-
-    public var normalTitle: UIFont {
-        return .systemFont(ofSize: 14, weight: .medium)
-    }
-
-    public var regularTitle: UIFont {
-        return .systemFont(ofSize: 16, weight: .medium)
-    }
-
-    public var medianTitle: UIFont {
-        return .systemFont(ofSize: 17, weight: .medium)
-    }
-
-    public var mediumTitle: UIFont {
-        return .systemFont(ofSize: 18, weight: .medium)
-    }
-
-    public var largeTitle: UIFont {
+    public let minorTitle = UIFont.systemFont(ofSize: 10, weight: .medium)
+    public let smallTitle = UIFont.systemFont(ofSize: 12, weight: .medium)
+    public let normalTitle = UIFont.systemFont(ofSize: 14, weight: .medium)
+    public let regularTitle = UIFont.systemFont(ofSize: 16, weight: .medium)
+    public let medianTitle = UIFont.systemFont(ofSize: 17, weight: .medium)
+    public let mediumTitle = UIFont.systemFont(ofSize: 18, weight: .medium)
+    public let largeTitle: UIFont = {
         switch Device.model {
         case .iPhone5:
             return .systemFont(ofSize: 18, weight: .medium)
         default:
             return .systemFont(ofSize: 20, weight: .medium)
         }
-    }
+    }()
 
     // MARK: Headline
-
-    public var normalHeadline: UIFont {
-        return .systemFont(ofSize: 14, weight: .semibold)
-    }
-
-    public var mediumHeadline: UIFont {
-        return .systemFont(ofSize: 18, weight: .semibold)
-    }
-
-    public var bigHeadline: UIFont {
-        return .systemFont(ofSize: 22, weight: .semibold)
-    }
-
-    public var greatHeadline: UIFont {
-        return .systemFont(ofSize: 24, weight: .semibold)
-    }
+    public let normalHeadline = UIFont.systemFont(ofSize: 14, weight: .semibold)
+    public let mediumHeadline = UIFont.systemFont(ofSize: 18, weight: .semibold)
+    public let bigHeadline = UIFont.systemFont(ofSize: 22, weight: .semibold)
+    public let greatHeadline = UIFont.systemFont(ofSize: 24, weight: .semibold)
 
     // MARK: Header
-
-    public var littleHeader: UIFont {
-        return .systemFont(ofSize: 11, weight: .bold)
-    }
-
-    public var normalHeader: UIFont {
-        return .systemFont(ofSize: 14, weight: .bold)
-    }
-
-    public var regularHeader: UIFont {
-        return .systemFont(ofSize: 16, weight: .bold)
-    }
+    public let littleHeader = UIFont.systemFont(ofSize: 11, weight: .bold)
+    public let normalHeader = UIFont.systemFont(ofSize: 14, weight: .bold)
+    public let regularHeader = UIFont.systemFont(ofSize: 16, weight: .bold)
 }

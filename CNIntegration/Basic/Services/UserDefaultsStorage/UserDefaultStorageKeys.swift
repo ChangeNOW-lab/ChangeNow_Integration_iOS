@@ -8,15 +8,15 @@
 
 public enum UserDefaultsStorageKey: String, UserDefaultsStorageKeyConvertible {
 
-    case currenciesUpdateDate
-    case pairsUpdateDate
-    case amountsUpdateDate
-    case anonymsUpdateDate
-    case currenciesValidationData
+    case currenciesUpdateDate = "CNCurrenciesUpdateDate"
+    case pairsUpdateDate = "CNPairsUpdateDate"
+    case amountsUpdateDate = "CNAmountsUpdateDate"
+    case anonymsUpdateDate = "CNAnonymsUpdateDate"
+    case currenciesValidationData = "CNCurrenciesValidationData"
 
-    case reviewWorthyActionCount
-    case lastReviewRequestAppVersion
-    case lastReviewRequestDate
+    case reviewWorthyActionCount = "CNReviewWorthyActionCount"
+    case lastReviewRequestAppVersion = "CNLastReviewRequestAppVersion"
+    case lastReviewRequestDate = "CNLastReviewRequestDate"
 
     public var userDefaultsStorageKey: String {
         return rawValue

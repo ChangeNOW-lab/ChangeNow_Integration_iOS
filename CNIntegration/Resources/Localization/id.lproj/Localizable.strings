@@ -133,7 +133,3 @@
 "Transaction.Status.FinishedMore.Description" = "Wow! Kau telah menerima lebih dari yang diharapkan.\nTukar pasangan kripto lain dengan aplikasi ChangeNOW.";
 "Transaction.Status.Finished.Description" = "Selamat! Pertukaran berhasil diselesaikan.\nTukar pasangan crypto lainnya dengan aplikasi ChangeNOW.";
 
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "・Dapatkan Litecoin dari 200+ mata uang kripto\n ・ Pertukaran cepat dan aman\n ・ Tidak perlu akun";
-

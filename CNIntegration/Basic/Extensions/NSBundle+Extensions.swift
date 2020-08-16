@@ -10,7 +10,7 @@ private var associatedObjectHandle: UInt8 = 0
 
 extension Bundle {
 
-    private static let hostingBundle = Bundle(for: CNIntegration.self)
+    private static let hostingBundle = Bundle(for: CNModule.self)
     private static let applicationLocale = hostingBundle.preferredLocalizations.first.flatMap(Locale.init) ?? Locale.current
 
     static let initWorkBundlerOnce: () = {

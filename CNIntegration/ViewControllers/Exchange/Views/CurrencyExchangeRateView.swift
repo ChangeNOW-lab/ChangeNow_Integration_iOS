@@ -37,7 +37,7 @@ final class CurrencyExchangeRateView: TapActionView {
         let view = DefaultButton()
         view.titleLabel?.font = .normalText
         view.titleLabel?.lineBreakMode = .byTruncatingTail
-        view.setTitleColor(.certainMain, for: .normal)
+        view.setTitleColor(.primarySelection, for: .normal)
         view.setBackgroundImage(.darkBackgroundImage, for: .normal)
         view.contentEdgeInsets = .init(top: 0, left: 4, bottom: 0, right: 4)
         view.layer.cornerRadius = 2
@@ -48,7 +48,7 @@ final class CurrencyExchangeRateView: TapActionView {
     }()
 
     private lazy var fieldActivityIndicator: NVActivityIndicatorView = {
-        let view = NVActivityIndicatorView(frame: .zero, type: .ballBeat, color: .certainMain, padding: nil)
+        let view = NVActivityIndicatorView(frame: .zero, type: .ballBeat, color: .primarySelection, padding: nil)
 //        view.padding = 7
         view.backgroundColor = .darkBackground
         view.layer.cornerRadius = 4

@@ -133,6 +133,3 @@
 "Transaction.Status.FinishedMore.Description" = "Wow! You have received more than expected. That's how good we are at trading.";
 "Transaction.Status.Finished.Description" = "Congratulations! Exchange completed successfully. Can't wait to start a new one.";
 
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "・Get Litecoin from 200+ crypto currencies\n・Fast and secure exchanges\n・No account needed";

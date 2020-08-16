@@ -133,7 +133,3 @@
 "ChooseCurrency.GetSpecific" = "将这种币种兑换成 %1$@ %2$@";
 "Transaction.Status.FinishedMore.Description" = "哇，真棒！您收到的金额比被预测的多一些。使用ChangeNOW来兑换其他的加密货币对。";
 "Transaction.Status.Finished.Description" = "恭喜恭喜！兑换交易成功了。使用ChangeNOW来兑换其他的加密货币对。";
-
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "可以把200多币种兑换成Litecoin\n快捷可靠的兑换\n不用注册";

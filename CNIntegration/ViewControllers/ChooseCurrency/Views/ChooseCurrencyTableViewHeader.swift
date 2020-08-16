@@ -18,7 +18,7 @@ final class ChooseCurrencyTableViewHeader: UITableViewHeaderFooterView, Reusable
 
     private lazy var iconView: UIImageView = {
         let view = UIImageView()
-        view.tintColor = .certainMain
+        view.tintColor = .primarySelection
         return view
     }()
 

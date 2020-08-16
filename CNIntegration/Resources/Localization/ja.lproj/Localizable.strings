@@ -133,7 +133,3 @@
 "Transaction.Status.FinishedMore.Description" = "うわー！予想以上の数を受け取りました。\nChangeNOWアプリで他の暗号ペアを交換してください。";
 "Transaction.Status.Finished.Description" = "おめでとう！交換は正常に完了しました。\nChangeNOWアプリで他の暗号ペアを交換してください。";
 
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "からLitecoinを取得200+暗号通貨\n・高速かつ安全な交換\n・アカウントは必要ありません";
-

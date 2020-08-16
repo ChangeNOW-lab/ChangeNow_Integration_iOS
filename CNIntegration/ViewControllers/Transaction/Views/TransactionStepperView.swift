@@ -28,21 +28,21 @@ final class TransactionStepperView: UIView {
     private lazy var firstImageView: UIImageView = {
         let view = UIImageView()
         view.image = R.image.circleActive()
-        view.tintColor = .certainMain
+        view.tintColor = .primarySelection
         return view
     }()
     private lazy var firstLabel: UILabel = numberLabel(text: "1")
 
     private lazy var secondImageView: UIImageView = {
         let view = UIImageView()
-        view.tintColor = .certainMain
+        view.tintColor = .primarySelection
         return view
     }()
     private lazy var secondLabel: UILabel = numberLabel(text: "2")
 
     private lazy var thirdImageView: UIImageView = {
         let view = UIImageView()
-        view.tintColor = .certainMain
+        view.tintColor = .primarySelection
         return view
     }()
     private lazy var thirdLabel: UILabel = numberLabel(text: "3")
@@ -83,18 +83,18 @@ final class TransactionStepperView: UIView {
     func set(step: Step) {
         switch step {
         case .first:
-            firstSeparator.backgroundColor = UIColor.slightlyGray
-            secondSeparator.backgroundColor = UIColor.slightlyGray
+            firstSeparator.backgroundColor = UIColor.primaryGray
+            secondSeparator.backgroundColor = UIColor.primaryGray
             secondImageView.image = R.image.circleInactive()
             thirdImageView.image = R.image.circleInactive()
         case .second:
-            firstSeparator.backgroundColor = UIColor.certainMain
-            secondSeparator.backgroundColor = UIColor.slightlyGray
+            firstSeparator.backgroundColor = UIColor.primarySelection
+            secondSeparator.backgroundColor = UIColor.primaryGray
             secondImageView.image = R.image.circleActive()
             thirdImageView.image = R.image.circleInactive()
         case .third:
-            firstSeparator.backgroundColor = UIColor.certainMain
-            secondSeparator.backgroundColor = UIColor.certainMain
+            firstSeparator.backgroundColor = UIColor.primarySelection
+            secondSeparator.backgroundColor = UIColor.primarySelection
             secondImageView.image = R.image.circleActive()
             thirdImageView.image = R.image.circleActive()
         }

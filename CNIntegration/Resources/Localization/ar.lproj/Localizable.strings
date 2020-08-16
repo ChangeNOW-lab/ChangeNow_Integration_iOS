@@ -132,8 +132,3 @@
 "ChooseCurrency.GetSpecific" = "احصل على %@ من %@";
 "Transaction.Status.FinishedMore.Description" = "نجاح باهر!  لقد تلقيت أكثر من المتوقع.\nقم بتبديل أزواج التشفير الأخرى باستخدام تطبيق ChangeNOW.";
 "Transaction.Status.Finished.Description" = "تهانينا!  اكتمل التبادل بنجاح.\nقم بتبديل أزواج التشفير الأخرى باستخدام تطبيق ChangeNOW.";
-
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "・احصل على Litecoin من أكثر من 200+ عملة تشفير\n・تبادلات سريعة وآمنة \n・لا حاجة إلى حساب";
-

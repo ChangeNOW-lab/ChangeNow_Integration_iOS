@@ -75,6 +75,8 @@ final class ChooseCurrencySegmentControl: UIView {
     }
 
     private func commonInit() {
+        translatesAutoresizingMaskIntoConstraints = false
+
         addSubviews()
         setConstraints()
 

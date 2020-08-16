@@ -132,7 +132,3 @@
 "ChooseCurrency.GetSpecific" = "Dapatkan %1$@ dari %2$@";
 "Transaction.Status.FinishedMore.Description" = "Wow! Anda telah menerima lebih dari yang diharapkan.\nExchange lain kripto pasangan dengan ChangeNOW aplikasi.";
 "Transaction.Status.Finished.Description" = "Tahniah! Pertukaran berjaya dilakukan. \nTukar pasangan crypto lain dengan aplikasi ChangeNOW.";
-
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "Dapatkan Litecoin dari 200+ mata wang kripto\n・Pertukaran pantas dan selamat\n・Tidak perlu akaun";

@@ -39,9 +39,9 @@ final class TransactionSupportView: UIView {
     private lazy var supportButton: DefaultButton = {
         let view = DefaultButton()
         view.titleLabel?.font = .normalTitle
-        view.imageView?.tintColor = .certainRed
+        view.imageView?.tintColor = .primaryRed
         view.setImage(R.image.mail(), for: .normal)
-        view.setTitleColor(.certainRed, for: .normal)
+        view.setTitleColor(.primaryRed, for: .normal)
         view.setTitle(R.string.localizable.transactionSupportButton(), for: .normal)
         view.centerTextAndImage(spacing: 8, removeHorizontalOffset: true, forceLTR: !UIView.isLTR)
         view.addTarget(self, action: #selector(supportButtonAction), for: .touchUpInside)

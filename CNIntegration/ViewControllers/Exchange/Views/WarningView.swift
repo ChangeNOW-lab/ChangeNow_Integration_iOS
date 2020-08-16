@@ -32,10 +32,10 @@ final class WarningView: UIView {
         addSubviews()
         setConstraints()
 
-        backgroundColor = UIColor.certainOrange.withAlphaComponent(0.14)
+        backgroundColor = UIColor.primaryOrange.withAlphaComponent(0.14)
         layer.cornerRadius = 2
         layer.masksToBounds = true
-        layer.borderColor = UIColor.certainOrange.withAlphaComponent(0.63).cgColor
+        layer.borderColor = UIColor.primaryOrange.withAlphaComponent(0.63).cgColor
         layer.borderWidth = 1
     }
 

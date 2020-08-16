@@ -47,7 +47,7 @@ final class InternetAlertView: UIView {
             backgroundColor = UIColor.white.withAlphaComponent(0.16)
             titleLabel.text = R.string.localizable.internetErrorRefresh()
         case .transaction:
-            backgroundColor = .mainDark
+            backgroundColor = .mainLight
             titleLabel.text = R.string.localizable.internetErrorWaiting()
         }
         layer.cornerRadius = 9

@@ -133,7 +133,3 @@
 "Transaction.Status.FinishedMore.Description" = "와우! 예상보다 많은 것을 받았습니다.\nChangeNOW 앱과 다른 암호화 쌍을 교환하십시오";
 "Transaction.Status.Finished.Description" = "축하합니다! 교환이 성공적으로 완료되었습니다.\n다른 암호화 쌍을 ChangeNOW 앱으로 교체하십시오.";
 
-// MARK: - ChangeNow
-
-"BuyVia.ChangeNow.Description" = "・200 개 암호화 통화 에서 라이트 코인을 얻을\n・빠르고 안전한 교환\n・어떤 계정이 필요하지 않습니다";
-
