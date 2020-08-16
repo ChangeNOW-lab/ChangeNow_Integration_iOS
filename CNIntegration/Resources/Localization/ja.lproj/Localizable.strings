@@ -37,7 +37,7 @@
 
 "Exchange.PairNotAvailable" = "ペアは利用できません";
 "Exchange.UnavailablePair" = "ペア %1$@ to %2$@ は現在交換できません。後で試してみてください。";
-"Exchange.UnavailableSwitch.Text" = "ペアが交換できないので、%1$@-%2$@ に切り替えることはできません。";
+"Exchange.UnavailableSwitch.Text" = "ペアが交換できないので、%1$@ - %2$@ に切り替えることはできません。";
 
 "Exchange.NoAddress.Title" = "受取人アドレスがありません。";
 "Exchange.NoAddress.Text" = "送金を希望するウォレットアドレスを追加してください。";
@@ -72,22 +72,22 @@
 
 // MARK: - Transaction
 
-"Transaction.Title" = "％1$@ から ％2$@";
+"Transaction.Title" = "%1$@ から %2$@";
 "Transaction.Id" = "トランザクションID";
 
 "Transaction.Cancel.Title" = "トランザクションをキャンセルします";
 "Transaction.Cancel.Text" = "この取引をキャンセルして新しい取引を開始してもよろしいですか？";
 
-"Transaction.Deposit.Title" = "あなたの財布を使って預金を ％@ に送金してください";
-"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Title" = "あなたの財布を使って預金を ％@ に送金してください:";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW";
 "Transaction.Deposit.Money" = "送金する";
 "Transaction.Deposit.Address" = "アドレスへ：";
-"Transaction.Deposit.ViaApps" = "を経由して% @の預金を送信します。:";
+"Transaction.Deposit.ViaApps" = "を経由して %@ の預金を送信します。:";
 "Transaction.Deposit.ViaApps.OneTap" = "ワンタップ";
 "Transaction.Deposit.ShowQR" = "QRコード";
 "Transaction.Deposit.Share" = "シェア";
 
-"Transaction.Deposit.TrustWallet.NotSupported" = "％@ コインはTrustWalletでサポートされていません";
+"Transaction.Deposit.TrustWallet.NotSupported" = "%@ コインはTrustWalletでサポートされていません";
 
 "Transaction.YouSend" = "あなたが送る";
 "Transaction.YouSent" = "あなたが送信しました：";
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "何かがあなたのトランザクションに問題が発生しました。";
 "Transaction.Support.Text" = "問題に取り組んでいます。更新を得るか、または追加情報を提供するために私達に連絡してください %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "サポート";
 
 "Transaction.StartNew.Success" = "新しい取引を開始する準備はできていますか？";
 "Transaction.StartNew.Failure" = "新しい取引を開始したい";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "新しいトランザクションを開始してよろしいですか？";
 
 "Transaction.RateUs.TitleMore" = "うわっ! 予想より多くを受け取った。\nそれは私たちが取引でどのように良いです";
-"Transaction.RateUs.Title" = "おめでとうございます！交換は正常に完了しました。\U00A0新しいものを開始するのを待つことができません。";
+"Transaction.RateUs.Title" = "おめでとうございます！交換は正常に完了しました。新しいものを開始するのを待つことができません。";
 "Transaction.RateUs.Button" = "App storeでの評価をお願いします";
 
 // MARK: - DepositQR
@@ -128,8 +128,8 @@
 
 // MARK: - External
 
-"Exchange.ToSpecific" = "%@のお財布へ";
-"ChooseCurrency.GetSpecific" = "%2$@ から%1$@をゲット";
+"Exchange.ToSpecific" = "%@ のお財布へ";
+"ChooseCurrency.GetSpecific" = "%2$@ から %1$@ をゲット";
 "Transaction.Status.FinishedMore.Description" = "うわー！予想以上の数を受け取りました。\nChangeNOWアプリで他の暗号ペアを交換してください。";
 "Transaction.Status.Finished.Description" = "おめでとう！交換は正常に完了しました。\nChangeNOWアプリで他の暗号ペアを交換してください。";
 

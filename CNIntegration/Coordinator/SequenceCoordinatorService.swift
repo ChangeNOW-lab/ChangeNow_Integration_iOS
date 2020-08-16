@@ -16,19 +16,15 @@ final class SequenceCoordinatorService: CoordinatorService {
         return UIApplication.shared.delegate?.window ?? UIWindow()
     }
 
-    private var startedViewController: UIViewController?
-    private var startedNavBarIsHidden: Bool?
+    private weak var mainViewController: UIViewController?
+    private var isNavigationBarHidden: Bool?
 
-    private let scope: AnyObject
+    private let moduleManager: ModuleManager
     private let exchangeType: ExchangeType
-    private let dismissAction: Action
 
-    init(scope: AnyObject, exchangeType: ExchangeType, dismissAction: Action) {
-        self.scope = scope
+    init(moduleManager: ModuleManager, exchangeType: ExchangeType) {
+        self.moduleManager = moduleManager
         self.exchangeType = exchangeType
-        self.dismissAction = dismissAction
-        self.startedViewController = UIApplication.topViewController()
-        self.startedNavBarIsHidden = self.startedViewController?.navigationController?.navigationBar.isHidden
     }
 
     // MARK: - Navigation
@@ -76,51 +72,59 @@ final class SequenceCoordinatorService: CoordinatorService {
     }
 
     func dismiss() {
-        if let navigationController = startedViewController?.navigationController {
-            var viewControllers = navigationController.viewControllers
-            viewControllers.removeAll(where: {
-                $0 is TransactionViewController || $0 is ExchangeViewController
-            })
-            navigationController.setNavigationBarHidden(startedNavBarIsHidden ?? false, animated: false)
-            navigationController.setViewControllers(viewControllers, animated: true)
+        if let mainViewController = mainViewController {
+            if let parentVC = mainViewController.parent as? UINavigationController {
+                parentVC.popViewController(animated: true)
+                if let isNavigationBarHidden = isNavigationBarHidden {
+                    parentVC.setNavigationBarHidden(isNavigationBarHidden, animated: false)
+                }
+            } else {
+                mainViewController.dismiss(animated: true, completion: nil)
+            }
         } else {
-            startedViewController?.presentedViewController?.dismiss(animated: true, completion: { [weak self] in
-                self?.dismissAction.perform()
-            })
+            log.error("Unknown navigation state")
+        }
+    }
+
+    func prepareStart(viewController: UIViewController) {
+        if isNavigationBarHidden == nil,
+            let navVC = viewController.navigationController {
+            isNavigationBarHidden = navVC.isNavigationBarHidden
+            navVC.setNavigationBarHidden(true, animated: false)
+        }
+    }
+
+    func prepareStop(viewController: UIViewController) {
+        if mainViewController == nil {
+            moduleManager.stop()
         }
     }
 
     // MARK: - Private
 
     private func showRoot(viewController: UIViewController) {
-        if let navigationController = startedViewController?.navigationController {
-            var viewControllers = navigationController.viewControllers
-            viewControllers.removeAll(where: {
-                $0 is TransactionViewController || $0 is ExchangeViewController
-            })
-            viewControllers.append(viewController)
-            viewController.hidesBottomBarWhenPushed = true
-            navigationController.setNavigationBarHidden(true, animated: false)
-            navigationController.setViewControllers(viewControllers, animated: true)
-        } else {
-            if startedViewController?.presentedViewController != nil {
-                startedViewController?.presentedViewController?.dismiss(animated: false, completion: nil)
+        viewController.hidesBottomBarWhenPushed = true
+        if let mainViewController = mainViewController {
+            if let parentVC = mainViewController.parent as? UINavigationController {
+                var viewControllers = parentVC.viewControllers
+                if let index = viewControllers.firstIndex(where: {
+                    $0 is TransactionViewController || $0 is ExchangeViewController
+                }) {
+                    viewControllers[index] = viewController
+                }
+                self.mainViewController = viewController
+                parentVC.setViewControllers(viewControllers, animated: true)
+            } else if let parentVC = mainViewController.presentingViewController {
+                self.mainViewController = viewController
+                parentVC.presentedViewController?.dismiss(animated: true, completion: { [weak parentVC] in
+                    parentVC?.present(viewController, animated: true, completion: nil)
+                })
+            } else {
+                log.error("Unknown navigation state")
             }
-            viewController.modalPresentationStyle = .fullScreen
-            pushAnimation(on: startedViewController?.view)
-            startedViewController?.present(viewController,
-                                           animated: false,
-                                           completion: nil)
+        } else {
+            mainViewController = viewController
         }
-    }
-
-    private func pushAnimation(on view: UIView?) {
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromRight
-        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
-        view?.layer.add(transition, forKey: kCATransition)
     }
 
     // MARK: - Private

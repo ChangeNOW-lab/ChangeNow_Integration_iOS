@@ -8,10 +8,13 @@
 
 import Resolver
 
-public class CNIntegration {
+protocol ModuleManager: AnyObject {
+    func stop()
+}
 
-    private let resolver = Resolver.main
-    private let resolverScopeCache = ResolverScopeCache()
+public class CNIntegration: ModuleManager {
+
+    private weak var resolverScopeCache: ResolverScopeCache?
 
     public init(apiKey: String,
                 theme: Theme? = nil,
@@ -27,15 +30,11 @@ public class CNIntegration {
         configureDependencies(navigationType: navigationType, exchangeType: exchangeType)
     }
 
-    deinit {
-        resolverScopeCache.reset()
-    }
-
     @discardableResult
     public func start() -> UIViewController {
         #if DEBUG
-        return resolver.resolve(CoordinatorService.self).showMainScreen()
-//        return resolver.resolve(CoordinatorService.self).showTransactionScreen(
+        return Resolver.main.resolve(CoordinatorService.self).showMainScreen()
+//        return Resolver.main.resolve(CoordinatorService.self).showTransactionScreen(
 //            transaction: TransactionStatusData(
 //                id: "90c5866d162c6",
 //                status: "new",
@@ -55,9 +54,15 @@ public class CNIntegration {
 //            isNeedReload: true
 //        )
         #else
-        return resolver.resolve(CoordinatorService.self).showMainScreen()
+        return Resolver.main.resolve(CoordinatorService.self).showMainScreen()
         #endif
     }
+
+    func stop() {
+        resolverScopeCache?.reset()
+    }
+
+    // MARK: - Private
 
     private func configureLanguage(languageCode: String?) {
         let locale = Bundle.updateLanguage(languageCode: languageCode, tableName: "Localizable")
@@ -70,7 +75,7 @@ public class CNIntegration {
                 case .rightToLeft:
                     UIView.appearance().semanticContentAttribute = .forceRightToLeft
                 @unknown default:
-                    fatalError()
+                    log.error("Unknown state")
                 }
             }
         }
@@ -88,18 +93,23 @@ public class CNIntegration {
 
     private func configureDependencies(navigationType: NavigationType,
                                        exchangeType: ExchangeType) {
-        let scope = resolverScopeCache
+        let resolver = Resolver.main
+        let scope = ResolverScopeCache()
+        self.resolverScopeCache = scope
+
         switch navigationType {
         case .main:
-            resolver.register { MainCoordinatorService(scope: self, exchangeType: exchangeType) as CoordinatorService }.scope(scope)
+            resolver.register { [unowned self] in
+                MainCoordinatorService(moduleManager: self, exchangeType: exchangeType) as CoordinatorService
+            }.scope(scope)
         case .sequence:
-            resolver.register {
-                SequenceCoordinatorService(scope: self, exchangeType: exchangeType, dismissAction: Action {
-                    Resolver.cached.reset()
-                }) as CoordinatorService
+            resolver.register { [unowned self] in
+                SequenceCoordinatorService(moduleManager: self, exchangeType: exchangeType) as CoordinatorService
             }.scope(scope)
         case .embed:
-            resolver.register { EmbedCoordinatorService(scope: self, exchangeType: exchangeType) as CoordinatorService }.scope(scope)
+            resolver.register { [unowned self] in
+                EmbedCoordinatorService(moduleManager: self, exchangeType: exchangeType) as CoordinatorService
+            }.scope(scope)
         }
         resolver.register { CurrenciesDefaultService() as CurrenciesService }.scope(scope)
         resolver.register { ExchangeDefaultService() as ExchangeService }.scope(scope)

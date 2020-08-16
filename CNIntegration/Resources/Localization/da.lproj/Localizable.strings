@@ -77,8 +77,8 @@
 "Transaction.Cancel.Title" = "Annuller transaktion";
 "Transaction.Cancel.Text" = "Er du sikker på, at du vil annullere denne transaktion og starte en ny?";
 
-"Transaction.Deposit.Title" = "Brug din tegnebog til at sende indbetaling til %@";
-"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Title" = "Brug din tegnebog til at sende indbetaling til %@:";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW";
 "Transaction.Deposit.Money" = "Send penge";
 "Transaction.Deposit.Address" = "At adressere:";
 "Transaction.Deposit.ViaApps" = "Send indbetaling i %@ via:";
@@ -103,14 +103,14 @@
 
 "Transaction.Status.Finished" = "Færdig";
 
-"Transaction.Status.Refunded" = "refunderet";
+"Transaction.Status.Refunded" = "Refunderet";
 "Transaction.Status.Refunded.Description" = "Så du får din krypto tilbage. Lad os nu starte en ny udveksling og bringe den til slutningen.";
 
 "Transaction.Status.Failed" = "Mislykkedes";
 
 "Transaction.Support.Title" = "Der gik noget galt med din transaktion";
 "Transaction.Support.Text" = "Vi arbejder på problemet. Kontakt os for at få opdateringer eller give yderligere oplysninger til %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Support";
 
 "Transaction.StartNew.Success" = "Klar til at starte en ny udveksling?";
 "Transaction.StartNew.Failure" = "Jeg vil starte en ny udveksling";
@@ -118,7 +118,7 @@
 "Transaction.StartNew.Alert" = "Er du sikker på at starte en ny transaktion?";
 
 "Transaction.RateUs.TitleMore" = "Wow! Du har modtaget mere end forventet.\nDet er hvor gode vi handler med.";
-"Transaction.RateUs.Title" = "Tillykke! Exchange blev fuldført. Kan\U00A0ikke vente med at starte en ny.";
+"Transaction.RateUs.Title" = "Tillykke! Exchange blev fuldført. Kan ikke vente med at starte en ny.";
 "Transaction.RateUs.Button" = "Bedøm os i App store";
 
 // MARK: - DepositQR

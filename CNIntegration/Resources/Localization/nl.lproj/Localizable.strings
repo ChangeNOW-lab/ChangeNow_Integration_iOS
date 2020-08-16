@@ -37,7 +37,7 @@
 
 "Exchange.PairNotAvailable" = "Paar niet beschikbaar";
 "Exchange.UnavailablePair" = "Paar %1$@ tot %2$@ is momenteel niet beschikbaar voor omwisseling. Probeer het later.";
-"Exchange.UnavailableSwitch.Text" = "Kan niet overschakelen naar %1$@-%2$@ omdat het paar niet beschikbaar is om te ruilen.";
+"Exchange.UnavailableSwitch.Text" = "Kan niet overschakelen naar %1$@ - %2$@ omdat het paar niet beschikbaar is om te ruilen.";
 
 "Exchange.NoAddress.Title" = "Geen Ontvanger Adres";
 "Exchange.NoAddress.Text" = "Voeg het portemonnee-adres toe waar u wilt dat wij uw geld naartoe sturen.";
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "Er is iets misgegaan met je transactie.";
 "Transaction.Support.Text" = "We werken aan het probleem. Neem contact met ons op om updates te krijgen of om extra informatie te geven op %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Ondersteuning";
 
 "Transaction.StartNew.Success" = "Klaar om een nieuwe ruil te beginnen?";
 "Transaction.StartNew.Failure" = "Ik wil een nieuwe ruil beginnen";

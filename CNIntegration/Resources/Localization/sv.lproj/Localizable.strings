@@ -80,8 +80,8 @@
 
 "Transaction.Deposit.Title" = "Använd din plånbok för att skicka insättning till %@";
 "Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
-"Transaction.Deposit.Money" = "Skicka pengar";
-"Transaction.Deposit.Address" = "Itu";
+"Transaction.Deposit.Money" = "Skicka pengar:";
+"Transaction.Deposit.Address" = "Itu:";
 "Transaction.Deposit.ViaApps" = "Skicka insättning i %@ via:";
 "Transaction.Deposit.ViaApps.OneTap" = "ett tryck";
 "Transaction.Deposit.ShowQR" = "QR-kod";
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "Något gick fel med din transaktion.";
 "Transaction.Support.Text" = "Vi arbetar med problemet. Kontakta oss för att få uppdateringar eller ge ytterligare information till %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Stöd";
 
 "Transaction.StartNew.Success" = "Redo att starta ett nytt utbyte?";
 "Transaction.StartNew.Failure" = "Jag vill starta ett nytt utbyte";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "Är du säker på att starta en ny transaktion?";
 
 "Transaction.RateUs.TitleMore" = "Wow! Du har fått mer än väntat. \nThat är hur bra vi är på handeln";
-"Transaction.RateUs.Title" = "Grattis! Exchange har slutförts. Kan inte\U00A0 vänta på att starta en ny";
+"Transaction.RateUs.Title" = "Grattis! Exchange har slutförts. Kan inte vänta på att starta en ny";
 "Transaction.RateUs.Button" = "Betygsätt oss i App Store";
 
 // MARK: - DepositQR
@@ -135,5 +135,5 @@
 
 // MARK: - ChangeNow
 
-"BuyVia.ChangeNow.Description" = "Hämta Litecoin från 200+ kryptovalutor\n・Snabba och säkra utbyten\n・Inget konto behövs";
+"BuyVia.ChangeNow.Description" = "・Hämta Litecoin från 200+ kryptovalutor\n・Snabba och säkra utbyten\n・Inget konto behövs";
 

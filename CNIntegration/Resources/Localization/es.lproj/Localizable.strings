@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "Algo salió mal con su transacción.";
 "Transaction.Support.Text" = "Estamos trabajando en una solución. Contacte con nosotros para mantenerse informado o proporcionar cualquier información adicional en %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Apoyo";
 
 "Transaction.StartNew.Success" = "¿Listo para comenzar un nuevo cambio?";
 "Transaction.StartNew.Failure" = "Quiero comenzar un nuevo cambio.";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "¿Está seguro de que quiere iniciar una nueva transacción?";
 
 "Transaction.RateUs.TitleMore" = "¡Vaya! Recibió más de lo previsto.\nEs posible gracias a nuestro trabajo coordinado.";
-"Transaction.RateUs.Title" = "¡Felicidades! El cambio se ha completado con éxito. Esperamos con\U00A0impaciencia el próximo.";
+"Transaction.RateUs.Title" = "¡Felicidades! El cambio se ha completado con éxito. Esperamos con impaciencia el próximo.";
 "Transaction.RateUs.Button" = "Califícanos en App Store";
 
 // MARK: - DepositQR
@@ -135,4 +135,4 @@
 
 // MARK: - ChangeNow
 
-"BuyVia.ChangeNow.Description" = "ã»Recibir Litecoin de 200+ criptomonedas\nã»Cambio rápido y fiable\nã»Sin inscripción";
+"BuyVia.ChangeNow.Description" = "Recibir Litecoin de 200+ criptomonedas\n Cambio rápido y fiable\n Sin inscripción";

@@ -279,6 +279,7 @@ final class ExchangeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        coordinatorService.prepareStart(viewController: self)
         view.backgroundColor = .background
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(hideKeyboard)))
 
@@ -306,6 +307,7 @@ final class ExchangeViewController: UIViewController {
         NotificationCenter.default.removeObserver(self,
                                                   name: UIApplication.didBecomeActiveNotification,
                                                   object: nil)
+        coordinatorService.prepareStop(viewController: self)
     }
 
     override func viewDidLayoutSubviews() {

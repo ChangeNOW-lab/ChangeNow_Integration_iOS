@@ -16,11 +16,13 @@ final class EmbedCoordinatorService: CoordinatorService {
         return UIApplication.shared.delegate?.window ?? UIWindow()
     }
 
-    private let scope: AnyObject
+    private weak var mainViewController: UIViewController?
+
+    private let moduleManager: ModuleManager
     private let exchangeType: ExchangeType
 
-    init(scope: AnyObject, exchangeType: ExchangeType) {
-        self.scope = scope
+    init(moduleManager: ModuleManager, exchangeType: ExchangeType) {
+        self.moduleManager = moduleManager
         self.exchangeType = exchangeType
     }
 
@@ -39,7 +41,7 @@ final class EmbedCoordinatorService: CoordinatorService {
     func showExchangeScreen() -> UIViewController {
         let viewController = ExchangeViewController(exchangeType: exchangeType,
                                                     isInNavigationStack: false)
-        showRootIfNeeded(viewController: viewController)
+        showRoot(viewController: viewController)
         return viewController
     }
 
@@ -48,7 +50,7 @@ final class EmbedCoordinatorService: CoordinatorService {
         let viewController = TransactionViewController(transaction: transaction,
                                                        isInNavigationStack: false,
                                                        isNeedReload: isNeedReload)
-        showRootIfNeeded(viewController: viewController)
+        showRoot(viewController: viewController)
         return viewController
     }
 
@@ -72,14 +74,25 @@ final class EmbedCoordinatorService: CoordinatorService {
         
     }
 
+    func prepareStart(viewController: UIViewController) {
+        if let navVC = viewController.navigationController {
+            navVC.setNavigationBarHidden(true, animated: false)
+        }
+    }
+
+    func prepareStop(viewController: UIViewController) {
+        if mainViewController == nil {
+            moduleManager.stop()
+        }
+    }
+
     // MARK: - Private
 
-    private func showRootIfNeeded(viewController: UIViewController) {
-        let currentViewController = self.currentViewController()
-        if currentViewController is TransactionViewController || currentViewController is ExchangeViewController {
-            if let rootController = currentViewController?.parent as? UINavigationController {
+    private func showRoot(viewController: UIViewController) {
+        if let currentViewController = mainViewController {
+            if let rootController = currentViewController.parent as? UINavigationController {
                 rootController.setViewControllers([viewController], animated: true)
-            } else if let rootController = currentViewController?.parent as? UITabBarController {
+            } else if let rootController = currentViewController.parent as? UITabBarController {
                 var viewControllers = rootController.viewControllers ?? []
                 if let index = viewControllers.firstIndex(where: {
                     $0 is TransactionViewController || $0 is ExchangeViewController
@@ -89,15 +102,7 @@ final class EmbedCoordinatorService: CoordinatorService {
                 rootController.setViewControllers(viewControllers, animated: true)
             }
         }
-    }
-
-    private func pushAnimation() {
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.type = CATransitionType.push
-        transition.subtype = CATransitionSubtype.fromRight
-        transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.easeInEaseOut)
-        window?.layer.add(transition, forKey: kCATransition)
+        mainViewController = viewController
     }
 
     // MARK: - Private

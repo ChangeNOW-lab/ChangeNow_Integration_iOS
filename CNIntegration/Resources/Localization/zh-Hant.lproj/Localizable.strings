@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "您的交易出了問題";
 "Transaction.Support.Text" = "我們正在處理這個問題。聯繫我們獲取更新或向 %@ 提供任何附加資訊";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "支持";
 
 "Transaction.StartNew.Success" = "準備好開始新的交易所了嗎?";
 "Transaction.StartNew.Failure" = "我想開始一個新的交流";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "您確定要開始新交易嗎?";
 
 "Transaction.RateUs.TitleMore" = "哇!您收到的交易比預期的要多.";
-"Transaction.RateUs.Title" = "恭喜你!交換成功完成。無法\U00A0 等待啟動新的.";
+"Transaction.RateUs.Title" = "恭喜你!交換成功完成。無法 等待啟動新的.";
 "Transaction.RateUs.Button" = "在應用商店中評價我們";
 
 // MARK: - DepositQR

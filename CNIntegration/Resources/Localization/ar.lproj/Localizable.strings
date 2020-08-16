@@ -90,11 +90,11 @@
 "Transaction.Deposit.TrustWallet.NotSupported" = "%@ coin غير مدعوم بواسطة TrustWallet";
 
 "Transaction.YouSend" = "ترسل:";
-"Transaction.YouSent" = ":أنت أرسلت";
-"Transaction.YouGet" = ":تحصل على";
-"Transaction.Received" = ":تم الاستلام";
-"Transaction.Refunded" = ":تم رد النقود";
-"Transaction.RecipientAddress" = ":إلى المستلم %@ العنوان";
+"Transaction.YouSent" = "نت أرسلت";
+"Transaction.YouGet" = "تحصل على:";
+"Transaction.Received" = "تم الاستلام:";
+"Transaction.Refunded" = "تم رد النقود:";
+"Transaction.RecipientAddress" = "إلى المستلم %@ العنوان:";
 
 "Transaction.Status.Deposit" = "في انتظار الإيداع";
 "Transaction.Status.Deposit.Description" = ".كلما أرسلت إيداعًا أسرع ، زادت فرصة تلقي المبلغ المتوقع";
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = ".حدث خطأ في معاملتك";
 "Transaction.Support.Text" = "نحن نعمل على حل المشكلة. اتصل بنا للحصول على تحديثات أو تقديم أي معلومات إضافية لـ %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "الدعم";
 
 "Transaction.StartNew.Success" = "على استعداد لبدء بورصة جديدة؟";
 "Transaction.StartNew.Failure" = "أريد أن أبدأ تبادل جديد";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "هل أنت متأكد من بدء معاملة جديدة؟";
 
 "Transaction.RateUs.TitleMore" = ".نجاح باهر!  لقد تلقيت أكثر مما كان متوقعًا. \nهذه هي مدى جودتنا في التداول";
-"Transaction.RateUs.Title" = "تهانينا!  اكتمل الصرف بنجاح.  لا يمكن\U00A0 الانتظار لبدء واحدة جديدة.";
+"Transaction.RateUs.Title" = "تهانينا!  اكتمل الصرف بنجاح.  لا يمكن الانتظار لبدء واحدة جديدة.";
 "Transaction.RateUs.Button" = "قم بتقييمنا على متجر التطبيقات";
 
 // MARK: - DepositQR

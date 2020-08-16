@@ -8,12 +8,12 @@
 
 public enum NavigationType {
 
-    // When used as the base of the app
+    // When used as the base of the app on UIWindow
     case main
 
-    // When you need to open from an external screen
+    // When you need to open by push from NavigationController or present from ViewController
     case sequence
 
-    // When to embed in the navigation Controller or TabBarController
+    // When you need to embed in the TabBarController
     case embed
 }

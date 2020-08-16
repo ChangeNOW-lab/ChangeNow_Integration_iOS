@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24FA75C500FB496A61FA566F /* Pods_CNIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A75377FF17E2EAFD60A5ADD /* Pods_CNIntegration.framework */; };
+		45DF6CBB7FE3AF87EAF1E94C /* Pods_CNIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F08E8BBFBF9414B417F1112 /* Pods_CNIntegration.framework */; };
+		5A0D78C324E9797100A6E18D /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D78C224E9797100A6E18D /* R.swift */; };
 		5A9F699824CD72EA008B5762 /* CNIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F698E24CD72EA008B5762 /* CNIntegration.framework */; };
 		5A9F699D24CD72EA008B5762 /* CNIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F699C24CD72EA008B5762 /* CNIntegrationTests.swift */; };
 		5A9F699F24CD72EA008B5762 /* CNIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9F699124CD72EA008B5762 /* CNIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -172,7 +173,6 @@
 		5A9F6B3A24CD746F008B5762 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F6A7E24CD746F008B5762 /* Assets.xcassets */; };
 		5A9F6B3B24CD746F008B5762 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A9F6A8024CD746F008B5762 /* Localizable.strings */; };
 		5A9F6B3C24CD746F008B5762 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6A9324CD746F008B5762 /* Global.swift */; };
-		5A9F6B6F24CD75B7008B5762 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B6E24CD75B7008B5762 /* R.generated.swift */; };
 		5A9F6B7224CD76BB008B5762 /* CNIntegration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B7124CD76BB008B5762 /* CNIntegration.swift */; };
 		5A9F6B7E24CD81C3008B5762 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B7D24CD81C3008B5762 /* Theme.swift */; };
 		5A9F6B8024CDAE86008B5762 /* ExchangeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B7F24CDAE86008B5762 /* ExchangeType.swift */; };
@@ -185,7 +185,6 @@
 		5A9F6B9124CE2E9F008B5762 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B9024CE2E9F008B5762 /* UIApplication+Extensions.swift */; };
 		5A9F6BA824CF3651008B5762 /* DefaultCoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6BA724CF3651008B5762 /* DefaultCoordinatorService.swift */; };
 		5A9F6BAA24CF572A008B5762 /* EmbedCoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6BA924CF572A008B5762 /* EmbedCoordinatorService.swift */; };
-		D6E7FB868E95B3F5BC5E7DB5 /* Pods_CNIntegrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5FFCFF6D8C79D0A7018E60 /* Pods_CNIntegrationTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,8 +198,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		50628E2A834C5B7E70DF4A91 /* Pods-CNIntegrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegrationTests.debug.xcconfig"; path = "../Integration/Pods/Target Support Files/Pods-CNIntegrationTests/Pods-CNIntegrationTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5A75377FF17E2EAFD60A5ADD /* Pods_CNIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0D78B124E932F200A6E18D /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		5A0D78C224E9797100A6E18D /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
 		5A9F698E24CD72EA008B5762 /* CNIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CNIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9F699124CD72EA008B5762 /* CNIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNIntegration.h; sourceTree = "<group>"; };
 		5A9F699224CD72EA008B5762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -385,7 +384,6 @@
 		5A9F6A9124CD746F008B5762 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5A9F6A9224CD746F008B5762 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5A9F6A9324CD746F008B5762 /* Global.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
-		5A9F6B6E24CD75B7008B5762 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		5A9F6B7124CD76BB008B5762 /* CNIntegration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CNIntegration.swift; sourceTree = "<group>"; };
 		5A9F6B7D24CD81C3008B5762 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		5A9F6B7F24CDAE86008B5762 /* ExchangeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeType.swift; sourceTree = "<group>"; };
@@ -398,12 +396,10 @@
 		5A9F6B9024CE2E9F008B5762 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		5A9F6BA724CF3651008B5762 /* DefaultCoordinatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCoordinatorService.swift; sourceTree = "<group>"; };
 		5A9F6BA924CF572A008B5762 /* EmbedCoordinatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedCoordinatorService.swift; sourceTree = "<group>"; };
-		72B1C9DAB43B66031CD87B0C /* Pods-CNIntegrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegrationTests.release.xcconfig"; path = "../Integration/Pods/Target Support Files/Pods-CNIntegrationTests/Pods-CNIntegrationTests.release.xcconfig"; sourceTree = "<group>"; };
-		955D9AF20BDB64F975D0C8B2 /* Pods-CNIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.release.xcconfig"; path = "../Integration/Pods/Target Support Files/Pods-CNIntegration/Pods-CNIntegration.release.xcconfig"; sourceTree = "<group>"; };
-		994A4F25BB5DEA6D07EB1E72 /* Pods-CNIntegrationTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegrationTests.adhoc.xcconfig"; path = "../Integration/Pods/Target Support Files/Pods-CNIntegrationTests/Pods-CNIntegrationTests.adhoc.xcconfig"; sourceTree = "<group>"; };
-		A3F2D5F1DD4DEFEC8FC01287 /* Pods-CNIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.debug.xcconfig"; path = "../Integration/Pods/Target Support Files/Pods-CNIntegration/Pods-CNIntegration.debug.xcconfig"; sourceTree = "<group>"; };
-		E56EB2FFC80422F7905DA5FC /* Pods-CNIntegration.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.adhoc.xcconfig"; path = "../Integration/Pods/Target Support Files/Pods-CNIntegration/Pods-CNIntegration.adhoc.xcconfig"; sourceTree = "<group>"; };
-		FE5FFCFF6D8C79D0A7018E60 /* Pods_CNIntegrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNIntegrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D711B2641B5497DAA902DB /* Pods-CNIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.release.xcconfig"; path = "Target Support Files/Pods-CNIntegration/Pods-CNIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		8F08E8BBFBF9414B417F1112 /* Pods_CNIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FD36C9FE54FE34717163477 /* Pods-CNIntegration.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.adhoc.xcconfig"; path = "Target Support Files/Pods-CNIntegration/Pods-CNIntegration.adhoc.xcconfig"; sourceTree = "<group>"; };
+		E4810DA2A3D027D5022F8F22 /* Pods-CNIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.debug.xcconfig"; path = "Target Support Files/Pods-CNIntegration/Pods-CNIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -411,7 +407,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24FA75C500FB496A61FA566F /* Pods_CNIntegration.framework in Frameworks */,
+				45DF6CBB7FE3AF87EAF1E94C /* Pods_CNIntegration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,30 +416,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A9F699824CD72EA008B5762 /* CNIntegration.framework in Frameworks */,
-				D6E7FB868E95B3F5BC5E7DB5 /* Pods_CNIntegrationTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		569998C86661B131448FD337 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5A75377FF17E2EAFD60A5ADD /* Pods_CNIntegration.framework */,
-				FE5FFCFF6D8C79D0A7018E60 /* Pods_CNIntegrationTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		5A9F698424CD72EA008B5762 = {
 			isa = PBXGroup;
 			children = (
+				5A0D78B124E932F200A6E18D /* README */,
 				5A9F699024CD72EA008B5762 /* CNIntegration */,
 				5A9F699B24CD72EA008B5762 /* CNIntegrationTests */,
 				5A9F698F24CD72EA008B5762 /* Products */,
-				B734C45A8938B853221F8548 /* Pods */,
-				569998C86661B131448FD337 /* Frameworks */,
+				92D73198D0347D99B25C1695 /* Pods */,
+				A76DBA359E44D8051FC2F6F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -965,7 +952,7 @@
 		5A9F6A7D24CD746F008B5762 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A9F6B6E24CD75B7008B5762 /* R.generated.swift */,
+				5A0D78C224E9797100A6E18D /* R.swift */,
 				5A9F6A7E24CD746F008B5762 /* Assets.xcassets */,
 				5A9F6A7F24CD746F008B5762 /* Localization */,
 			);
@@ -992,18 +979,23 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		B734C45A8938B853221F8548 /* Pods */ = {
+		92D73198D0347D99B25C1695 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A3F2D5F1DD4DEFEC8FC01287 /* Pods-CNIntegration.debug.xcconfig */,
-				955D9AF20BDB64F975D0C8B2 /* Pods-CNIntegration.release.xcconfig */,
-				E56EB2FFC80422F7905DA5FC /* Pods-CNIntegration.adhoc.xcconfig */,
-				50628E2A834C5B7E70DF4A91 /* Pods-CNIntegrationTests.debug.xcconfig */,
-				72B1C9DAB43B66031CD87B0C /* Pods-CNIntegrationTests.release.xcconfig */,
-				994A4F25BB5DEA6D07EB1E72 /* Pods-CNIntegrationTests.adhoc.xcconfig */,
+				E4810DA2A3D027D5022F8F22 /* Pods-CNIntegration.debug.xcconfig */,
+				74D711B2641B5497DAA902DB /* Pods-CNIntegration.release.xcconfig */,
+				8FD36C9FE54FE34717163477 /* Pods-CNIntegration.adhoc.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		A76DBA359E44D8051FC2F6F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F08E8BBFBF9414B417F1112 /* Pods_CNIntegration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1024,7 +1016,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A9F69A224CD72EA008B5762 /* Build configuration list for PBXNativeTarget "CNIntegration" */;
 			buildPhases = (
-				6F872932572F4E5471C59594 /* [CP] Check Pods Manifest.lock */,
+				5BED15A15E12E6ACE56C2776 /* [CP] Check Pods Manifest.lock */,
 				5A9F698924CD72EA008B5762 /* Headers */,
 				5A9F6B7024CD75DA008B5762 /* R.swift */,
 				5A9F698A24CD72EA008B5762 /* Sources */,
@@ -1044,11 +1036,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A9F69A524CD72EA008B5762 /* Build configuration list for PBXNativeTarget "CNIntegrationTests" */;
 			buildPhases = (
-				2C432B2CE5FBE251D1D025C3 /* [CP] Check Pods Manifest.lock */,
 				5A9F699324CD72EA008B5762 /* Sources */,
 				5A9F699424CD72EA008B5762 /* Frameworks */,
 				5A9F699524CD72EA008B5762 /* Resources */,
-				EEF76E47A0B26DEF97DE7F4C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1134,28 +1124,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2C432B2CE5FBE251D1D025C3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-CNIntegrationTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5A9F6B7024CD75DA008B5762 /* R.swift */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1170,13 +1138,13 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$PROJECT_DIR/CNIntegration/Resources/R.generated.swift,
+				$PROJECT_DIR/CNIntegration/Resources/R.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$PROJECT_DIR/CNIntegration/Resources/R.generated.swift\"\n\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$PROJECT_DIR/CNIntegration/Resources/R.swift\"\n\n";
 		};
-		6F872932572F4E5471C59594 /* [CP] Check Pods Manifest.lock */ = {
+		5BED15A15E12E6ACE56C2776 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1196,23 +1164,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EEF76E47A0B26DEF97DE7F4C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CNIntegrationTests/Pods-CNIntegrationTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CNIntegrationTests/Pods-CNIntegrationTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CNIntegrationTests/Pods-CNIntegrationTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1369,7 +1320,6 @@
 				5A9F6AAD24CD746F008B5762 /* UIViewController+Keyboard.swift in Sources */,
 				5A9F6AD224CD746F008B5762 /* NavigationBarHideConfiguration.swift in Sources */,
 				5A9F6B0324CD746F008B5762 /* UIImage+Theme.swift in Sources */,
-				5A9F6B6F24CD75B7008B5762 /* R.generated.swift in Sources */,
 				5A9F6B1A24CD746F008B5762 /* DepositQRViewController.swift in Sources */,
 				5A9F6ABB24CD746F008B5762 /* String+Extensions.swift in Sources */,
 				5A9F6AF524CD746F008B5762 /* StorageService.swift in Sources */,
@@ -1390,6 +1340,7 @@
 				5A9F6B1F24CD746F008B5762 /* ChooseCurrencyTableViewHeader.swift in Sources */,
 				5A9F6B1824CD746F008B5762 /* ExpectedRateViewController.swift in Sources */,
 				5A9F6AF724CD746F008B5762 /* KeychainStorage.swift in Sources */,
+				5A0D78C324E9797100A6E18D /* R.swift in Sources */,
 				5A9F6B3524CD746F008B5762 /* WalletsService.swift in Sources */,
 				5A9F6ACA24CD746F008B5762 /* LabelButton.swift in Sources */,
 				5A9F6A9B24CD746F008B5762 /* UIButton+Extension.swift in Sources */,
@@ -1566,7 +1517,7 @@
 		};
 		5A9F69A324CD72EA008B5762 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3F2D5F1DD4DEFEC8FC01287 /* Pods-CNIntegration.debug.xcconfig */;
+			baseConfigurationReference = E4810DA2A3D027D5022F8F22 /* Pods-CNIntegration.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -1585,6 +1536,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1599,7 +1551,7 @@
 		};
 		5A9F69A424CD72EA008B5762 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 955D9AF20BDB64F975D0C8B2 /* Pods-CNIntegration.release.xcconfig */;
+			baseConfigurationReference = 74D711B2641B5497DAA902DB /* Pods-CNIntegration.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -1617,6 +1569,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1629,7 +1582,6 @@
 		};
 		5A9F69A624CD72EA008B5762 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 50628E2A834C5B7E70DF4A91 /* Pods-CNIntegrationTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1649,7 +1601,6 @@
 		};
 		5A9F69A724CD72EA008B5762 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72B1C9DAB43B66031CD87B0C /* Pods-CNIntegrationTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
@@ -1726,7 +1677,7 @@
 		};
 		5A9F6B7B24CD7A6A008B5762 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E56EB2FFC80422F7905DA5FC /* Pods-CNIntegration.adhoc.xcconfig */;
+			baseConfigurationReference = 8FD36C9FE54FE34717163477 /* Pods-CNIntegration.adhoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CLANG_ENABLE_MODULES = YES;
@@ -1744,6 +1695,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1757,7 +1709,6 @@
 		};
 		5A9F6B7C24CD7A6A008B5762 /* Adhoc */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 994A4F25BB5DEA6D07EB1E72 /* Pods-CNIntegrationTests.adhoc.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;

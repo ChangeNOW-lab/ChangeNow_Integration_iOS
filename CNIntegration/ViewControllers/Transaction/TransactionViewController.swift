@@ -287,6 +287,7 @@ final class TransactionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        coordinatorService.prepareStart(viewController: self)
         view.backgroundColor = .transactionBackground
 
         addSubviews()
@@ -334,6 +335,7 @@ final class TransactionViewController: UIViewController {
                                                   object: nil)
         reachabilityService.remove(listener: self)
         stackViewObserver?.invalidate()
+        coordinatorService.prepareStop(viewController: self)
     }
 
     override func viewDidLayoutSubviews() {

@@ -37,7 +37,7 @@
 
 "Exchange.PairNotAvailable" = "Coppia non disponibile";
 "Exchange.UnavailablePair" = "La coppia %1$@ a %2$@ non è attualmente disponibile per lo scambio. Prova più tardi.";
-"Exchange.UnavailableSwitch.Text" = "Non è possibile passare a %1$@-%2$@ perché la coppia non è disponibile per lo scambio";
+"Exchange.UnavailableSwitch.Text" = "Non è possibile passare a %1$@ - %2$@ perché la coppia non è disponibile per lo scambio";
 
 "Exchange.NoAddress.Title" = "Nessun indirizzo del destinatario";
 "Exchange.NoAddress.Text" = "Si prega di aggiungere l'indirizzo del portafoglio dove desideri che inviamo i tuoi soldi.";
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "Qualcosa è andato storto con la vostra transazione.";
 "Transaction.Support.Text" = "Stiamo lavorando sul problema. Contattateci per ricevere aggiornamenti o fornire ulteriori informazioni all'indirizzo %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Supporto";
 
 "Transaction.StartNew.Success" = "Pronti a iniziare un nuovo scambio?";
 "Transaction.StartNew.Failure" = "Voglio iniziare un nuovo scambio";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "Siete sicuri di voler avviare una nuova transazione?";
 
 "Transaction.RateUs.TitleMore" = "Wow! Hai ricevuto più di quanto ci aspettassimo.\nQuesto è quanto siamo bravi a fare trading.";
-"Transaction.RateUs.Title" = "Congratulazioni! Scambio completato con successo. Non posso\u00A0aspettare di avviarne uno nuovo.";
+"Transaction.RateUs.Title" = "Congratulazioni! Scambio completato con successo. Non posso aspettare di avviarne uno nuovo.";
 "Transaction.RateUs.Button" = "Votaci sull'App Store";
 
 // MARK: - DepositQR
@@ -135,5 +135,5 @@
 
 // MARK: - ChangeNow
 
-"BuyVia.ChangeNow.Description" = "Ricevi Litecoin da oltre 200+ valute criptate\n・Scambi veloci e sicuri\n・Non è necessario un conto";
+"BuyVia.ChangeNow.Description" = "・Ricevi Litecoin da oltre 200+ valute criptate\n・Scambi veloci e sicuri\n・Non è necessario un conto";
 

@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "Ada masalah dengan urus niaga anda.";
 "Transaction.Support.Text" = "Kami sedang menyelesaikan masalah tersebut. Hubungi kami untuk mendapatkan kemas kini atau memberikan maklumat tambahan ke %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Sokongan";
 
 "Transaction.StartNew.Success" = "Bersedia untuk memulakan pertukaran baru?";
 "Transaction.StartNew.Failure" = "Saya mahu memulakan pertukaran baru.";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "Adakah anda pasti memulakan transaksi baru?";
 
 "Transaction.RateUs.TitleMore" = "Wow! Anda telah menerima lebih dari yang diharapkan.\nItu adalah cara yang baik kami berada di perdagangan.";
-"Transaction.RateUs.Title" = "Tahniah! Pertukaran berjaya dilakukan. Tidak bisa\U00A0wait untuk permulaan yang baru.";
+"Transaction.RateUs.Title" = "Tahniah! Pertukaran berjaya dilakukan. Tidak bisa wait untuk permulaan yang baru.";
 "Transaction.RateUs.Button" = "Nilaikan kami di App store";
 
 // MARK: - DepositQR

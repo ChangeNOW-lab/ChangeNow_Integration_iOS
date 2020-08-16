@@ -22,7 +22,10 @@ protocol CoordinatorService {
                                   selectedState: ChooseCurrencyState,
                                   exchangeType: ExchangeType,
                                   delegate: ChooseCurrencyDelegate?)
+
     func dismiss()
+    func prepareStart(viewController: UIViewController)
+    func prepareStop(viewController: UIViewController)
 }
 
 extension CoordinatorService {

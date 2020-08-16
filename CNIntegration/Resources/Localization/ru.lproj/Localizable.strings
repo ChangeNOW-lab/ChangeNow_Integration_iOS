@@ -31,7 +31,7 @@
 "Exchange.ExpectedRate.NoExtraCosts" = "Мы ни при каких обстоятельствах не взимаем с вас никакие дополнительные сборы.";
 "Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "никаких дополнительных сборов";
 "Exchange.ExpectedRate.Fees" = "Комиссия сети и другие расходы, связанные с обменом, включены в курс.";
-"Exchange.ExpectedRate.Fees.Included" = "все расходы включены в курс";
+"Exchange.ExpectedRate.Fees.Included" = "Все расходы включены в курс";
 
 "Exchange.IncorrectRecipientAddress" = "Неверный адрес получателя";
 
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "С вашей транзакцией что-то пошло не так.";
 "Transaction.Support.Text" = "Мы работаем над решением проблемы. Свяжитесь с нами, чтобы оставаться в курсе или предоставить любую дополнительную информацию, по адресу %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Написать в поддержку";
 
 "Transaction.StartNew.Success" = "Готовы начать новый обмен?";
 "Transaction.StartNew.Failure" = "Я хочу начать новый обмен";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "Вы уверены, что хотите начать новую транзакцию?";
 
 "Transaction.RateUs.TitleMore" = "Вот это да! Вы получили даже больше, чем прогнозировалось.\nЭто возможно благодаря нашей слаженной работе.";
-"Transaction.RateUs.Title" = "Поздравляем! Обмен успешно завершен. Мы с нетерпением\U00A0ждем следующего.";
+"Transaction.RateUs.Title" = "Поздравляем! Обмен успешно завершен. Мы с нетерпением ждем следующего.";
 "Transaction.RateUs.Button" = "Оцените нас в App Store";
 
 // MARK: - DepositQR
@@ -135,4 +135,4 @@
 
 // MARK: - ChangeNow
 
-"BuyVia.ChangeNow.Description" = "a?»Получить Litecoin из 200+ криптовалют\na?»Быстрый и надежный обмен\na?»Без регистрации";
+"BuyVia.ChangeNow.Description" = "Получить Litecoin из 200+ криптовалют\n -Быстрый и надежный обмен\n -Без регистрации";

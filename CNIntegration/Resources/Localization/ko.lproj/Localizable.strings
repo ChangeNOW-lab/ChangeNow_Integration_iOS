@@ -37,7 +37,7 @@
 
 "Exchange.PairNotAvailable" = "쌍을 사용할 수 없음";
 "Exchange.UnavailablePair" = " 현재 %1$@ 에서 %2$@ 까지 쌍을 교환 할 수 없습니다.  나중에 시도";
-"Exchange.UnavailableSwitch.Text" = "%1$@-%2$@ 로 전환할 수 없습니다.교환할 수 없기 때문에 쌍을 사용할 수 없습니다";
+"Exchange.UnavailableSwitch.Text" = "%1$@ - %2$@ 로 전환할 수 없습니다.교환할 수 없기 때문에 쌍을 사용할 수 없습니다";
 
 "Exchange.NoAddress.Title" = "받는 사람 주소 없음";
 "Exchange.NoAddress.Text" = "당신이 당신의 돈을 보낼 우리가 원하는 지갑 주소를 추가하십시오";
@@ -78,8 +78,8 @@
 "Transaction.Cancel.Title" = "거래 취소";
 "Transaction.Cancel.Text" = "이 거래를 취소하고 새 거래를 시작 하시겠습니까?";
 
-"Transaction.Deposit.Title" = "지갑을 사용하여 예금을 %@ 에 보내십시오";
-"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Title" = "지갑을 사용하여 예금을 %@ 에 보내십시오:";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW";
 "Transaction.Deposit.Money" = "돈을 보내다:";
 "Transaction.Deposit.Address" = "주소 :";
 "Transaction.Deposit.ViaApps" = "%@ 로 예금을 보내십시오 :";
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "거래에 문제가 있습니다.";
 "Transaction.Support.Text" = "우리는 문제를 해결하고 있습니다. 에 대한 추가 정보를 업데이트를 얻거나 제공하기 위해 저희에게 연락 %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "지원하다";
 
 "Transaction.StartNew.Success" = "새로운 교환을 시작할 준비가 되셨습니까?";
 "Transaction.StartNew.Failure" = "새로운 교환을 시작하고 싶습니다";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "새로운 거래를 시작 하시겠습니까?";
 
 "Transaction.RateUs.TitleMore" = "와우! 당신은 예상보다 더 많은 것을 받았습니다.\n이것은 우리가 거래를 잘하는 것입니다.";
-"Transaction.RateUs.Title" = "축하합니다! 교환이 성공적으로 완료되었습니다. 새 것을 시작하기 위해\U00A0을 기다릴 수 없습니다.";
+"Transaction.RateUs.Title" = "축하합니다! 교환이 성공적으로 완료되었습니다. 새 것을 시작하기 위해을 기다릴 수 없습니다.";
 "Transaction.RateUs.Button" = "앱 스토어에서 우리를 평가";
 
 // MARK: - DepositQR

@@ -43,7 +43,7 @@ Pods
 Carthage/Build
 
 # R.swift framework
-*.generated.swift
+# *.generated.swift
 
 # fastlane
 fastlane/README.md

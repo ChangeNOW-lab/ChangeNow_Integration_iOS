@@ -37,7 +37,7 @@
 
 "Exchange.PairNotAvailable" = "Pasangan Tidak Tersedia";
 "Exchange.UnavailablePair" = "Pair %1$@ hingga %2$@ saat ini tidak tersedia untuk ditukar. Coba lagi nanti.";
-"Exchange.UnavailableSwitch.Text" = "Tidak dapat mengganti ke %1$@-%2$@ karena pasangan tidak tersedia untuk pertukaran.";
+"Exchange.UnavailableSwitch.Text" = "Tidak dapat mengganti ke %1$@ - %2$@ karena pasangan tidak tersedia untuk pertukaran.";
 
 "Exchange.NoAddress.Title" = "Tidak Ada Alamat Penerima";
 "Exchange.NoAddress.Text" = "Silakan tambahkan alamat dompet tempat Anda ingin kami mengirim uang Anda";
@@ -78,7 +78,7 @@
 "Transaction.Cancel.Title" = "Batalkan transaksi";
 "Transaction.Cancel.Text" = "Apakah Anda yakin ingin membatalkan transaksi ini dan memulai yang baru?";
 
-"Transaction.Deposit.Title" = "Gunakan dompet Anda untuk mengirim setoran ke %@?";
+"Transaction.Deposit.Title" = "Gunakan dompet Anda untuk mengirim setoran ke %@";
 "Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
 "Transaction.Deposit.Money" = "Mengirim uang";
 "Transaction.Deposit.Address" = "Ke alamat:";
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "Ada yang salah dengan transaksimu.";
 "Transaction.Support.Text" = "Kami sedang mengerjakan masalah. Hubungi kami untuk mendapatkan pembaruan atau memberikan informasi tambahan kepada %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Dukung";
 
 "Transaction.StartNew.Success" = "Siap memulai pertukaran baru?";
 "Transaction.StartNew.Failure" = "Saya ingin memulai pertukaran baru";

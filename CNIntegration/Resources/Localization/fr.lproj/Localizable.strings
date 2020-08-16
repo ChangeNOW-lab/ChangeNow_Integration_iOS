@@ -14,7 +14,7 @@
 // MARK: - Internet
 
 "InternetError.Waiting" = "En attente de réseau... Veuillez vérifier votre connexion Internet";
-"InternetError.Refresh" = "Oups! Vérifiez votre connexion Internet et faites glisser votre doigt sur lécran vers le bas pour actualiser la page";
+"InternetError.Refresh" = "Oups! Vérifiez votre connexion Internet et faites glisser votre doigt sur l'écran vers le bas pour actualiser la page";
 
 // MARK: - Exchange
 
@@ -40,7 +40,7 @@
 "Exchange.UnavailablePair" = "La paire %1$@ en %2$@ n'est pas disponible en ce moment. Veuillez réessayer plus tard.";
 "Exchange.UnavailableSwitch.Text" = "Impossible d'échanger %1$@ en %2$@ car la paire n'est pas disponible pour l'échange.";
 
-"Exchange.NoAddress.Title" = "Ladresse du destinataire est manquante";
+"Exchange.NoAddress.Title" = "L'adresse du destinataire est manquante";
 "Exchange.NoAddress.Text" = "Ajoutez l'adresse du portefeuille vers lequel vous souhaitez envoyer des fonds.";
 
 "Exchange.NoAmount.Text" = "Entrez le montant à échanger";
@@ -51,7 +51,7 @@
 // MARK: - Scanner
 
 "Scanner.Description" = "Scanner le code QR du portefeuille sur lequel vous souhaitez recevoir la cryptomonnaie";
-"Scanner.ErrorTitle" = "La lecture de code QR nest pas prise en charge";
+"Scanner.ErrorTitle" = "La lecture de code QR n'est pas prise en charge";
 "Scanner.ErrorMessage" = "Votre appareil ne prend pas en charge la lecture des codes QR. Utilisez un appareil avec une caméra.";
 
 // MARK: - ChooseCurrency
@@ -110,18 +110,18 @@
 
 "Transaction.Status.Failed" = "Échec de l'échange";
 
-"Transaction.Support.Title" = "Une erreur sest produite lors de votre transaction.";
+"Transaction.Support.Title" = "Une erreur s'est produite lors de votre transaction.";
 "Transaction.Support.Text" = "On travaille sur une solution. Contactez-nous pour rester informé ou fournir toute information complémentaire à %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Soutien";
 
 "Transaction.StartNew.Success" = "Êtes-vous prêt à commencer un nouvel échange?";
 "Transaction.StartNew.Failure" = "Je veux commencer un nouvel échange ";
 "Transaction.StartNew.Action" = "C'est parti!";
 "Transaction.StartNew.Alert" = "Êtes-vous certain de vouloir démarrer une nouvelle transaction?";
 
-"Transaction.RateUs.TitleMore" = "Whaou! Vous avez reçu encore plus que prévu. .\nCest possible grâce à l'efficacité de notre travail.";
-"Transaction.RateUs.Title" = "Félicitations! Léchange est réussi. Nous attendons avec impatience\U00A0le prochain échange.";
-"Transaction.RateUs.Button" = "Évaluez-nous sur lApp Store";
+"Transaction.RateUs.TitleMore" = "Whaou! Vous avez reçu encore plus que prévu. .\nC'est possible grâce à l'efficacité de notre travail.";
+"Transaction.RateUs.Title" = "Félicitations! L'échange est réussi. Nous attendons avec impatience le prochain échange.";
+"Transaction.RateUs.Button" = "Évaluez-nous sur l'App Store";
 
 // MARK: - DepositQR
 
@@ -131,9 +131,9 @@
 
 "Exchange.ToSpecific" = "Vers votre portefeuille %@";
 "ChooseCurrency.GetSpecific" = "Recevoir %1$@ de %2$@";
-"Transaction.Status.FinishedMore.Description" = "Whaou! Vous avez reçu encore plus que prévu \nÉchangez d'autres paires de cryptomonnaies avec lapplication ChangeNOW.";
-"Transaction.Status.Finished.Description" = "Félicitations! Léchange est réussi. \nÉchangez d'autres paires de cryptomonnaies avec lapplication ChangeNOW.";
+"Transaction.Status.FinishedMore.Description" = "Whaou! Vous avez reçu encore plus que prévu \nÉchangez d'autres paires de cryptomonnaies avec l'application ChangeNOW.";
+"Transaction.Status.Finished.Description" = "Félicitations! L'échange est réussi. \nÉchangez d'autres paires de cryptomonnaies avec l'application ChangeNOW.";
 
 // MARK: - ChangeNow
 
-"BuyVia.ChangeNow.Description" = "ã»Recevoir Litecoin à partir de plus de 200 cryptomonnaies\nã»Échange rapide et fiable \nã»Sans inscription";
+"BuyVia.ChangeNow.Description" = "Recevoir Litecoin à partir de plus de 200 cryptomonnaies\n Échange rapide et fiable \n Sans inscription";

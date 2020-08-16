@@ -16,11 +16,11 @@ final class MainCoordinatorService: CoordinatorService {
         return UIApplication.shared.delegate?.window ?? UIWindow()
     }
 
-    private let scope: AnyObject
+    private let moduleManager: ModuleManager
     private let exchangeType: ExchangeType
 
-    init(scope: AnyObject, exchangeType: ExchangeType) {
-        self.scope = scope
+    init(moduleManager: ModuleManager, exchangeType: ExchangeType) {
+        self.moduleManager = moduleManager
         self.exchangeType = exchangeType
     }
 
@@ -79,4 +79,8 @@ final class MainCoordinatorService: CoordinatorService {
     }
 
     func dismiss() { }
+
+    func prepareStart(viewController: UIViewController) { }
+    
+    func prepareStop(viewController: UIViewController) { }
 }

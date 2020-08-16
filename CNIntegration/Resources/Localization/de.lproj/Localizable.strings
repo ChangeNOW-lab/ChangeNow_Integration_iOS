@@ -78,8 +78,8 @@
 "Transaction.Cancel.Title" = "Transaktion stornieren";
 "Transaction.Cancel.Text" = "Sind Sie sicher, dass Sie diese Transaktion stornieren und eine neue einleiten wollen?";
 
-"Transaction.Deposit.Title" = "Nutzen Sie Ihr Wallet, um Depositengeld auf %@ zu überweisen";
-"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Title" = "Nutzen Sie Ihr Wallet, um Depositengeld auf %@ zu überweisen:";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW";
 "Transaction.Deposit.Money" = "Geld überweisen:";
 "Transaction.Deposit.Address" = "An die Adresse:";
 "Transaction.Deposit.ViaApps" = "Depositengeld auf %@ ";
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "Mit Ihrer Transaktion lief etwas schief.";
 "Transaction.Support.Text" = "Wir arbeiten an der Problemlösung. Kontaktieren Sie uns, um informiert zu sein oder jede zusätzliche Information per Adresse %@ zu übermitteln";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "Unterstützung";
 
 "Transaction.StartNew.Success" = "Sind Sie bereit, den neuen Umtausch einzuleiten?";
 "Transaction.StartNew.Failure" = "Ich möchte den neuen Umtausch einleiten";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "Sind Sie sicher, dass Sie die neue Transaktion einleiten möchten?";
 
 "Transaction.RateUs.TitleMore" = "Toll! Sie haben sogar mehr als Erwartetes erhalten.\n Es ist dank unserer gut organisierten Teamarbeit möglich.";
-"Transaction.RateUs.Title" = "Glückwunsch! Der Umtausch ist erfolgreich abgeschlossen. Wir erwarten mit Ungeduld \U00A0 den nächsten Umtausch.";
+"Transaction.RateUs.Title" = "Glückwunsch! Der Umtausch ist erfolgreich abgeschlossen. Wir erwarten mit Ungeduld den nächsten Umtausch.";
 "Transaction.RateUs.Button" = "Bewerten Sie uns im App Store";
 
 // MARK: - DepositQR
@@ -135,4 +135,4 @@
 
 // MARK: - ChangeNow
 
-"BuyVia.ChangeNow.Description" = "ãƒ»Litecoin von 200+ Kryptowährungen erhalten\nãƒ»Schneller und sicherer Umtausch\nãƒ»Ohne Registrierung";
+"BuyVia.ChangeNow.Description" = "Litecoin von 200+ Kryptowährungen erhalten\n Schneller und sicherer Umtausch\n Ohne Registrierung";

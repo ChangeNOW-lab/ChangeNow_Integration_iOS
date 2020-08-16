@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "Are you sure to start a new transaction?";
 
 "Transaction.RateUs.TitleMore" = "Wow! You have received more than expected.\nThat's how good we are at trading.";
-"Transaction.RateUs.Title" = "Congratulations! Exchange completed successfully. Can't\U00A0wait to start a new one.";
+"Transaction.RateUs.Title" = "Congratulations! Exchange completed successfully. Can't wait to start a new one.";
 "Transaction.RateUs.Button" = "Rate us on the App store";
 
 // MARK: - DepositQR

@@ -78,8 +78,8 @@
 "Transaction.Cancel.Title" = "लेनदेन रद्द करें";
 "Transaction.Cancel.Text" = "क्या आप वाकई इस लेनदेन को रद्द करना चाहते हैं और एक नई शुरुआत करना चाहते हैं?";
 
-"Transaction.Deposit.Title" = "%@ के लिए जमा भेजने के लिए अपने बटुए का उपयोग करें";
-"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
+"Transaction.Deposit.Title" = "%@ के लिए जमा भेजने के लिए अपने बटुए का उपयोग करें:";
+"Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW";
 "Transaction.Deposit.Money" = "पैसे भेजो:";
 "Transaction.Deposit.Address" = "संबोधित करना:";
 "Transaction.Deposit.ViaApps" = "%@ के माध्यम से जमा भेजें:";
@@ -94,7 +94,7 @@
 "Transaction.YouGet" = "आपके द्वारा प्राप्:त";
 "Transaction.Received" = "राप्त किया:";
 "Transaction.Refunded" = "रिफंड प्राप्त हुआ:";
-"Transaction.RecipientAddress" = "प्राप्तकर्ता% %@ पता:";
+"Transaction.RecipientAddress" = "प्राप्तकर्ता %@ पता:";
 
 "Transaction.Status.Deposit" = "जमा करने का इंतजार";
 "Transaction.Status.Deposit.Description" = "जल्दी ही आप एक जमा, उम्मीद की राशि प्राप्त करने का उच्च मौका भेजें.";
@@ -111,7 +111,7 @@
 
 "Transaction.Support.Title" = "कुछ अपने सौदे के साथ गलत हो गया था.";
 "Transaction.Support.Text" = "हम इस समस्या पर काम कर रहे हैं ।  अपडेट प्राप्त या करने के लिए किसी भी अतिरिक्त जानकारी प्रदान करने के लिए हमसे संपर्क करें %@";
-"Transaction.Support.Button" = "Contact support";
+"Transaction.Support.Button" = "सहयोग";
 
 "Transaction.StartNew.Success" = "एक नया आदान-प्रदान शुरू करने के लिए तैयार हैं?";
 "Transaction.StartNew.Failure" = "मैं एक नया आदान-प्रदान शुरू करना चाहते हैं";
@@ -119,7 +119,7 @@
 "Transaction.StartNew.Alert" = "आप एक नया लेन-देन शुरू करने के लिए सुनिश्चित कर रहे हैं?";
 
 "Transaction.RateUs.TitleMore" = "वाह! आप उम्मीद से अधिक प्राप्त हुआ है.\nयही कारण है कि हम व्यापार में कितना अच्छा कर रहे हैं";
-"Transaction.RateUs.Title" = "मुबारक हो! एक्सचेंज सफलतापूर्वक पूरा किया. एक\U00A0नया एक शुरू करने के लिए इंतजार नहीं कर सकता";
+"Transaction.RateUs.Title" = "मुबारक हो! एक्सचेंज सफलतापूर्वक पूरा किया. एकनया एक शुरू करने के लिए इंतजार नहीं कर सकता";
 "Transaction.RateUs.Button" = "हमें ऐप स्टोर पर रेट करें";
 
 // MARK: - DepositQR
@@ -135,5 +135,5 @@
 
 // MARK: - ChangeNow
 
-"BuyVia.ChangeNow.Description" = "200+ क्रिप्टो मुद्राओं\एन फास्ट और सुरक्षित आदान\n・प्रदान\एन से में\n・कोई खाता नहीं की जरूरत";
+"BuyVia.ChangeNow.Description" = "200+ क्रिप्टो मुद्राओंएन फास्ट और सुरक्षित आदान\n・प्रदानएन से में\n・कोई खाता नहीं की जरूरत";
 
