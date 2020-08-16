@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45DF6CBB7FE3AF87EAF1E94C /* Pods_CNIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F08E8BBFBF9414B417F1112 /* Pods_CNIntegration.framework */; };
-		5A0D78C324E9797100A6E18D /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D78C224E9797100A6E18D /* R.swift */; };
+		5A0D78C324E9797100A6E18D /* Rgenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D78C224E9797100A6E18D /* Rgenerated.swift */; };
 		5A9F699824CD72EA008B5762 /* CNIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F698E24CD72EA008B5762 /* CNIntegration.framework */; };
 		5A9F699D24CD72EA008B5762 /* CNIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F699C24CD72EA008B5762 /* CNIntegrationTests.swift */; };
 		5A9F699F24CD72EA008B5762 /* CNIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9F699124CD72EA008B5762 /* CNIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -199,7 +199,7 @@
 
 /* Begin PBXFileReference section */
 		5A0D78B124E932F200A6E18D /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		5A0D78C224E9797100A6E18D /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		5A0D78C224E9797100A6E18D /* Rgenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rgenerated.swift; sourceTree = "<group>"; };
 		5A9F698E24CD72EA008B5762 /* CNIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CNIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9F699124CD72EA008B5762 /* CNIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNIntegration.h; sourceTree = "<group>"; };
 		5A9F699224CD72EA008B5762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -463,6 +463,7 @@
 				5A9F6A7D24CD746F008B5762 /* Resources */,
 				5A9F699124CD72EA008B5762 /* CNIntegration.h */,
 				5A9F699224CD72EA008B5762 /* Info.plist */,
+				5A0D78C224E9797100A6E18D /* Rgenerated.swift */,
 			);
 			path = CNIntegration;
 			sourceTree = "<group>";
@@ -952,7 +953,6 @@
 		5A9F6A7D24CD746F008B5762 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5A0D78C224E9797100A6E18D /* R.swift */,
 				5A9F6A7E24CD746F008B5762 /* Assets.xcassets */,
 				5A9F6A7F24CD746F008B5762 /* Localization */,
 			);
@@ -1138,11 +1138,11 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				$PROJECT_DIR/CNIntegration/Resources/R.swift,
+				$PROJECT_DIR/CNIntegration/Rgenerated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$PROJECT_DIR/CNIntegration/Resources/R.swift\"\n\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$PROJECT_DIR/CNIntegration/Rgenerated.swift\"\n\n";
 		};
 		5BED15A15E12E6ACE56C2776 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1340,7 +1340,7 @@
 				5A9F6B1F24CD746F008B5762 /* ChooseCurrencyTableViewHeader.swift in Sources */,
 				5A9F6B1824CD746F008B5762 /* ExpectedRateViewController.swift in Sources */,
 				5A9F6AF724CD746F008B5762 /* KeychainStorage.swift in Sources */,
-				5A0D78C324E9797100A6E18D /* R.swift in Sources */,
+				5A0D78C324E9797100A6E18D /* Rgenerated.swift in Sources */,
 				5A9F6B3524CD746F008B5762 /* WalletsService.swift in Sources */,
 				5A9F6ACA24CD746F008B5762 /* LabelButton.swift in Sources */,
 				5A9F6A9B24CD746F008B5762 /* UIButton+Extension.swift in Sources */,
