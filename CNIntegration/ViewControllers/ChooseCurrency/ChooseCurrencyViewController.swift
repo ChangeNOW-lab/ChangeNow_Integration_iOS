@@ -96,26 +96,35 @@ final class ChooseCurrencyViewController: UIViewController {
     private var selectedState: ChooseCurrencyState
     private let exchangeType: ExchangeType
 
-    private lazy var currencies: [Currency] = currenciesService.currencies.filter { !$0.isFiat }
+    private var isFiatExchange: Bool {
+        return GlobalExchange.fiat.contains(fromCurrencyTicker)
+    }
+
+    private lazy var currencies: [Currency] = {
+        return currenciesService.currencies.filter { !$0.isFiat }
+    }()
+    private lazy var fiatCurrencies = [Currency.defaultUSD, Currency.defaultEUR]
     private lazy var fromCurrencies: [Currency] = {
         switch exchangeType {
         case .any:
             return currencies.filter {
                 currenciesService.pairs[$0.ticker]?.isNotEmpty == true
-            }
+            } + fiatCurrencies
         case let .specific(currency, _):
             let specificCurrency = currency.lowercased()
             return currencies.filter {
                 currenciesService.pairs[$0.ticker]?.contains(specificCurrency) == true
-            }
+            } + fiatCurrencies
         }
     }()
     private lazy var popularFromCurrencies: [Currency] = fromCurrencies.filter {
         currenciesService.topFrom.contains($0.ticker)
     }
+    private var defiFromCurrencies: [Currency] = []
     private var otherFromCurrencies: [Currency] = []
     private var toCurrencies: [Currency] = []
     private var popularToCurrencies: [Currency] = []
+    private var defiToCurrencies: [Currency] = []
     private var otherToCurrencies: [Currency] = []
     private var searchableCurrencies: [Currency] = []
 
@@ -187,14 +196,24 @@ final class ChooseCurrencyViewController: UIViewController {
             segmentMock.set(fromCurrency: fromCurrencyTicker, toCurrency: toCurrencyTicker)
         }
 
-        otherFromCurrencies = fromCurrencies.filter { !popularFromCurrencies.contains($0) }
-
-        let pairs = currenciesService.pairs[fromCurrencyTicker] ?? []
-        toCurrencies = currencies.filter { pairs.contains($0.ticker) }
-        popularToCurrencies = toCurrencies.filter {
-            currenciesService.topTo.contains($0.ticker)
+        // From
+        defiFromCurrencies = fromCurrencies.filter { GlobalExchange.defi.contains($0.ticker) }
+        otherFromCurrencies = fromCurrencies.filter {
+            !popularFromCurrencies.contains($0) && !fiatCurrencies.contains($0) && !defiFromCurrencies.contains($0)
         }
-        otherToCurrencies = toCurrencies.filter { !popularToCurrencies.contains($0) }
+
+        // To
+        if isFiatExchange {
+            toCurrencies = currencies
+        } else {
+            let pairs = currenciesService.pairs[fromCurrencyTicker] ?? []
+            toCurrencies = currencies.filter { pairs.contains($0.ticker) }
+        }
+        popularToCurrencies = toCurrencies.filter { currenciesService.topTo.contains($0.ticker) }
+        defiToCurrencies = toCurrencies.filter { GlobalExchange.defi.contains($0.ticker) }
+        otherToCurrencies = toCurrencies.filter {
+            !popularToCurrencies.contains($0) && !defiToCurrencies.contains($0)
+        }
 
         tableView.reloadData()
     }
@@ -332,6 +351,10 @@ final class ChooseCurrencyViewController: UIViewController {
                 case 0:
                     return popularFromCurrencies
                 case 1:
+                    return fiatCurrencies
+                case 2:
+                    return defiFromCurrencies
+                case 3:
                     return otherFromCurrencies
                 default:
                     return []
@@ -341,6 +364,8 @@ final class ChooseCurrencyViewController: UIViewController {
                 case 0:
                     return popularToCurrencies
                 case 1:
+                    return defiToCurrencies
+                case 2:
                     return otherToCurrencies
                 default:
                     return []
@@ -356,7 +381,12 @@ extension ChooseCurrencyViewController: UITableViewDataSource {
         if isSearchActive {
             return 1
         } else {
-            return 2
+            switch selectedState {
+            case .from:
+                return 4
+            case .to:
+                return 3
+            }
         }
     }
 
@@ -393,7 +423,8 @@ extension ChooseCurrencyViewController: UITableViewDelegate {
             }
             fromCurrencyTicker = ticker
 
-            if let pairs = currenciesService.pairs[ticker],
+            if isFiatExchange,
+                let pairs = currenciesService.pairs[ticker],
                 pairs.contains(toCurrencyTicker) == false {
                 toCurrencyTicker = pairs.first ?? Currency.defaultBTC.ticker
             }
@@ -416,13 +447,31 @@ extension ChooseCurrencyViewController: UITableViewDelegate {
         }
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: ChooseCurrencyTableViewHeader.reuseIdentifier) as?  ChooseCurrencyTableViewHeader
         if currenciesFor(section: section).isNotEmpty {
-            switch section {
-            case 0:
-                headerView?.set(style: .popular)
-            case 1:
-                headerView?.set(style: .other)
-            default:
-                return nil
+            switch selectedState {
+            case .from:
+                switch section {
+                case 0:
+                    headerView?.set(style: .popular)
+                case 1:
+                    headerView?.set(style: .fiat)
+                case 2:
+                    headerView?.set(style: .defi)
+                case 3:
+                    headerView?.set(style: .other)
+                default:
+                    return nil
+                }
+            case .to:
+                switch section {
+                case 0:
+                    headerView?.set(style: .popular)
+                case 1:
+                    headerView?.set(style: .defi)
+                case 2:
+                    headerView?.set(style: .other)
+                default:
+                    return nil
+                }
             }
         } else {
             return nil

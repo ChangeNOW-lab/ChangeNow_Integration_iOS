@@ -20,6 +20,7 @@
 "Exchange.Send" = "आपके द्वारा भेजी गई";
 "Exchange.Get" = "आपके द्वारा प्राप्त";
 "Exchange.MinimumAmount" = "यूनतम राशि %1$@ %2$@ है";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "विनिमय (एक्सचेंज)";
 "Exchange.RecipientAddress" = "प्राप्तकर्ता पते पर";
 "Exchange.Address" = "%@ पता जोड़ें";
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = "सेवा में %@";
 "ChooseCurrency.Popular" = "लोकप्रिय मुद्राएँ";
 "ChooseCurrency.Fiat" = "फ़िएट मुद्राएँ";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "अन्य मुद्राएँ";
 "ChooseCurrency.Empty" = "हम विनिमय के लिए समर्थन करने वाले किसी भी मुद्राओं या टिकट से मेल नहीं खाता";
 

@@ -6,22 +6,19 @@
 //  Copyright © 2020 Pavel Pronin. All rights reserved.
 //
 
-final class MainCoordinatorService: CoordinatorService {
+final class MainCoordinatorService: DefaultCoordinatorService, CoordinatorService {
 
     @Injected private var transactionService: TransactionService
-
-    private lazy var defaultCoordinatorService = DefaultCoordinatorService(exchangeType: exchangeType)
 
     private var window: UIWindow? {
         return UIApplication.shared.delegate?.window ?? UIWindow()
     }
 
     private let moduleManager: ModuleManager
-    private let exchangeType: ExchangeType
 
     init(moduleManager: ModuleManager, exchangeType: ExchangeType) {
         self.moduleManager = moduleManager
-        self.exchangeType = exchangeType
+        super.init(exchangeType: exchangeType)
     }
 
     // MARK: - Navigation
@@ -60,22 +57,6 @@ final class MainCoordinatorService: CoordinatorService {
             window?.set(rootViewController: newVC)
         }
         return newVC
-    }
-
-    func showScannerScreen(delegate: ScannerDelegate?) {
-        defaultCoordinatorService.showScannerScreen(delegate: delegate)
-    }
-
-    func showChooseCurrencyScreen(fromCurrencyTicker: String,
-                                  toCurrencyTicker: String,
-                                  selectedState: ChooseCurrencyState,
-                                  exchangeType: ExchangeType,
-                                  delegate: ChooseCurrencyDelegate?) {
-        defaultCoordinatorService.showChooseCurrencyScreen(fromCurrencyTicker: fromCurrencyTicker,
-                                                           toCurrencyTicker: toCurrencyTicker,
-                                                           selectedState: selectedState,
-                                                           exchangeType: exchangeType,
-                                                           delegate: delegate)
     }
 
     func dismiss() { }

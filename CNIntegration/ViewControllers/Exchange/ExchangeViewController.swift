@@ -259,8 +259,8 @@ final class ExchangeViewController: UIViewController {
 
     // MARK: - Public
 
-    var isMinimumExchangeWarningHidden: Bool {
-        return exchangeRateView.warningView.isHidden
+    var exchangeWarningType: ExchangeWarningType? {
+        return exchangeRateView.warningView.isHidden ? nil : exchangeRateView.warningView.warningType
     }
 
     // MARK: - Life Cycle
@@ -384,13 +384,12 @@ final class ExchangeViewController: UIViewController {
         }
     }
 
-    func setMinimumExchangeWarning(isHidden: Bool) {
-        if !isHidden, let rate = presenter.minimumExchangeAmount {
-            let fromCurrencyTicker = presenter.fromCurrency.ticker
-            exchangeRateView.warningView.set(rate: rate, rateCurrency: fromCurrencyTicker)
+    func setExchangeWarning(type: ExchangeWarningType?) {
+        if let type = type {
+            exchangeRateView.warningView.set(warningType: type)
         }
-        exchangeRateView.setWarning(isHidden: isHidden)
-        fromExchangeField.setFieldSelection(state: !isHidden)
+        exchangeRateView.setWarning(isHidden: type == nil)
+        fromExchangeField.setFieldSelection(state: type != nil)
     }
 
     // MARK: - Private
@@ -566,33 +565,55 @@ final class ExchangeViewController: UIViewController {
         }
 
         showActivityIndicator()
-        transactionService.createTransaction(
-            from: presenter.fromCurrency.ticker,
-            to: presenter.toCurrency.ticker,
-            address: addressField.text!,
-            amount: presenter.fromAmount,
-            extraId: extraIdField.text ?? "") { [weak self] result in
-                switch result {
-                case let .success(transaction):
-                    self?.transactionService.getTransactionStatus(id: transaction.id) { [weak self] result in
-                        switch result {
-                        case let .success(transactionStatusData):
-                            self?.coordinatorService.showTransactionScreen(transaction: transactionStatusData)
-                        case let .failure(error):
+        if presenter.isFiatExchange {
+            transactionService.createFiatTransaction(
+                from: presenter.fromCurrency.ticker,
+                to: presenter.toCurrency.ticker,
+                address: addressField.text!,
+                amount: presenter.fromAmount,
+                extraId: extraIdField.text ?? "") { [weak self] result in
+                    switch result {
+                    case let .success(transaction):
+                        guard let self = self, let url = URL(string: transaction.redirectURL) else { return }
+                        self.coordinatorService.showGuardarianTransaction(
+                            url: url,
+                            fromCurrencyTicker: self.presenter.fromCurrency.ticker,
+                            toCurrencyTicker: self.presenter.toCurrency.ticker
+                        )
+                    case let .failure(error):
+                        self?.showError(error.localizedDescription)
+                    }
+                    self?.hideActivityIndicator()
+            }
+        } else {
+            transactionService.createTransaction(
+                from: presenter.fromCurrency.ticker,
+                to: presenter.toCurrency.ticker,
+                address: addressField.text!,
+                amount: presenter.fromAmount,
+                extraId: extraIdField.text ?? "") { [weak self] result in
+                    switch result {
+                    case let .success(transaction):
+                        self?.transactionService.getTransactionStatus(id: transaction.id) { [weak self] result in
+                            switch result {
+                            case let .success(transactionStatusData):
+                                self?.coordinatorService.showTransactionScreen(transaction: transactionStatusData)
+                            case let .failure(error):
+                                self?.showError(error.localizedDescription)
+                            }
+                            self?.hideActivityIndicator()
+                        }
+                    case let .failure(error):
+                        if let changeNowError = error as? ChangeNowError,
+                            changeNowError.type == .notValidAddress {
+                            self?.showMessage(changeNowError.message,
+                                              title: R.string.localizable.exchangeIncorrectRecipientAddress())
+                        } else {
                             self?.showError(error.localizedDescription)
                         }
                         self?.hideActivityIndicator()
                     }
-                case let .failure(error):
-                    if let changeNowError = error as? ChangeNowError,
-                        changeNowError.type == .notValidAddress {
-                        self?.showMessage(changeNowError.message,
-                                          title: R.string.localizable.exchangeIncorrectRecipientAddress())
-                    } else {
-                        self?.showError(error.localizedDescription)
-                    }
-                    self?.hideActivityIndicator()
-                }
+            }
         }
     }
 

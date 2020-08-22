@@ -8,7 +8,14 @@
 
 import SnapKit
 
+enum ExchangeWarningType: Equatable {
+    case minimum(rate: Decimal, rateCurrency: String)
+    case maximum(rate: Decimal, rateCurrency: String)
+}
+
 final class WarningView: UIView {
+
+    private(set) var warningType: ExchangeWarningType?
 
     private lazy var titleLabel: UILabel = {
         let view = UILabel()
@@ -41,11 +48,20 @@ final class WarningView: UIView {
 
     // MARK: - Public
 
-    func set(rate: Decimal, rateCurrency: String) {
-        titleLabel.text = R.string.localizable.exchangeMinimumAmount(
-            "\(rate.rounding(withMode: .down, scale: GlobalConsts.maxMantissa))",
-            rateCurrency.uppercased()
-        )
+    func set(warningType: ExchangeWarningType) {
+        self.warningType = warningType
+        switch warningType {
+        case let .minimum(rate, rateCurrency):
+            titleLabel.text = R.string.localizable.exchangeMinimumAmount(
+                "\(rate.rounding(withMode: .down, scale: GlobalConsts.maxMantissa))",
+                rateCurrency.uppercased()
+            )
+        case let .maximum(rate, rateCurrency):
+            titleLabel.text = R.string.localizable.exchangeMaximumAmount(
+                "\(rate.rounding(withMode: .down, scale: GlobalConsts.maxMantissa))",
+                rateCurrency.uppercased()
+            )
+        }
     }
 
     // MARK: - Private

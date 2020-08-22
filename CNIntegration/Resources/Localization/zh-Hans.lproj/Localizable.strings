@@ -20,6 +20,7 @@
 "Exchange.Send" = "您兑换的金额";
 "Exchange.Get" = "您收到的金额";
 "Exchange.MinimumAmount" = "兑换最低金额为 %1$@ %2$@";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "兑换";
 "Exchange.RecipientAddress" = "到收款人地址上";
 "Exchange.Address" = "添加地址 %@";
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = "兑换成 %@";
 "ChooseCurrency.Popular" = "热门货币";
 "ChooseCurrency.Fiat" = "法定币种";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "其它币种";
 "ChooseCurrency.Empty" = "在支持的货币和交易品种列表中未找到";
 

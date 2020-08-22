@@ -20,6 +20,7 @@
 "Exchange.Send" = "あなたが送る";
 "Exchange.Get" = "あなたが";
 "Exchange.MinimumAmount" = "";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "取引所";
 "Exchange.RecipientAddress" = "宛先アドレス";
 "Exchange.Address" = "追加 %@ アドレス";
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = "はい、 %@";
 "ChooseCurrency.Popular" = "人気通貨";
 "ChooseCurrency.Fiat" = "フィアット通貨";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "その他の通貨";
 "ChooseCurrency.Empty" = "私たちが交換をサポートしている通貨やティッカーとは一致しません";
 

@@ -20,6 +20,7 @@
 "Exchange.Send" = "ترسل";
 "Exchange.Get" = "تحصل على";
 "Exchange.MinimumAmount" = "%2$@ %1$@ لمبلغ الأدنى هو";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "التداول";
 "Exchange.RecipientAddress" = "إلى عنوان المستلم";
 "Exchange.Address" = "إضافة %@ عنوان";
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = " %@ إلى";
 "ChooseCurrency.Popular" = "العملات المشهورة";
 "ChooseCurrency.Fiat" = "العملات الورقية";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "عملات أخرى";
 "ChooseCurrency.Empty" = "لا تتطابق مع أي عملات أو عملات معدنية ندعمها للتبادل";
 

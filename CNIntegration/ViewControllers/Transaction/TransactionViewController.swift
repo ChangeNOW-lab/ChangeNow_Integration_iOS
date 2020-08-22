@@ -415,11 +415,18 @@ final class TransactionViewController: UIViewController {
         }
         switch status {
         case .new, .waiting:
-            getDescriptionView.set(value: expectedValue(),
-                                   address: transaction.payoutAddress,
-                                   currency: transaction.toCurrency,
-                                   extraIdName: transaction.payoutExtraIdName ?? currenciesService.anonyms[transaction.toCurrency],
-                                   extraId: transaction.payoutExtraId)
+            getDescriptionView.set(
+                value: expectedValue(),
+                address: transaction.payoutAddress,
+                currency: transaction.toCurrency,
+                extraIdName: transaction.payoutExtraIdName ?? currenciesService.anonyms[transaction.toCurrency],
+                extraId: transaction.payoutExtraId,
+                transactionId: transaction.id,
+                transactionIdAction: Action { [weak self] in
+                    UIPasteboard.general.string = self?.transaction.id
+                    self?.impactFeedback()
+                    self?.showCopiedLabel()
+            })
             showStackView(subview: getDescriptionView)
         case .verifying, .confirming, .exchanging, .sending, .finished, .refunded, .failed, .expired:
             hideStackView(subview: getDescriptionView)

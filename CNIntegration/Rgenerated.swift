@@ -88,7 +88,7 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
 
-  /// This `R.image` struct is generated, and contains static references to 176 images.
+  /// This `R.image` struct is generated, and contains static references to 195 images.
   struct image {
     /// Image `BackIcon`.
     static let backIcon = Rswift.ImageResource(bundle: R.hostingBundle, name: "BackIcon")
@@ -102,6 +102,8 @@ struct R: Rswift.Validatable {
     static let closeLight = Rswift.ImageResource(bundle: R.hostingBundle, name: "CloseLight")
     /// Image `Close`.
     static let close = Rswift.ImageResource(bundle: R.hostingBundle, name: "Close")
+    /// Image `Cross`.
+    static let cross = Rswift.ImageResource(bundle: R.hostingBundle, name: "Cross")
     /// Image `CurrencyPlaceholder`.
     static let currencyPlaceholder = Rswift.ImageResource(bundle: R.hostingBundle, name: "CurrencyPlaceholder")
     /// Image `Deeplink`.
@@ -166,6 +168,8 @@ struct R: Rswift.Validatable {
     static let agi = Rswift.ImageResource(bundle: R.hostingBundle, name: "agi")
     /// Image `aion`.
     static let aion = Rswift.ImageResource(bundle: R.hostingBundle, name: "aion")
+    /// Image `algo`.
+    static let algo = Rswift.ImageResource(bundle: R.hostingBundle, name: "algo")
     /// Image `amb`.
     static let amb = Rswift.ImageResource(bundle: R.hostingBundle, name: "amb")
     /// Image `ardr`.
@@ -178,8 +182,14 @@ struct R: Rswift.Validatable {
     static let ast = Rswift.ImageResource(bundle: R.hostingBundle, name: "ast")
     /// Image `atom`.
     static let atom = Rswift.ImageResource(bundle: R.hostingBundle, name: "atom")
+    /// Image `ava`.
+    static let ava = Rswift.ImageResource(bundle: R.hostingBundle, name: "ava")
+    /// Image `bal`.
+    static let bal = Rswift.ImageResource(bundle: R.hostingBundle, name: "bal")
     /// Image `band`.
     static let band = Rswift.ImageResource(bundle: R.hostingBundle, name: "band")
+    /// Image `bandmainnet`.
+    static let bandmainnet = Rswift.ImageResource(bundle: R.hostingBundle, name: "bandmainnet")
     /// Image `bat`.
     static let bat = Rswift.ImageResource(bundle: R.hostingBundle, name: "bat")
     /// Image `bcd`.
@@ -218,6 +228,8 @@ struct R: Rswift.Validatable {
     static let cmt = Rswift.ImageResource(bundle: R.hostingBundle, name: "cmt")
     /// Image `cnd`.
     static let cnd = Rswift.ImageResource(bundle: R.hostingBundle, name: "cnd")
+    /// Image `comp`.
+    static let comp = Rswift.ImageResource(bundle: R.hostingBundle, name: "comp")
     /// Image `copy`.
     static let copy = Rswift.ImageResource(bundle: R.hostingBundle, name: "copy")
     /// Image `cro`.
@@ -254,10 +266,16 @@ struct R: Rswift.Validatable {
     static let etc = Rswift.ImageResource(bundle: R.hostingBundle, name: "etc")
     /// Image `eth`.
     static let eth = Rswift.ImageResource(bundle: R.hostingBundle, name: "eth")
+    /// Image `eur`.
+    static let eur = Rswift.ImageResource(bundle: R.hostingBundle, name: "eur")
     /// Image `evx`.
     static let evx = Rswift.ImageResource(bundle: R.hostingBundle, name: "evx")
     /// Image `fet`.
     static let fet = Rswift.ImageResource(bundle: R.hostingBundle, name: "fet")
+    /// Image `fio`.
+    static let fio = Rswift.ImageResource(bundle: R.hostingBundle, name: "fio")
+    /// Image `ftt`.
+    static let ftt = Rswift.ImageResource(bundle: R.hostingBundle, name: "ftt")
     /// Image `fun`.
     static let fun = Rswift.ImageResource(bundle: R.hostingBundle, name: "fun")
     /// Image `gas`.
@@ -268,6 +286,8 @@ struct R: Rswift.Validatable {
     static let go = Rswift.ImageResource(bundle: R.hostingBundle, name: "go")
     /// Image `grs`.
     static let grs = Rswift.ImageResource(bundle: R.hostingBundle, name: "grs")
+    /// Image `gt`.
+    static let gt = Rswift.ImageResource(bundle: R.hostingBundle, name: "gt")
     /// Image `gto`.
     static let gto = Rswift.ImageResource(bundle: R.hostingBundle, name: "gto")
     /// Image `hbar`.
@@ -292,8 +312,12 @@ struct R: Rswift.Validatable {
     static let kmd = Rswift.ImageResource(bundle: R.hostingBundle, name: "kmd")
     /// Image `knc`.
     static let knc = Rswift.ImageResource(bundle: R.hostingBundle, name: "knc")
+    /// Image `ksm`.
+    static let ksm = Rswift.ImageResource(bundle: R.hostingBundle, name: "ksm")
     /// Image `lend`.
     static let lend = Rswift.ImageResource(bundle: R.hostingBundle, name: "lend")
+    /// Image `link`.
+    static let link = Rswift.ImageResource(bundle: R.hostingBundle, name: "link")
     /// Image `loom`.
     static let loom = Rswift.ImageResource(bundle: R.hostingBundle, name: "loom")
     /// Image `lrc`.
@@ -314,6 +338,10 @@ struct R: Rswift.Validatable {
     static let mco = Rswift.ImageResource(bundle: R.hostingBundle, name: "mco")
     /// Image `mda`.
     static let mda = Rswift.ImageResource(bundle: R.hostingBundle, name: "mda")
+    /// Image `mdt`.
+    static let mdt = Rswift.ImageResource(bundle: R.hostingBundle, name: "mdt")
+    /// Image `mkr`.
+    static let mkr = Rswift.ImageResource(bundle: R.hostingBundle, name: "mkr")
     /// Image `mtl`.
     static let mtl = Rswift.ImageResource(bundle: R.hostingBundle, name: "mtl")
     /// Image `nano`.
@@ -326,6 +354,8 @@ struct R: Rswift.Validatable {
     static let node = Rswift.ImageResource(bundle: R.hostingBundle, name: "node")
     /// Image `npxs`.
     static let npxs = Rswift.ImageResource(bundle: R.hostingBundle, name: "npxs")
+    /// Image `ogn`.
+    static let ogn = Rswift.ImageResource(bundle: R.hostingBundle, name: "ogn")
     /// Image `omg`.
     static let omg = Rswift.ImageResource(bundle: R.hostingBundle, name: "omg")
     /// Image `ong`.
@@ -384,8 +414,12 @@ struct R: Rswift.Validatable {
     static let storj = Rswift.ImageResource(bundle: R.hostingBundle, name: "storj")
     /// Image `storm`.
     static let storm = Rswift.ImageResource(bundle: R.hostingBundle, name: "storm")
+    /// Image `stpt`.
+    static let stpt = Rswift.ImageResource(bundle: R.hostingBundle, name: "stpt")
     /// Image `strat`.
     static let strat = Rswift.ImageResource(bundle: R.hostingBundle, name: "strat")
+    /// Image `swftc`.
+    static let swftc = Rswift.ImageResource(bundle: R.hostingBundle, name: "swftc")
     /// Image `sys`.
     static let sys = Rswift.ImageResource(bundle: R.hostingBundle, name: "sys")
     /// Image `tnt`.
@@ -414,6 +448,8 @@ struct R: Rswift.Validatable {
     static let wabi = Rswift.ImageResource(bundle: R.hostingBundle, name: "wabi")
     /// Image `waves`.
     static let waves = Rswift.ImageResource(bundle: R.hostingBundle, name: "waves")
+    /// Image `waxp`.
+    static let waxp = Rswift.ImageResource(bundle: R.hostingBundle, name: "waxp")
     /// Image `wtc`.
     static let wtc = Rswift.ImageResource(bundle: R.hostingBundle, name: "wtc")
     /// Image `xaut`.
@@ -434,6 +470,8 @@ struct R: Rswift.Validatable {
     static let xvg = Rswift.ImageResource(bundle: R.hostingBundle, name: "xvg")
     /// Image `xzc`.
     static let xzc = Rswift.ImageResource(bundle: R.hostingBundle, name: "xzc")
+    /// Image `yfi`.
+    static let yfi = Rswift.ImageResource(bundle: R.hostingBundle, name: "yfi")
     /// Image `zec`.
     static let zec = Rswift.ImageResource(bundle: R.hostingBundle, name: "zec")
     /// Image `zen`.
@@ -482,6 +520,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "CloseLight", bundle: ..., traitCollection: ...)`
     static func closeLight(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.closeLight, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "Cross", bundle: ..., traitCollection: ...)`
+    static func cross(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.cross, compatibleWith: traitCollection)
     }
     #endif
 
@@ -710,6 +755,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "algo", bundle: ..., traitCollection: ...)`
+    static func algo(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.algo, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "amb", bundle: ..., traitCollection: ...)`
     static func amb(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.amb, compatibleWith: traitCollection)
@@ -752,9 +804,30 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "ava", bundle: ..., traitCollection: ...)`
+    static func ava(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ava, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bal", bundle: ..., traitCollection: ...)`
+    static func bal(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bal, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "band", bundle: ..., traitCollection: ...)`
     static func band(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.band, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "bandmainnet", bundle: ..., traitCollection: ...)`
+    static func bandmainnet(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.bandmainnet, compatibleWith: traitCollection)
     }
     #endif
 
@@ -892,6 +965,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "comp", bundle: ..., traitCollection: ...)`
+    static func comp(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.comp, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "copy", bundle: ..., traitCollection: ...)`
     static func copy(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.copy, compatibleWith: traitCollection)
@@ -1018,6 +1098,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "eur", bundle: ..., traitCollection: ...)`
+    static func eur(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.eur, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "evx", bundle: ..., traitCollection: ...)`
     static func evx(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.evx, compatibleWith: traitCollection)
@@ -1028,6 +1115,20 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "fet", bundle: ..., traitCollection: ...)`
     static func fet(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.fet, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "fio", bundle: ..., traitCollection: ...)`
+    static func fio(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.fio, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "ftt", bundle: ..., traitCollection: ...)`
+    static func ftt(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ftt, compatibleWith: traitCollection)
     }
     #endif
 
@@ -1063,6 +1164,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "grs", bundle: ..., traitCollection: ...)`
     static func grs(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.grs, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "gt", bundle: ..., traitCollection: ...)`
+    static func gt(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.gt, compatibleWith: traitCollection)
     }
     #endif
 
@@ -1151,9 +1259,23 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "ksm", bundle: ..., traitCollection: ...)`
+    static func ksm(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ksm, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "lend", bundle: ..., traitCollection: ...)`
     static func lend(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.lend, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "link", bundle: ..., traitCollection: ...)`
+    static func link(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.link, compatibleWith: traitCollection)
     }
     #endif
 
@@ -1228,6 +1350,20 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "mdt", bundle: ..., traitCollection: ...)`
+    static func mdt(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.mdt, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "mkr", bundle: ..., traitCollection: ...)`
+    static func mkr(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.mkr, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "mtl", bundle: ..., traitCollection: ...)`
     static func mtl(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.mtl, compatibleWith: traitCollection)
@@ -1266,6 +1402,13 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "npxs", bundle: ..., traitCollection: ...)`
     static func npxs(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.npxs, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "ogn", bundle: ..., traitCollection: ...)`
+    static func ogn(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.ogn, compatibleWith: traitCollection)
     }
     #endif
 
@@ -1473,9 +1616,23 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "stpt", bundle: ..., traitCollection: ...)`
+    static func stpt(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.stpt, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "strat", bundle: ..., traitCollection: ...)`
     static func strat(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.strat, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "swftc", bundle: ..., traitCollection: ...)`
+    static func swftc(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.swftc, compatibleWith: traitCollection)
     }
     #endif
 
@@ -1578,6 +1735,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "waxp", bundle: ..., traitCollection: ...)`
+    static func waxp(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.waxp, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "wtc", bundle: ..., traitCollection: ...)`
     static func wtc(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.wtc, compatibleWith: traitCollection)
@@ -1648,6 +1812,13 @@ struct R: Rswift.Validatable {
     #endif
 
     #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "yfi", bundle: ..., traitCollection: ...)`
+    static func yfi(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.yfi, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
     /// `UIImage(named: "zec", bundle: ..., traitCollection: ...)`
     static func zec(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.zec, compatibleWith: traitCollection)
@@ -1680,7 +1851,7 @@ struct R: Rswift.Validatable {
 
   /// This `R.string` struct is generated, and contains static references to 1 localization tables.
   struct string {
-    /// This `R.string.localizable` struct is generated, and contains static references to 88 localization keys.
+    /// This `R.string.localizable` struct is generated, and contains static references to 90 localization keys.
     struct localizable {
       /// en translation: %1$@ to %2$@
       ///
@@ -1750,6 +1921,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
       static let copied = Rswift.StringResource(key: "Copied", tableName: "Localizable", bundle: R.hostingBundle, locales: ["de", "ar", "zh-Hans", "ja", "en", "es", "da", "it", "ms", "sv", "ko", "zh-Hant", "ru", "fr", "id", "nl", "pt", "hi"], comment: nil)
+      /// en translation: DeFi tokens
+      ///
+      /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
+      static let chooseCurrencyDefi = Rswift.StringResource(key: "ChooseCurrency.Defi", tableName: "Localizable", bundle: R.hostingBundle, locales: ["de", "ar", "zh-Hans", "ja", "en", "es", "da", "it", "ms", "sv", "ko", "zh-Hant", "ru", "fr", "id", "nl", "pt", "hi"], comment: nil)
       /// en translation: Doesn't match any currencies or tickers that we support for exchange
       ///
       /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
@@ -1806,6 +1981,10 @@ struct R: Rswift.Validatable {
       ///
       /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
       static let exchangeNoDataTitle = Rswift.StringResource(key: "Exchange.NoData.Title", tableName: "Localizable", bundle: R.hostingBundle, locales: ["de", "ar", "zh-Hans", "ja", "en", "es", "da", "it", "ms", "sv", "ko", "zh-Hant", "ru", "fr", "id", "nl", "pt", "hi"], comment: nil)
+      /// en translation: Maximum amount is %1$@ %2$@
+      ///
+      /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
+      static let exchangeMaximumAmount = Rswift.StringResource(key: "Exchange.MaximumAmount", tableName: "Localizable", bundle: R.hostingBundle, locales: ["de", "ar", "zh-Hans", "ja", "en", "es", "da", "it", "ms", "sv", "ko", "zh-Hant", "ru", "fr", "id", "nl", "pt", "hi"], comment: nil)
       /// en translation: Minimum amount is %1$@ %2$@
       ///
       /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
@@ -2302,6 +2481,21 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("Copied", bundle: bundle, comment: "")
       }
 
+      /// en translation: DeFi tokens
+      ///
+      /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
+      static func chooseCurrencyDefi(preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          return NSLocalizedString("ChooseCurrency.Defi", bundle: hostingBundle, comment: "")
+        }
+
+        guard let (_, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "ChooseCurrency.Defi"
+        }
+
+        return NSLocalizedString("ChooseCurrency.Defi", bundle: bundle, comment: "")
+      }
+
       /// en translation: Doesn't match any currencies or tickers that we support for exchange
       ///
       /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
@@ -2512,6 +2706,23 @@ struct R: Rswift.Validatable {
         }
 
         return NSLocalizedString("Exchange.NoData.Title", bundle: bundle, comment: "")
+      }
+
+      /// en translation: Maximum amount is %1$@ %2$@
+      ///
+      /// Locales: de, ar, zh-Hans, ja, en, es, da, it, ms, sv, ko, zh-Hant, ru, fr, id, nl, pt, hi
+      static func exchangeMaximumAmount(_ value1: String, _ value2: String, preferredLanguages: [String]? = nil) -> String {
+        guard let preferredLanguages = preferredLanguages else {
+          let format = NSLocalizedString("Exchange.MaximumAmount", bundle: hostingBundle, comment: "")
+          return String(format: format, locale: applicationLocale, value1, value2)
+        }
+
+        guard let (locale, bundle) = localeBundle(tableName: "Localizable", preferredLanguages: preferredLanguages) else {
+          return "Exchange.MaximumAmount"
+        }
+
+        let format = NSLocalizedString("Exchange.MaximumAmount", bundle: bundle, comment: "")
+        return String(format: format, locale: locale, value1, value2)
       }
 
       /// en translation: Minimum amount is %1$@ %2$@

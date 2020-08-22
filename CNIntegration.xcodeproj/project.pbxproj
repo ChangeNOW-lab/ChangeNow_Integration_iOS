@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		45DF6CBB7FE3AF87EAF1E94C /* Pods_CNIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F08E8BBFBF9414B417F1112 /* Pods_CNIntegration.framework */; };
 		5A0D78C324E9797100A6E18D /* Rgenerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D78C224E9797100A6E18D /* Rgenerated.swift */; };
+		5A1AE2A924F040FD00EA1192 /* GuardarianAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1AE2A824F040FD00EA1192 /* GuardarianAPI.swift */; };
+		5A1AE2AB24F045A000EA1192 /* GuardarianDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1AE2AA24F045A000EA1192 /* GuardarianDecoder.swift */; };
+		5A1AE2AE24F045C800EA1192 /* GuardarianData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1AE2AD24F045C800EA1192 /* GuardarianData.swift */; };
+		5A1AE2B024F1184D00EA1192 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1AE2AF24F1184D00EA1192 /* WebViewController.swift */; };
 		5A9F699824CD72EA008B5762 /* CNIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F698E24CD72EA008B5762 /* CNIntegration.framework */; };
 		5A9F699D24CD72EA008B5762 /* CNIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F699C24CD72EA008B5762 /* CNIntegrationTests.swift */; };
 		5A9F699F24CD72EA008B5762 /* CNIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9F699124CD72EA008B5762 /* CNIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -200,6 +204,10 @@
 /* Begin PBXFileReference section */
 		5A0D78B124E932F200A6E18D /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		5A0D78C224E9797100A6E18D /* Rgenerated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rgenerated.swift; sourceTree = "<group>"; };
+		5A1AE2A824F040FD00EA1192 /* GuardarianAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardarianAPI.swift; sourceTree = "<group>"; };
+		5A1AE2AA24F045A000EA1192 /* GuardarianDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardarianDecoder.swift; sourceTree = "<group>"; };
+		5A1AE2AD24F045C800EA1192 /* GuardarianData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardarianData.swift; sourceTree = "<group>"; };
+		5A1AE2AF24F1184D00EA1192 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		5A9F698E24CD72EA008B5762 /* CNIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CNIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9F699124CD72EA008B5762 /* CNIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNIntegration.h; sourceTree = "<group>"; };
 		5A9F699224CD72EA008B5762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -422,6 +430,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A1AE2AC24F045AF00EA1192 /* Guardarian */ = {
+			isa = PBXGroup;
+			children = (
+				5A1AE2A824F040FD00EA1192 /* GuardarianAPI.swift */,
+				5A1AE2AA24F045A000EA1192 /* GuardarianDecoder.swift */,
+			);
+			path = Guardarian;
+			sourceTree = "<group>";
+		};
+		5A1AE2B124F11A6900EA1192 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				5A1AE2AF24F1184D00EA1192 /* WebViewController.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
 		5A9F698424CD72EA008B5762 = {
 			isa = PBXGroup;
 			children = (
@@ -763,6 +788,7 @@
 				5A9F6A2D24CD746E008B5762 /* EstimatedExchange.swift */,
 				5A9F6A2E24CD746E008B5762 /* TransactionStatusData.swift */,
 				5A9F6A2F24CD746E008B5762 /* ChangeNowError.swift */,
+				5A1AE2AD24F045C800EA1192 /* GuardarianData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -786,6 +812,7 @@
 				5A9F6A5024CD746E008B5762 /* DepositQR */,
 				5A9F6A5324CD746E008B5762 /* Scanner */,
 				5A9F6A5524CD746E008B5762 /* ChooseCurrency */,
+				5A1AE2B124F11A6900EA1192 /* Web */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -897,6 +924,7 @@
 		5A9F6A6024CD746E008B5762 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				5A1AE2AC24F045AF00EA1192 /* Guardarian */,
 				5A9F6A6124CD746E008B5762 /* Transaction */,
 				5A9F6A6524CD746E008B5762 /* Exchange */,
 				5A9F6A6924CD746F008B5762 /* Currencies */,
@@ -912,9 +940,9 @@
 		5A9F6A6124CD746E008B5762 /* Transaction */ = {
 			isa = PBXGroup;
 			children = (
+				5A9F6A6424CD746E008B5762 /* TransactionService.swift */,
 				5A9F6A6224CD746E008B5762 /* TransactionAPI.swift */,
 				5A9F6A6324CD746E008B5762 /* TransactionDecoder.swift */,
-				5A9F6A6424CD746E008B5762 /* TransactionService.swift */,
 			);
 			path = Transaction;
 			sourceTree = "<group>";
@@ -922,8 +950,8 @@
 		5A9F6A6524CD746E008B5762 /* Exchange */ = {
 			isa = PBXGroup;
 			children = (
-				5A9F6A6624CD746E008B5762 /* ExchangeAPI.swift */,
 				5A9F6A6724CD746E008B5762 /* ExchangeService.swift */,
+				5A9F6A6624CD746E008B5762 /* ExchangeAPI.swift */,
 				5A9F6A6824CD746F008B5762 /* ExchangeDecoder.swift */,
 			);
 			path = Exchange;
@@ -932,9 +960,9 @@
 		5A9F6A6924CD746F008B5762 /* Currencies */ = {
 			isa = PBXGroup;
 			children = (
+				5A9F6A6C24CD746F008B5762 /* CurrenciesService.swift */,
 				5A9F6A6A24CD746F008B5762 /* CurrenciesAPI.swift */,
 				5A9F6A6B24CD746F008B5762 /* CurrenciesDecoder.swift */,
-				5A9F6A6C24CD746F008B5762 /* CurrenciesService.swift */,
 			);
 			path = Currencies;
 			sourceTree = "<group>";
@@ -1223,6 +1251,7 @@
 				5A9F6AB924CD746F008B5762 /* Dictionary+Extensions.swift in Sources */,
 				5A9F6AEE24CD746F008B5762 /* ActionScheduler.swift in Sources */,
 				5A9F6B1024CD746F008B5762 /* TransactionStepperView.swift in Sources */,
+				5A1AE2A924F040FD00EA1192 /* GuardarianAPI.swift in Sources */,
 				5A9F6B3124CD746F008B5762 /* ValidatorService.swift in Sources */,
 				5A9F6AF224CD746F008B5762 /* Logger.swift in Sources */,
 				5A9F6AD424CD746F008B5762 /* ConfigurableNavigationController.swift in Sources */,
@@ -1236,7 +1265,9 @@
 				5A9F6ADE24CD746F008B5762 /* ValidationRulePattern.swift in Sources */,
 				5A9F6B1E24CD746F008B5762 /* SearchBarView.swift in Sources */,
 				5A9F6B2D24CD746F008B5762 /* CurrenciesService.swift in Sources */,
+				5A1AE2AE24F045C800EA1192 /* GuardarianData.swift in Sources */,
 				5A9F6B0024CD746F008B5762 /* TransactionStatusData.swift in Sources */,
+				5A1AE2AB24F045A000EA1192 /* GuardarianDecoder.swift in Sources */,
 				5A9F6ADC24CD746F008B5762 /* ValidationRuleURL.swift in Sources */,
 				5A9F6AA624CD746F008B5762 /* CharacterSet+Extensions.swift in Sources */,
 				5A9F6B1424CD746F008B5762 /* ExchangePresenter.swift in Sources */,
@@ -1281,6 +1312,7 @@
 				5A9F6B1724CD746F008B5762 /* CurrencyExchangeRateView.swift in Sources */,
 				5A9F6B2A24CD746F008B5762 /* ExchangeDecoder.swift in Sources */,
 				5A9F6B8F24CDEC51008B5762 /* ChooseCurrencySegmentMock.swift in Sources */,
+				5A1AE2B024F1184D00EA1192 /* WebViewController.swift in Sources */,
 				5A9F6A9D24CD746F008B5762 /* Array+Synchronized.swift in Sources */,
 				5A9F6B2924CD746F008B5762 /* ExchangeService.swift in Sources */,
 				5A9F6B2E24CD746F008B5762 /* RateAppService.swift in Sources */,
@@ -1536,7 +1568,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1569,7 +1601,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1695,7 +1727,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

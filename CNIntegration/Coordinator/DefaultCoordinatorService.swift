@@ -6,9 +6,9 @@
 //  Copyright © 2020 Pavel Pronin. All rights reserved.
 //
 
-final class DefaultCoordinatorService {
+class DefaultCoordinatorService {
 
-    private let exchangeType: ExchangeType
+    let exchangeType: ExchangeType
 
     init(exchangeType: ExchangeType) {
         self.exchangeType = exchangeType
@@ -16,11 +16,23 @@ final class DefaultCoordinatorService {
 
     // MARK: - Navigation
 
+    func showGuardarianTransaction(url: URL,
+                                   fromCurrencyTicker: String,
+                                   toCurrencyTicker: String) {
+        let newVC = WebViewController(
+            url: url,
+            title: R.string.localizable.transactionTitle(fromCurrencyTicker.uppercased(),
+                                                         toCurrencyTicker.uppercased())
+        )
+        let navVC = ConfigurableNavigationController(rootViewController: newVC)
+        navVC.modalPresentationStyle = .fullScreen
+        currentViewController()?.present(navVC, animated: true, completion: nil)
+    }
+
     func showScannerScreen(delegate: ScannerDelegate?) {
-        let currentViewController = self.currentViewController()
         let newVC = ScannerViewController()
         newVC.delegate = delegate
-        currentViewController?.present(newVC, animated: true, completion: nil)
+        currentViewController()?.present(newVC, animated: true, completion: nil)
     }
 
     func showChooseCurrencyScreen(fromCurrencyTicker: String,
@@ -28,7 +40,6 @@ final class DefaultCoordinatorService {
                                   selectedState: ChooseCurrencyState,
                                   exchangeType: ExchangeType,
                                   delegate: ChooseCurrencyDelegate?) {
-        let currentViewController = self.currentViewController()
         let newVC = ChooseCurrencyViewController(fromCurrencyTicker: fromCurrencyTicker,
                                                  toCurrencyTicker: toCurrencyTicker,
                                                  selectedState: selectedState,
@@ -39,7 +50,7 @@ final class DefaultCoordinatorService {
         } else {
             newVC.modalPresentationStyle = .overCurrentContext
         }
-        currentViewController?.present(newVC, animated: true, completion: nil)
+        currentViewController()?.present(newVC, animated: true, completion: nil)
     }
 
     func currentViewController() -> UIViewController? {

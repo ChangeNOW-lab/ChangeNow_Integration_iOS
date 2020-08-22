@@ -20,6 +20,7 @@
 "Exchange.Send" = "You send";
 "Exchange.Get" = "You get";
 "Exchange.MinimumAmount" = "Minimum amount is %1$@ %2$@";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "Exchange";
 "Exchange.RecipientAddress" = "To Recipient Address";
 "Exchange.Address" = "Add %@ Address";
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = "to %@";
 "ChooseCurrency.Popular" = "Popular currencies";
 "ChooseCurrency.Fiat" = "Fiat currencies";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "Other currencies";
 "ChooseCurrency.Empty" = "Doesn't match any currencies or tickers that we support for exchange";
 

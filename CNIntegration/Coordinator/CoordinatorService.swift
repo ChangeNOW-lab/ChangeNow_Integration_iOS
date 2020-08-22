@@ -16,6 +16,9 @@ protocol CoordinatorService {
     func showTransactionScreen(transaction: TransactionStatusData,
                                isNeedReload: Bool) -> UIViewController
 
+    func showGuardarianTransaction(url: URL,
+                                   fromCurrencyTicker: String,
+                                   toCurrencyTicker: String)
     func showScannerScreen(delegate: ScannerDelegate?)
     func showChooseCurrencyScreen(fromCurrencyTicker: String,
                                   toCurrencyTicker: String,

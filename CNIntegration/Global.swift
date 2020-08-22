@@ -25,6 +25,42 @@ struct ChangeNOW {
     }
 }
 
+struct Guardarian {
+
+    #if DEBUG
+    static let apiBaseURL = "https://api-guardarian-test.nownodes.io"
+    #else
+    static let apiBaseURL = "https://api-payments.guardarian.com"
+    #endif
+
+    #if DEBUG
+    static let apiKey = "c14d927f-cb01-4561-9520-28ec22c92709"
+    #else
+    static let apiKey = "ff2e92c2-5c0c-464f-bed8-25fc7876e240"
+    #endif
+}
+
+struct GlobalExchange {
+
+    static let fiatMinimum: Decimal = 20
+    static let fiatMaximum: Decimal = 150
+
+    static let fiat = ["usd", "eur"]
+    static let defi = ["lend", "comp", "snx", "knc", "ren", "rep", "bnt", "lrc", "yfi", "bal"]
+
+    static func pair(fromCurrency: Currency, toCurrency: Currency) -> String {
+        return "\(fromCurrency.ticker)_\(toCurrency.ticker)"
+    }
+
+    static func currencies(pair: String) -> (String, String)? {
+        let components = pair.components(separatedBy: "_")
+        if components.count == 2 {
+            return (components[0], components[1])
+        }
+        return nil
+    }
+}
+
 struct GlobalStrings {
     static let extraId = "Extra ID"
 }

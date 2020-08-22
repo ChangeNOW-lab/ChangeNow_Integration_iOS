@@ -61,4 +61,26 @@ extension Currency {
                         isStable: true,
                         supportsFixedRate: true)
     }
+
+    static var defaultUSD: Currency {
+        return Currency(ticker: "usd",
+                        name: "US Dollar",
+                        image: "",
+                        hasExternalId: false,
+                        isFiat: true,
+                        featured: false,
+                        isStable: true,
+                        supportsFixedRate: true)
+    }
+
+    static var defaultEUR: Currency {
+        return Currency(ticker: "eur",
+                        name: "Euro",
+                        image: "",
+                        hasExternalId: false,
+                        isFiat: true,
+                        featured: false,
+                        isStable: true,
+                        supportsFixedRate: true)
+    }
 }

@@ -72,6 +72,31 @@ final class ExchangeDefaultService: ExchangeService {
     func getEstimatedExchangeAmount(pair: String,
                                     sendAmount: Decimal,
                                     completion: GetEstimatedExchangeAmountCompletion?) -> Cancellable {
+        if let currencies = GlobalExchange.currencies(pair: pair),
+            GlobalExchange.fiat.contains(currencies.0) {
+            return NetworkService.request(
+                target: GuardarianAPI.estimate(cryptoCurrency: currencies.1,
+                                               fiatCurrency: currencies.0,
+                                               fiatAmount: sendAmount),
+                auth: .none) { (response) in
+                    switch response {
+                    case let .success(result):
+                        if let guardarianExchange = GuardarianDecoder.getGuardarianExchange(data: result.data) {
+                            DispatchQueue.main.async {
+                                completion?(Result.success(EstimatedExchange(
+                                    estimatedAmount: guardarianExchange.estimatedAmount,
+                                    transactionSpeedForecast: "",
+                                    warningMessage: nil))
+                                )
+                            }
+                        }
+                    case let .failure(error):
+                        DispatchQueue.main.async {
+                            completion?(Result.failure(error))
+                        }
+                    }
+            }
+        }
         return NetworkService.request(
             target: ExchangeAPI.exchangeAmount(pair: pair, sendAmount: sendAmount),
             auth: .none) { (response) in

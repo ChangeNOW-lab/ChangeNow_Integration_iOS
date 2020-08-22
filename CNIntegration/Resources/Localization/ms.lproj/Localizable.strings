@@ -20,6 +20,7 @@
 "Exchange.Send" = "Anda hantar";
 "Exchange.Get" = "Anda dapat";
 "Exchange.MinimumAmount" = "Jumlah minimum ialah %1$@ %2$@";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "Pertukaran";
 "Exchange.RecipientAddress" = "Ke alamat Penerima";
 "Exchange.Address" = "Tambah %@ alamat";
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = "Kepada %@";
 "ChooseCurrency.Popular" = "Mata wang popular";
 "ChooseCurrency.Fiat" = "Mata wang Fiat";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "Mata wang lain";
 "ChooseCurrency.Empty" = "Tidak sesuai dengan mana-mana mata wang yang kami sokong untuk pertukaran";
 

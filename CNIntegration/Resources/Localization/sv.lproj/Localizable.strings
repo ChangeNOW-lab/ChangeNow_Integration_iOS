@@ -20,6 +20,7 @@
 "Exchange.Send" = "Du skickar";
 "Exchange.Get" = "Du får";
 "Exchange.MinimumAmount" = "Minsta belopp är %1$@ %2$@";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "Växling";
 "Exchange.RecipientAddress" = "Till mottagarens adress";
 "Exchange.Address" = "Lägg till %@ adress";
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = "Till %@";
 "ChooseCurrency.Popular" = "Populära valutor";
 "ChooseCurrency.Fiat" = "Fiatvalutor";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "Andra valutor";
 "ChooseCurrency.Empty" = "Stämmer inte med valutor eller tickers som vi stöder för utbyte";
 

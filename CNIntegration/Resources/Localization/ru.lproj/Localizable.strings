@@ -20,6 +20,7 @@
 "Exchange.Send" = "Вы переводите";
 "Exchange.Get" = "Вы получаете";
 "Exchange.MinimumAmount" = "Минимальная сумма составляет %1$@ %2$@";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "Обмен";
 "Exchange.RecipientAddress" = "На адрес получателя";
 "Exchange.Address" = "Добавить адрес %@";
@@ -29,9 +30,9 @@
 "Exchange.ExpectedRate.Description" = "ChangeNOW выберет для вас наиболее выгодный курс в момент обмена.";
 "Exchange.ExpectedRate.Description.Best" = "выгодный курс";
 "Exchange.ExpectedRate.NoExtraCosts" = "Мы ни при каких обстоятельствах не взимаем с вас никакие дополнительные сборы.";
-"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "никаких дополнительных сборов";
+"Exchange.ExpectedRate.NoExtraCosts.Guarantee" = "никакие дополнительные сборы";
 "Exchange.ExpectedRate.Fees" = "Комиссия сети и другие расходы, связанные с обменом, включены в курс.";
-"Exchange.ExpectedRate.Fees.Included" = "Все расходы включены в курс";
+"Exchange.ExpectedRate.Fees.Included" = "включены в курс";
 
 "Exchange.IncorrectRecipientAddress" = "Неверный адрес получателя";
 
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = "в %@";
 "ChooseCurrency.Popular" = "Популярные валюты";
 "ChooseCurrency.Fiat" = "Фиатные валюты";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "Другие валюты";
 "ChooseCurrency.Empty" = "Не найдено в списке поддерживаемых валют и торговых символов";
 
@@ -83,7 +85,7 @@
 "Transaction.Deposit.Money" = "Перевести деньги:";
 "Transaction.Deposit.Address" = "На адрес:";
 "Transaction.Deposit.ViaApps" = "Перевести депозит в %@ с помощью";
-"Transaction.Deposit.ViaApps.OneTap" = "одного нажатия";
+"Transaction.Deposit.ViaApps.OneTap" = "одно нажатие";
 "Transaction.Deposit.ShowQR" = "Показать QR-код";
 "Transaction.Deposit.Share" = "Поделиться адресом";
 

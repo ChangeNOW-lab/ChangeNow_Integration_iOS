@@ -20,6 +20,7 @@
 "Exchange.Send" = "您發送";
 "Exchange.Get" = "你得到";
 "Exchange.MinimumAmount" = "最低金額為 %1$@ %2$@";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "交換";
 "Exchange.RecipientAddress" = "收件者位址";
 "Exchange.Address" = "新增 %@ 位址";
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = "至 %@";
 "ChooseCurrency.Popular" = "熱門貨幣";
 "ChooseCurrency.Fiat" = "菲亞特貨幣";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "其他貨幣";
 "ChooseCurrency.Empty" = "與我們支持兌換的任何貨幣或股票代碼不匹配";
 

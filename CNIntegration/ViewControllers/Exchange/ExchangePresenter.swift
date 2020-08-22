@@ -18,9 +18,23 @@ final class ExchangePresenter: NSObject {
     // MARK: - Public
 
     var isReadyToExchange: Bool {
-        return toAmount != nil &&
-            minimumExchangeAmount != nil &&
-            fromAmount >= minimumExchangeAmount!
+        return toAmount != nil && satisfyMinimum && satisfyMaximum
+    }
+
+    var satisfyMinimum: Bool {
+        return minimumExchangeAmount != nil && fromAmount >= minimumExchangeAmount!
+    }
+
+    var satisfyMaximum: Bool {
+        if isFiatExchange {
+            return GlobalExchange.fiatMaximum >= fromAmount
+        } else {
+            return true
+        }
+    }
+
+    var isFiatExchange: Bool {
+        return GlobalExchange.fiat.contains(fromCurrency.ticker)
     }
 
     // MARK: - Private
@@ -35,13 +49,13 @@ final class ExchangePresenter: NSObject {
     }
     private(set) var fromAmount: Decimal {
         didSet {
-            checkMinimumExchangeAmount()
+            checkExchangeAmount()
         }
     }
     private(set) var toAmount: Decimal?
     private(set) var minimumExchangeAmount: Decimal? {
         didSet {
-            checkMinimumExchangeAmount()
+            checkExchangeAmount()
         }
     }
 
@@ -54,11 +68,7 @@ final class ExchangePresenter: NSObject {
     }
 
     private var pair: String {
-        return "\(fromCurrency.ticker)_\(toCurrency.ticker)"
-    }
-
-    private var reversePair: String {
-        return "\(toCurrency.ticker)_\(fromCurrency.ticker)"
+        return GlobalExchange.pair(fromCurrency: fromCurrency, toCurrency: toCurrency)
     }
 
     private var isNeedReloadCurrencies: Bool
@@ -219,18 +229,26 @@ final class ExchangePresenter: NSObject {
                            extraIdTitle: extraIdTitle ?? nil)
     }
 
-    private func checkMinimumExchangeAmount() {
-        var isHidden = true
+    private func checkExchangeAmount() {
+        var newExchangeWarningType: ExchangeWarningType? = nil
         if let minimumExchangeAmount = minimumExchangeAmount, fromAmount < minimumExchangeAmount {
-            isHidden = false
+            newExchangeWarningType = .minimum(rate: minimumExchangeAmount, rateCurrency: fromCurrency.ticker)
+        } else if isFiatExchange, GlobalExchange.fiatMaximum < fromAmount {
+            newExchangeWarningType = .maximum(rate: GlobalExchange.fiatMaximum, rateCurrency: fromCurrency.ticker)
         }
-        if viewController.isMinimumExchangeWarningHidden != isHidden {
-            viewController.setMinimumExchangeWarning(isHidden: isHidden)
+        if viewController.exchangeWarningType != newExchangeWarningType {
+            viewController.setExchangeWarning(type: newExchangeWarningType)
         }
     }
 
     private func updateMinimalExchangeAmount() {
         minimalExchangeAmountRequest?.cancel()
+
+        guard !isFiatExchange else {
+            minimumExchangeAmount = GlobalExchange.fiatMinimum
+            return
+        }
+
         minimalExchangeAmountRequest = exchangeService.getMinimalExchangeAmount(pair: pair) { [weak self] result in
             self?.minimalExchangeAmountRequest = nil
             switch result {
@@ -243,26 +261,22 @@ final class ExchangePresenter: NSObject {
         }
     }
 
-    private func updateEstimatedExchangeAmount(isReverse: Bool = false) {
+    private func updateEstimatedExchangeAmount() {
         estimatedExchangeAmountRequest?.cancel()
         estimatedExchangeAmountRequest = exchangeService.getEstimatedExchangeAmount(
-            pair: isReverse ? reversePair : pair,
-            sendAmount: isReverse ? toAmount ?? 1 : fromAmount,
+            pair: pair,
+            sendAmount: fromAmount,
             completion: { [weak self] result in
                 guard let self = self else { return }
                 self.estimatedExchangeAmountRequest = nil
                 switch result {
                 case let .success(estimatedExchange):
-                    if isReverse {
-                        self.fromAmount = estimatedExchange.estimatedAmount
-                    } else {
-                        self.toAmount = estimatedExchange.estimatedAmount
-                    }
+                    self.toAmount = estimatedExchange.estimatedAmount
                     self.updateToAmounts()
                     self.exchangeService.set(exchangeData: self.exchangeData)
                 case let .failure(error):
                     switch error.localizedDescription {
-                    case "Pair is inactive":
+                    case "Pair is inactive", "Could not get estimate":
                         self.viewController.showError(R.string.localizable.exchangeUnavailablePair(self.fromCurrency.ticker.uppercased(),
                                                                                                    self.toCurrency.ticker.uppercased()))
                         self.isNeedShowPairError = false
@@ -288,10 +302,11 @@ final class ExchangePresenter: NSObject {
     }
 
     private func checkPair(pairs: CurrencyPairs) {
+        guard !isFiatExchange else { return }
         let pairs = pairs[fromCurrency.ticker]
         if isNeedShowPairError, pairs == nil || !pairs!.contains(toCurrency.ticker) {
             viewController.showMessage(R.string.localizable.exchangeUnavailablePair(fromCurrency.ticker.uppercased(),
-            toCurrency.ticker.uppercased()),
+                                                                                    toCurrency.ticker.uppercased()),
                                        title: R.string.localizable.exchangePairNotAvailable())
         }
         isNeedShowPairError = true

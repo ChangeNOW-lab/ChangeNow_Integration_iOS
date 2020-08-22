@@ -20,6 +20,7 @@
 "Exchange.Send" = "보냄";
 "Exchange.Get" = "받음";
 "Exchange.MinimumAmount" = "최소 금액은 %1$@ %2$@ 입니다";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "교환";
 "Exchange.RecipientAddress" = "받는 사람 주소로";
 "Exchange.Address" = "주소 %@ 추가";
@@ -60,6 +61,7 @@
 "ChooseCurrency.To" = "도착 %@";
 "ChooseCurrency.Popular" = "통용 통화";
 "ChooseCurrency.Fiat" = "지시 통화";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "기타 통화";
 "ChooseCurrency.Empty" = "우리가 교환을 위해 지원하는 모든 통화와 일치하지 않습니다";
 

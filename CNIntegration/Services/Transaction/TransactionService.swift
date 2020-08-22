@@ -8,6 +8,7 @@
 
 import Moya
 
+typealias GetFiatTransactionCompletion = (Result<GuardarianTransactionData, Error>) -> Void
 typealias GetTransactionCompletion = (Result<TransactionData, Error>) -> Void
 typealias GetTransactionStatusCompletion = (Result<TransactionStatusData, Error>) -> Void
 
@@ -16,6 +17,14 @@ protocol TransactionService {
     var transactionStatusData: TransactionStatusData? { get }
 
     func removeTransaction()
+
+    @discardableResult
+    func createFiatTransaction(from: String,
+                               to: String,
+                               address: String,
+                               amount: Decimal,
+                               extraId: String,
+                               completion: GetFiatTransactionCompletion?) -> Cancellable
 
     @discardableResult
     func createTransaction(from: String,
@@ -51,6 +60,38 @@ final class TransactionDefaultService: TransactionService {
     func removeTransaction() {
         transactionStatusData = nil
         try? FileStorage.remove(from: .documents, filename: transactionStatusDataLocalPath)
+    }
+
+    @discardableResult
+    func createFiatTransaction(from: String,
+                               to: String,
+                               address: String,
+                               amount: Decimal,
+                               extraId: String,
+                               completion: GetFiatTransactionCompletion?) -> Cancellable {
+        return NetworkService.request(
+            target: GuardarianAPI.transaction(cryptoCurrency: to,
+                                              fiatCurrency: from,
+                                              fiatAmount: amount,
+                                              payoutAddress: address),
+            auth: .none) { (response) in
+                switch response {
+                case let .success(result):
+                    if let transaction = GuardarianDecoder.getGuardarianTransaction(data: result.data) {
+                        DispatchQueue.main.async {
+                            completion?(Result.success(transaction))
+                        }
+                    }
+                case let .failure(error):
+                    DispatchQueue.main.async {
+                        if case MoyaError.underlying(let error, _) = error {
+                            completion?(Result.failure(error))
+                        } else {
+                            completion?(Result.failure(error))
+                        }
+                    }
+                }
+        }
     }
 
     @discardableResult

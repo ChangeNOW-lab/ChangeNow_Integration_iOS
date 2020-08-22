@@ -19,6 +19,7 @@
 "Exchange.Send" = "Du sender";
 "Exchange.Get" = "Du får";
 "Exchange.MinimumAmount" = "Minimumsbeløb er %1$@ %2$@";
+"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
 "Exchange.Exchange" = "Udveksle";
 "Exchange.RecipientAddress" = "Til modtageradresse";
 "Exchange.Address" = "Tilføj %@ adresse";
@@ -59,6 +60,7 @@
 "ChooseCurrency.To" = "Til %@";
 "ChooseCurrency.Popular" = "Populære valutaer";
 "ChooseCurrency.Fiat" = "Fiat valutaer";
+"ChooseCurrency.Defi" = "DeFi tokens";
 "ChooseCurrency.Other" = "Andre valutaer";
 "ChooseCurrency.Empty" = "Det matcher ikke nogle valutaer eller tickers, som vi støtter til udveksling";
 

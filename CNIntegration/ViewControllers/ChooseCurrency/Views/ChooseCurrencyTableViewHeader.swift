@@ -13,6 +13,7 @@ final class ChooseCurrencyTableViewHeader: UITableViewHeaderFooterView, Reusable
     enum Style {
         case popular
         case fiat
+        case defi
         case other
     }
 
@@ -57,6 +58,9 @@ final class ChooseCurrencyTableViewHeader: UITableViewHeaderFooterView, Reusable
         case .fiat:
             titleLabel.text = R.string.localizable.chooseCurrencyFiat()
             iconView.image = R.image.visaAndMastercard()
+        case .defi:
+            titleLabel.text = R.string.localizable.chooseCurrencyDefi()
+            iconView.image = nil
         case .other:
             titleLabel.text = R.string.localizable.chooseCurrencyOther()
             iconView.image = nil
