@@ -20,5 +20,15 @@ struct ValidatorDecoder {
         }
         return nil
     }
+
+    static func getCachedCurrenciesValidationData(data: Data) -> CurrenciesValidationData? {
+        let decoder = Foundation.JSONDecoder()
+        do {
+            return try decoder.decode(CurrenciesValidationData.self, from: data)
+        } catch {
+            log.error("Failed to decode JSON – \(error)")
+        }
+        return nil
+    }
 }
 

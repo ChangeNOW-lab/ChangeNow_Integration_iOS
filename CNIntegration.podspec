@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CNIntegration"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = 'ChangeNOW client SDK for iOS.'
 
   s.authors           = "ChangeNOW"
@@ -23,6 +23,6 @@ Pod::Spec.new do |s|
 
   s.frameworks   = 'Foundation'
   s.source_files = 'CNIntegration/**/*.{h,m,swift}'
-  s.resources = 'CNIntegration/Resources/**/*.{xcassets,strings}'
+  s.resources = 'CNIntegration/Resources/**/*.{xcassets,strings,json}'
 
 end

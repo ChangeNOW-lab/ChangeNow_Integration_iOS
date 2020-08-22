@@ -9,7 +9,7 @@
 class MainField: DefaultTextField {
 
     private let validColor: UIColor = .primarySelection
-    private let selectedColor: UIColor = .primarySelection
+    private let selectedColor: UIColor = .mainSelection
 
     private var currentValidState: Bool = false {
         didSet {

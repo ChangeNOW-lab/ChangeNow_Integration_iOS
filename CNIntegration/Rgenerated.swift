@@ -88,6 +88,20 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
 
+  /// This `R.file` struct is generated, and contains static references to 1 files.
+  struct file {
+    /// Resource file `BinanceRegexs.json`.
+    static let binanceRegexsJson = Rswift.FileResource(bundle: R.hostingBundle, name: "BinanceRegexs", pathExtension: "json")
+
+    /// `bundle.url(forResource: "BinanceRegexs", withExtension: "json")`
+    static func binanceRegexsJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.binanceRegexsJson
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    fileprivate init() {}
+  }
+
   /// This `R.image` struct is generated, and contains static references to 195 images.
   struct image {
     /// Image `BackIcon`.

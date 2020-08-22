@@ -13,6 +13,7 @@
 		5A1AE2AB24F045A000EA1192 /* GuardarianDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1AE2AA24F045A000EA1192 /* GuardarianDecoder.swift */; };
 		5A1AE2AE24F045C800EA1192 /* GuardarianData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1AE2AD24F045C800EA1192 /* GuardarianData.swift */; };
 		5A1AE2B024F1184D00EA1192 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1AE2AF24F1184D00EA1192 /* WebViewController.swift */; };
+		5A1AE2B324F13AD600EA1192 /* BinanceRegexs.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A1AE2B224F13AD600EA1192 /* BinanceRegexs.json */; };
 		5A9F699824CD72EA008B5762 /* CNIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A9F698E24CD72EA008B5762 /* CNIntegration.framework */; };
 		5A9F699D24CD72EA008B5762 /* CNIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F699C24CD72EA008B5762 /* CNIntegrationTests.swift */; };
 		5A9F699F24CD72EA008B5762 /* CNIntegration.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A9F699124CD72EA008B5762 /* CNIntegration.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -208,6 +209,7 @@
 		5A1AE2AA24F045A000EA1192 /* GuardarianDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardarianDecoder.swift; sourceTree = "<group>"; };
 		5A1AE2AD24F045C800EA1192 /* GuardarianData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuardarianData.swift; sourceTree = "<group>"; };
 		5A1AE2AF24F1184D00EA1192 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5A1AE2B224F13AD600EA1192 /* BinanceRegexs.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BinanceRegexs.json; sourceTree = "<group>"; };
 		5A9F698E24CD72EA008B5762 /* CNIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CNIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9F699124CD72EA008B5762 /* CNIntegration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNIntegration.h; sourceTree = "<group>"; };
 		5A9F699224CD72EA008B5762 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -981,6 +983,7 @@
 		5A9F6A7D24CD746F008B5762 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5A1AE2B224F13AD600EA1192 /* BinanceRegexs.json */,
 				5A9F6A7E24CD746F008B5762 /* Assets.xcassets */,
 				5A9F6A7F24CD746F008B5762 /* Localization */,
 			);
@@ -1139,6 +1142,7 @@
 			files = (
 				5A9F6B3B24CD746F008B5762 /* Localizable.strings in Resources */,
 				5A9F6B3A24CD746F008B5762 /* Assets.xcassets in Resources */,
+				5A1AE2B324F13AD600EA1192 /* BinanceRegexs.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

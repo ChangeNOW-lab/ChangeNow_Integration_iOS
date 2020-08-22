@@ -27,8 +27,8 @@ extension CurrenciesServiceDelegate {
 
 protocol CurrenciesService {
 
-    var topFrom: [String] { get }
-    var topTo: [String] { get }
+    var popularFrom: [String] { get }
+    var popularTo: [String] { get }
 
     var currencies: [Currency] { get }
     var pairs: CurrencyPairs { get }
@@ -49,27 +49,17 @@ protocol CurrenciesService {
 
 extension CurrenciesService {
 
-    func updateAll() {
-        updateAll(force: false)
-    }
-    func updateCurrencies() {
-
-    }
-    func updatePairs() {
-
-    }
-    func updateAmounts() {
-
-    }
-    func updateAnonyms() {
-
-    }
+    func updateAll() { updateAll(force: false) }
+    func updateCurrencies() { updateCurrencies(force: false) }
+    func updatePairs() { updatePairs(force: false) }
+    func updateAmounts() { updateAmounts(force: false) }
+    func updateAnonyms() { updateAnonyms(force: false) }
 }
 
 final class CurrenciesDefaultService: CurrenciesService {
 
-    let topFrom = ["btc", "eth", "xmr", "xrp", "ltc", "trx", "xlm", "usdterc20"]
-    let topTo = ["btc", "xmr", "eth", "vet", "xtz", "xrp", "zec", "trx", "ada"]
+    let popularFrom = ["btc", "eth", "xmr", "xrp", "ltc", "trx", "xlm", "usdterc20"]
+    let popularTo = ["btc", "xmr", "eth", "vet", "xtz", "xrp", "zec", "trx", "ada"]
 
     private(set) lazy var currencies: [Currency] = {
         do {

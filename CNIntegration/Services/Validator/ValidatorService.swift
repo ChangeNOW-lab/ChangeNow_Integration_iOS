@@ -52,11 +52,17 @@ protocol ValidatorService {
 final class ValidatorDefaultService: ValidatorService {
 
     private(set) lazy var currenciesValidationData: CurrenciesValidationData = {
-        do {
-            return try FileStorage.content(from: .documents, filename: validationDataLocalPath)
-        } catch {
-            log.debug("Failed to load currencies validation data from storage. Error: \(error)")
+        if let url = Bundle(for: CNModule.self).url(forResource: "BinanceRegexs", withExtension: "json"),
+            let data = try? Data(contentsOf: url),
+            let result = ValidatorDecoder.getCachedCurrenciesValidationData(data: data) {
+            return result
         }
+//        TODO: Add a new provider of regex
+//        do {
+//            return try FileStorage.content(from: .documents, filename: validationDataLocalPath)
+//        } catch {
+//            log.debug("Failed to load currencies validation data from storage. Error: \(error)")
+//        }
         return [:]
     }()
 
@@ -93,7 +99,7 @@ final class ValidatorDefaultService: ValidatorService {
 
     func isValid(ticker: String, address: String) throws -> Bool {
         var addressRegEx: String = ""
-        let currency = Currency.currencyComponents(currency: ticker.lowercased()).ticker
+        let currency = Currency.currencyComponents(currency: ticker.uppercased()).ticker
         if let currencyValidationData = currenciesValidationData[currency] {
             addressRegEx = currencyValidationData.regEx
         }
@@ -106,7 +112,7 @@ final class ValidatorDefaultService: ValidatorService {
 
     func isValid(ticker: String, extraId: String) throws -> Bool {
         var regExExtraId: String = ""
-        let currency = Currency.currencyComponents(currency: ticker.lowercased()).ticker
+        let currency = Currency.currencyComponents(currency: ticker.uppercased()).ticker
         if let currencyValidationData = currenciesValidationData[currency] {
             regExExtraId = currencyValidationData.regExTag
         }
@@ -120,31 +126,32 @@ final class ValidatorDefaultService: ValidatorService {
     // MARK: - Update
 
     func updateCurrenciesValidationData(force: Bool = false) {
-        guard !isUpdatingValidationData else { return }
-        if !force {
-            let date: Date? = UserDefaultsStorage.value(forKey: .currenciesValidationData)
-            guard date == nil || Date().hours(from: date!) >= 24 else { return }
-        }
-        isUpdatingValidationData = true
-        _ = NetworkService.request(target: ValidatorAPI.getCurrenciesValidationData, auth: .none) { [weak self] (response) in
-            switch response {
-            case let .success(result):
-                if let currenciesValidationData = ValidatorDecoder.getCurrenciesValidationData(data: result.data) {
-                    self?.updateCurrenciesValidationData(currenciesValidationData: currenciesValidationData)
-                    UserDefaultsStorage.set(Date(), forKey: .currenciesValidationData)
-                    DispatchQueue.main.async { [weak self] in
-                        guard let self = self else { return }
-                        self.currenciesValidationData = currenciesValidationData
-                        self.listenersContainer.forEach { listener in
-                            listener.currenciesValidationDataDidChanged(currenciesValidationData: currenciesValidationData)
-                        }
-                    }
-                }
-            case let .failure(error):
-                log.debug(error.localizedDescription)
-            }
-            self?.isUpdatingValidationData = false
-        }
+//        TODO: Add a new provider of regex
+//        guard !isUpdatingValidationData else { return }
+//        if !force {
+//            let date: Date? = UserDefaultsStorage.value(forKey: .currenciesValidationData)
+//            guard date == nil || Date().hours(from: date!) >= 24 else { return }
+//        }
+//        isUpdatingValidationData = true
+//        _ = NetworkService.request(target: ValidatorAPI.getCurrenciesValidationData, auth: .none) { [weak self] (response) in
+//            switch response {
+//            case let .success(result):
+//                if let currenciesValidationData = ValidatorDecoder.getCurrenciesValidationData(data: result.data) {
+//                    self?.updateCurrenciesValidationData(currenciesValidationData: currenciesValidationData)
+//                    UserDefaultsStorage.set(Date(), forKey: .currenciesValidationData)
+//                    DispatchQueue.main.async { [weak self] in
+//                        guard let self = self else { return }
+//                        self.currenciesValidationData = currenciesValidationData
+//                        self.listenersContainer.forEach { listener in
+//                            listener.currenciesValidationDataDidChanged(currenciesValidationData: currenciesValidationData)
+//                        }
+//                    }
+//                }
+//            case let .failure(error):
+//                log.debug(error.localizedDescription)
+//            }
+//            self?.isUpdatingValidationData = false
+//        }
     }
 
     // MARK: - Listeners
@@ -167,8 +174,8 @@ final class ValidatorDefaultService: ValidatorService {
     private func updateCurrenciesValidationData(currenciesValidationData: CurrenciesValidationData) {
         do {
             try FileStorage.store(objects: currenciesValidationData,
-                                                 to: .documents,
-                                                 as: validationDataLocalPath)
+                                  to: .documents,
+                                  as: validationDataLocalPath)
         } catch {
             log.error("Failed to save currencies to storage. Error: \(error)")
         }

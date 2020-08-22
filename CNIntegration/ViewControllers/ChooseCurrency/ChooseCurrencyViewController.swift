@@ -118,7 +118,7 @@ final class ChooseCurrencyViewController: UIViewController {
         }
     }()
     private lazy var popularFromCurrencies: [Currency] = fromCurrencies.filter {
-        currenciesService.topFrom.contains($0.ticker)
+        currenciesService.popularFrom.contains($0.ticker)
     }
     private var defiFromCurrencies: [Currency] = []
     private var otherFromCurrencies: [Currency] = []
@@ -209,7 +209,7 @@ final class ChooseCurrencyViewController: UIViewController {
             let pairs = currenciesService.pairs[fromCurrencyTicker] ?? []
             toCurrencies = currencies.filter { pairs.contains($0.ticker) }
         }
-        popularToCurrencies = toCurrencies.filter { currenciesService.topTo.contains($0.ticker) }
+        popularToCurrencies = toCurrencies.filter { currenciesService.popularTo.contains($0.ticker) }
         defiToCurrencies = toCurrencies.filter { GlobalExchange.defi.contains($0.ticker) }
         otherToCurrencies = toCurrencies.filter {
             !popularToCurrencies.contains($0) && !defiToCurrencies.contains($0)
