@@ -418,13 +418,12 @@ extension ChooseCurrencyViewController: UITableViewDelegate {
         guard let ticker = currenciesFor(section: indexPath.section)[safe: indexPath.row]?.ticker else { return }
         switch selectedState {
         case .from:
-            if toCurrencyTicker == ticker {
+            if !isFiatExchange, toCurrencyTicker == ticker {
                 toCurrencyTicker = fromCurrencyTicker
             }
             fromCurrencyTicker = ticker
 
-            if isFiatExchange,
-                let pairs = currenciesService.pairs[ticker],
+            if let pairs = currenciesService.pairs[ticker],
                 pairs.contains(toCurrencyTicker) == false {
                 toCurrencyTicker = pairs.first ?? Currency.defaultBTC.ticker
             }
