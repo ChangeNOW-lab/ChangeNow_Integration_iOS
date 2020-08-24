@@ -46,13 +46,14 @@ extension Bundle {
             .map(Locale.init)
             .prefix(1)
             .flatMap { locale -> [String] in
-                if hostingBundle.localizations.contains(locale.identifier) {
-                    if let language = locale.languageCode, hostingBundle.localizations.contains(language) {
+                let localizations = ["en", "ru"] //hostingBundle.localizations
+                if localizations.contains(locale.identifier) {
+                    if let language = locale.languageCode, localizations.contains(language) {
                         return [locale.identifier, language]
                     } else {
                         return [locale.identifier]
                     }
-                } else if let language = locale.languageCode, hostingBundle.localizations.contains(language) {
+                } else if let language = locale.languageCode, localizations.contains(language) {
                     return [language]
                 } else {
                     return []

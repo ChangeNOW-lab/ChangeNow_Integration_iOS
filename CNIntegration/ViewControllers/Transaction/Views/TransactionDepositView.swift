@@ -251,6 +251,7 @@ final class TransactionDepositView: UIView {
         titleLabel.snp.makeConstraints {
             $0.top.equalToSuperview().offset(3)
             $0.leading.equalToSuperview().offset(5)
+            $0.height.equalTo(20)
             $0.trailing.equalToSuperview()
         }
         containerView.snp.makeConstraints {

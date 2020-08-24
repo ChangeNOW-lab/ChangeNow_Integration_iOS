@@ -181,7 +181,7 @@ final class TransactionIdView: TapActionView {
     private lazy var titleLabel: UILabel = {
         let view = UILabel()
         view.numberOfLines = 1
-        view.textColor = UIColor.background.withAlphaComponent(0.8)
+        view.textColor = UIColor.background.withAlphaComponent(0.6)
         view.font = .normalText
         view.text = R.string.localizable.transactionId()
         return view

@@ -18,9 +18,9 @@
 // MARK: - Exchange
 
 "Exchange.Send" = "Вы переводите";
-"Exchange.Get" = "Вы получаете";
+"Exchange.Get" = "Вы получите";
 "Exchange.MinimumAmount" = "Минимальная сумма составляет %1$@ %2$@";
-"Exchange.MaximumAmount" = "Maximum amount is %1$@ %2$@";
+"Exchange.MaximumAmount" = "Максимальная сумма составляет %1$@ %2$@";
 "Exchange.Exchange" = "Обмен";
 "Exchange.RecipientAddress" = "На адрес получателя";
 "Exchange.Address" = "Добавить адрес %@";
@@ -38,9 +38,9 @@
 
 "Exchange.PairNotAvailable" = "Пара недоступна";
 "Exchange.UnavailablePair" = "Пара %1$@ / %2$@ недоступна для обмена в данный момент. Повторите попытку позже.";
-"Exchange.UnavailableSwitch.Text" = "Не удалось обменять %1$@ в %2$@, поскольку пара недоступна для обмена.";
+"Exchange.UnavailableSwitch.Text" = "Не удалось поменять на %1$@ в %2$@, поскольку пара недоступна для обмена.";
 
-"Exchange.NoAddress.Title" = "Отсутствует адрес получателя";
+"Exchange.NoAddress.Title" = "Не введен адрес получателя";
 "Exchange.NoAddress.Text" = "Добавьте адрес кошелька, на который требуется отправить денежные средства.";
 
 "Exchange.NoAmount.Text" = "Укажите сумму для обмена.";
@@ -56,14 +56,14 @@
 
 // MARK: - ChooseCurrency
 
-"ChooseCurrency.Search.Placeholder" = "Введите валюту или торговый символ";
+"ChooseCurrency.Search.Placeholder" = "Введите валюту или тикер";
 "ChooseCurrency.From" = "из %@";
 "ChooseCurrency.To" = "в %@";
 "ChooseCurrency.Popular" = "Популярные валюты";
 "ChooseCurrency.Fiat" = "Фиатные валюты";
-"ChooseCurrency.Defi" = "DeFi tokens";
+"ChooseCurrency.Defi" = "DeFi токены";
 "ChooseCurrency.Other" = "Другие валюты";
-"ChooseCurrency.Empty" = "Не найдено в списке поддерживаемых валют и торговых символов";
+"ChooseCurrency.Empty" = "Не найдено в списке поддерживаемых валют и наименований тиккеров";
 
 
 // MARK: - CurrencyValidationRule
@@ -84,7 +84,7 @@
 "Transaction.Deposit.Title.ChangeNOW" = "ChangeNOW:";
 "Transaction.Deposit.Money" = "Перевести деньги:";
 "Transaction.Deposit.Address" = "На адрес:";
-"Transaction.Deposit.ViaApps" = "Перевести депозит в %@ с помощью";
+"Transaction.Deposit.ViaApps" = "Прислать депозит в %@ с помощью:";
 "Transaction.Deposit.ViaApps.OneTap" = "одно нажатие";
 "Transaction.Deposit.ShowQR" = "Показать QR-код";
 "Transaction.Deposit.Share" = "Поделиться адресом";
@@ -93,21 +93,21 @@
 
 "Transaction.YouSend" = "Вы переводите:";
 "Transaction.YouSent" = "Вы перевели:";
-"Transaction.YouGet" = "Вы получаете:";
-"Transaction.Received" = "Получено:";
+"Transaction.YouGet" = "Вы получите:";
+"Transaction.Received" = "Вы получили:";
 "Transaction.Refunded" = "Возвращено:";
-"Transaction.RecipientAddress" = "На адрес %@ получателя:";
+"Transaction.RecipientAddress" = "На %@ адрес получателя:";
 
 "Transaction.Status.Deposit" = "Ожидание депозита";
 "Transaction.Status.Deposit.Description" = "Чем быстрее вы переведете депозит, тем выше вероятность получения прогнозируемой суммы.";
 
 "Transaction.Status.Exchanging" = "Идет обмен";
-"Transaction.Status.Exchanging.Description" = "Мы ищем наиболее выгодный способ обмена этой суммы и перевода денег вам.";
+"Transaction.Status.Exchanging.Description" = "Мы ищем наиболее выгодный для вас способ обмена этой суммы и перевода денег.";
 
-"Transaction.Status.Finished" = "Завершено";
+"Transaction.Status.Finished" = "Завершен";
 
-"Transaction.Status.Refunded" = "Возвращено";
-"Transaction.Status.Refunded.Description" = "Мы вернули вам ваши средства в криптовалюте. Давайте начнем новый обмен и завершим его.";
+"Transaction.Status.Refunded" = "Возврат";
+"Transaction.Status.Refunded.Description" = "Мы вернули вам ваши средства в криптовалюте. Давайте попробуем ещё раз и начнем новый обмен.";
 
 "Transaction.Status.Failed" = "Не удалось обменять";
 
