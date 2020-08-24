@@ -1,153 +1,94 @@
 Instruction for integration of the ChangeNOW exchange module to your app.
 
-### Requirements
-
-Connection of ChangeNOW module using[  CocoaPods](https://cocoapods.org) manager:
+##Requirements
+Connection of ChangeNOW module using CocoaPods manager:
 
 pod 'CNIntegration', :git => 'https://github.com/ChangeNOW-lab/ChangeNow_Integration_iOS.git', :tag => '0.1.0'
 
-### Example
-
+##Example
 Use of ChangeNOW module:
-
 CNIntegration(apiKey: "your api key for ChangeNOW",
+              theme: Theme? = nil,
+              navigationType: NavigationType = .main,
+              exchangeType: ExchangeType = .any,
+              languageCode: String? = nil).start()
 
-           theme: Theme? = nil,
-
-           navigationType: NavigationType = .main,
-
-           exchangeType: ExchangeType = .any,
-
-           languageCode: String? = nil).start()
-
-### Integration steps:
-
-1.  To perform integration, you need to get the API key by contacting ChangeNOW or just make your own here in a few steps: <https://changenow.io/affiliate> 
-
-2.  You can create your own interface theme to be displayed based on the Theme protocol, or pass "nil" for the default theme.
-
-3.  NavigationType -- you can use one of 3 navigation types:
-
-1.  main -- when the module is the basis of your application and is built on the UIWindow
-
-2.  sequence -- when the module needs to be opened in the UINavigationController stack via push or made "present" with UIViewController. In this case the "start" function of the CNIntegration instance will determine the current type of UINavigationController or UIViewController and will perform "push" or "present", respectively.
-
-3.  embed -- when the module needs to be added to the root of UITabBarController or UINavigationController. In this case the "start" function of the CNIntegration instance will return the UIViewController instance.
-
-5.  ExchangeType -- you can use the module in two modes:
-
-1.  any -- when the module supports all currency exchange options
-
-2.  specific (currency: String, address: String?) -- when you need to specify a particular currency in which you want to exchange with the ability to specify the default wallet address
-
-7.  You can set the language yourself using the following language codes:
-
+##Integration steps:
+To perform integration, you need to get the API key by contacting ChangeNOW or just make your own here in a few steps: https://changenow.io/affiliate 
+You can create your own interface theme to be displayed based on the Theme protocol, or pass "nil" for the default theme.
+NavigationType – you can use one of 3 navigation types:
+main – when the module is the basis of your application and is built on the UIWindow
+sequence – when the module needs to be opened in the UINavigationController stack via push or made "present" with UIViewController. In this case the "start" function of the CNIntegration instance will determine the current type of UINavigationController or UIViewController and will perform "push" or "present", respectively.
+embed – when the module needs to be added to the root of UITabBarController or UINavigationController. In this case the "start" function of the CNIntegration instance will return the UIViewController instance.
+ExchangeType – you can use the module in two modes:
+any – when the module supports all currency exchange options
+specific (currency: String, address: String?) – when you need to specify a particular currency in which you want to exchange with the ability to specify the default wallet address
+You can set the language yourself using the following language codes:
 ["ar", "da", "de", "en", "es", "fr", "hi", "id", "it", "ja", "ko", "ms", "nl", "pt", "ru", "sv", "zh-Hans", "zh-Hant"] or pass the "nil" parameter to detect the language automatically.
 
 If you do not want to conventionalize the module, then the whole integration consists of adding a module connection string via CocoaPods and later a command from the instructions.
 
-### Theme Configuration
-
+##Theme Configuration
 Conventionalizing occurs with the following Theme parameters:
-
 public protocol Theme {
 
- var mainButtonCornerRadius: CGFloat? { get }
 
- var cellSelectionCornerRadius: CGFloat { get }
+    var mainButtonCornerRadius: CGFloat? { get }
+    var cellSelectionCornerRadius: CGFloat { get }
 
- var colors: ThemeColors { get }
-
- var fonts: ThemeFonts { get }
-
+    var colors: ThemeColors { get }
+    var fonts: ThemeFonts { get }
 }
 
 public protocol ThemeColors {
 
- var lightBackground: UIColor { get }
-
- var slightlyGray: UIColor { get }
-
- var darkBackground: UIColor { get }
-
- var background: UIColor { get }
-
- var main: UIColor { get }
-
- var mainDark: UIColor { get }
-
- var mainSelection: UIColor { get }
-
- var certainMain: UIColor { get }
-
- var placeholder: UIColor { get }
-
- var sertainGrayLight: UIColor { get }
-
- var certainOrange: UIColor { get }
-
- var certainRed: UIColor { get }
-
- var transactionBackground: UIColor { get }
-
+    var lightBackground: UIColor { get }
+    var slightlyGray: UIColor { get }
+    var darkBackground: UIColor { get }
+    var background: UIColor { get }
+    var main: UIColor { get }
+    var mainDark: UIColor { get }
+    var mainSelection: UIColor { get }
+    var certainMain: UIColor { get }
+    var placeholder: UIColor { get }
+    var sertainGrayLight: UIColor { get }
+    var certainOrange: UIColor { get }
+    var certainRed: UIColor { get }
+    var transactionBackground: UIColor { get }
 }
 
 public protocol ThemeFonts {
 
- // MARK: Description
+    // MARK: Description
+    var minorDescription: UIFont { get }
+    var normalDescription: UIFont { get }
+    var regularDescription: UIFont { get }
+    var mediumDescription: UIFont { get }
 
- var minorDescription: UIFont { get }
+    // MARK: Text
+    var minorText: UIFont { get }
+    var smallText: UIFont { get }
+    var normalText: UIFont { get }
+    var regularText: UIFont { get }
+    var mediumText: UIFont { get }
 
- var normalDescription: UIFont { get }
+    // MARK: Title
+    var minorTitle: UIFont { get }
+    var smallTitle: UIFont { get }
+    var normalTitle: UIFont { get }
+    var regularTitle: UIFont { get }
+    var medianTitle: UIFont { get }
+    var mediumTitle: UIFont { get }
+    var largeTitle: UIFont { get }
 
- var regularDescription: UIFont { get }
+    // MARK: Headline
+    var normalHeadline: UIFont { get }
+    var mediumHeadline: UIFont { get }
+    var bigHeadline: UIFont { get }
+    var greatHeadline: UIFont { get }
 
- var mediumDescription: UIFont { get }
-
- // MARK: Text
-
- var minorText: UIFont { get }
-
- var smallText: UIFont { get }
-
- var normalText: UIFont { get }
-
- var regularText: UIFont { get }
-
- var mediumText: UIFont { get }
-
- // MARK: Title
-
- var minorTitle: UIFont { get }
-
- var smallTitle: UIFont { get }
-
- var normalTitle: UIFont { get }
-
- var regularTitle: UIFont { get }
-
- var medianTitle: UIFont { get }
-
- var mediumTitle: UIFont { get }
-
- var largeTitle: UIFont { get }
-
- // MARK: Headline
-
- var normalHeadline: UIFont { get }
-
- var mediumHeadline: UIFont { get }
-
- var bigHeadline: UIFont { get }
-
- var greatHeadline: UIFont { get }
-
- // MARK: Header
-
- var littleHeader: UIFont { get }
-
- var normalHeader: UIFont { get }
-
- var regularHeader: UIFont { get }
-
+    // MARK: Header
+    var littleHeader: UIFont { get }
+    var normalHeader: UIFont { get }
+    var regularHeader: UIFont { get }
 }
