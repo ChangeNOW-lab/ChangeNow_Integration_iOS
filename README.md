@@ -1,6 +1,6 @@
 # Integration Guide
 
-Here's how to integrate ChangeNOW exchange module natively and in just a few steps in your iOS.
+Here's how to integrate **ChangeNOW exchange module** natively and in just a few steps in your iOS app.
 
 ### Requirements
 
