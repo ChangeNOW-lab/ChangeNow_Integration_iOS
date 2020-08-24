@@ -23,18 +23,18 @@ CNModule(apiKey: "your api key for ChangeNOW",
 
 1.  To perform integration, you need to get the API key by contacting ChangeNOW or just make your own here in a few steps: <https://changenow.io/affiliate> 
 
-1.  You can create your own interface theme to be displayed based on the **Theme protocol**, or pass `nil` for the default theme.
+2.  You can create your own interface theme to be displayed based on the **Theme protocol**, or pass `nil` for the default theme.
 
-1.  **NavigationType** - you can use one of 3 navigation types:
+3.  **NavigationType** - you can use one of 3 navigation types:
  *  **main** - when the module is the basis of your application and is built on the UIWindow
  *  **sequence** - when the module needs to be opened in the UINavigationController stack via `push` or made `present` with UIViewController. In this case the `start` function of the CNModule instance will return the UIViewController instance.
  *  **embed** - when the module needs to be added to the root of UITabBarController or UINavigationController. In this case the `start` function of the CNModule instance will return the UIViewController instance.
 
-1.  **ExchangeType** - you can use the module in two modes:
+4.  **ExchangeType** - you can use the module in two modes:
  * **any** - when the module supports all currency exchange options
  * **specific** (currency: `String`, address: `String?`) - when you need to specify a particular currency in which you want to exchange with the ability to specify the default wallet address
 
-7.  You can set the language yourself using the following **language codes**:
+5.  You can set the language yourself using the following **language codes**:
 
 `["ar", "da", "de", "en", "es", "fr", "hi", "id", "it", "ja", "ko", "ms", "nl", "pt", "ru", "sv", "zh-Hans", "zh-Hant"]` or pass the `nil` parameter to detect the language automatically.
 
