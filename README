@@ -1,11 +1,11 @@
 Instruction for integration of the ChangeNOW exchange module to your app.
 
-##Requirements
+## Requirements
 Connection of ChangeNOW module using CocoaPods manager:
 
 pod 'CNIntegration', :git => 'https://github.com/ChangeNOW-lab/ChangeNow_Integration_iOS.git', :tag => '0.1.0'
 
-##Example
+## Example
 Use of ChangeNOW module:
 CNIntegration(apiKey: "your api key for ChangeNOW",
               theme: Theme? = nil,
@@ -13,7 +13,7 @@ CNIntegration(apiKey: "your api key for ChangeNOW",
               exchangeType: ExchangeType = .any,
               languageCode: String? = nil).start()
 
-##Integration steps:
+## Integration steps:
 To perform integration, you need to get the API key by contacting ChangeNOW or just make your own here in a few steps: https://changenow.io/affiliate 
 You can create your own interface theme to be displayed based on the Theme protocol, or pass "nil" for the default theme.
 NavigationType – you can use one of 3 navigation types:
@@ -28,7 +28,7 @@ You can set the language yourself using the following language codes:
 
 If you do not want to conventionalize the module, then the whole integration consists of adding a module connection string via CocoaPods and later a command from the instructions.
 
-##Theme Configuration
+## Theme Configuration
 Conventionalizing occurs with the following Theme parameters:
 public protocol Theme {
 
