@@ -557,7 +557,11 @@ final class ExchangeViewController: UIViewController {
             showMessage(R.string.localizable.exchangeNoAmountText())
             return
         case (true, false):
-            showMessage(R.string.localizable.exchangeNoAddressText(), title: R.string.localizable.exchangeNoAddressTitle())
+            if addressField.text?.isEmpty == true {
+                showMessage(R.string.localizable.exchangeNoAddressText(), title: R.string.localizable.exchangeNoAddressTitle())
+            } else {
+                showMessage(R.string.localizable.exchangeIncorrectRecipientAddress())
+            }
             return
         default:
             showMessage(R.string.localizable.exchangeNoDataText(), title: R.string.localizable.exchangeNoDataTitle())
