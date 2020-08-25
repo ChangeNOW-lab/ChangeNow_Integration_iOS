@@ -43,6 +43,17 @@ final class TransactionDefaultService: TransactionService {
 
     private(set) lazy var transactionStatusData: TransactionStatusData? = {
         do {
+            // Only for migration
+            if let oldTransactionStatusData: TransactionStatusData = try? FileStorage.content(
+                from: .documents,
+                filename: oldTransactionStatusDataLocalPath) {
+                try? FileStorage.remove(from: .documents,
+                                        filename: oldTransactionStatusDataLocalPath)
+                _ = try? FileStorage.store(objects: oldTransactionStatusData,
+                                           to: .documents,
+                                           as: transactionStatusDataLocalPath)
+                return oldTransactionStatusData
+            }
             return try FileStorage.content(
                 from: .documents,
                 filename: transactionStatusDataLocalPath
@@ -53,6 +64,7 @@ final class TransactionDefaultService: TransactionService {
         return nil
     }()
 
+    private let oldTransactionStatusDataLocalPath = Filename(name: "TransactionStatusData", fileExtension: .plist)
     private let transactionStatusDataLocalPath = Filename(name: "CNTransactionStatusData", fileExtension: .plist)
 
     // MARK: - Public
@@ -154,8 +166,8 @@ final class TransactionDefaultService: TransactionService {
     private func updateTransactionStatusData(transactionStatusData: TransactionStatusData) {
         do {
             try FileStorage.store(objects: transactionStatusData,
-                                                 to: .documents,
-                                                 as: transactionStatusDataLocalPath)
+                                  to: .documents,
+                                  as: transactionStatusDataLocalPath)
         } catch {
             log.error("Failed to save exchange data to storage. Error: \(error)")
         }
