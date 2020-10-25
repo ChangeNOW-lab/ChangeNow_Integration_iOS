@@ -185,6 +185,7 @@
 		5A9F6B9124CE2E9F008B5762 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6B9024CE2E9F008B5762 /* UIApplication+Extensions.swift */; };
 		5A9F6BA824CF3651008B5762 /* DefaultCoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6BA724CF3651008B5762 /* DefaultCoordinatorService.swift */; };
 		5A9F6BAA24CF572A008B5762 /* EmbedCoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6BA924CF572A008B5762 /* EmbedCoordinatorService.swift */; };
+		5AC43FE8254596660063CF75 /* IntegrationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC43FE7254596660063CF75 /* IntegrationType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -396,6 +397,7 @@
 		5A9F6B9024CE2E9F008B5762 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		5A9F6BA724CF3651008B5762 /* DefaultCoordinatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCoordinatorService.swift; sourceTree = "<group>"; };
 		5A9F6BA924CF572A008B5762 /* EmbedCoordinatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedCoordinatorService.swift; sourceTree = "<group>"; };
+		5AC43FE7254596660063CF75 /* IntegrationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationType.swift; sourceTree = "<group>"; };
 		74D711B2641B5497DAA902DB /* Pods-CNIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.release.xcconfig"; path = "Target Support Files/Pods-CNIntegration/Pods-CNIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		8F08E8BBFBF9414B417F1112 /* Pods_CNIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD36C9FE54FE34717163477 /* Pods-CNIntegration.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.adhoc.xcconfig"; path = "Target Support Files/Pods-CNIntegration/Pods-CNIntegration.adhoc.xcconfig"; sourceTree = "<group>"; };
@@ -451,6 +453,7 @@
 				5A9F6B7124CD76BB008B5762 /* CNModule.swift */,
 				5A9F6B7D24CD81C3008B5762 /* Theme.swift */,
 				5A9F6B8324CDAFB9008B5762 /* DefaultTheme.swift */,
+				5AC43FE7254596660063CF75 /* IntegrationType.swift */,
 				5A9F6B7F24CDAE86008B5762 /* ExchangeType.swift */,
 				5A9F6B8124CDAE99008B5762 /* NavigationType.swift */,
 				5A9F6B8724CDB030008B5762 /* Coordinator */,
@@ -1337,6 +1340,7 @@
 				5A9F6B2624CD746F008B5762 /* TransactionDecoder.swift in Sources */,
 				5A9F6B1324CD746F008B5762 /* ExchangeViewController.swift in Sources */,
 				5A9F6AD824CD746F008B5762 /* Validator.swift in Sources */,
+				5AC43FE8254596660063CF75 /* IntegrationType.swift in Sources */,
 				5A9F6B1F24CD746F008B5762 /* ChooseCurrencyTableViewHeader.swift in Sources */,
 				5A9F6B1824CD746F008B5762 /* ExpectedRateViewController.swift in Sources */,
 				5A9F6AF724CD746F008B5762 /* KeychainStorage.swift in Sources */,

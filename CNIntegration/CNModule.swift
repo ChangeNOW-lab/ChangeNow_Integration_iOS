@@ -18,10 +18,12 @@ public class CNModule: ModuleManager {
 
     public init(apiKey: String,
                 theme: Theme? = nil,
+                integrations: [IntegrationType] = [],
                 navigationType: NavigationType = .main,
                 exchangeType: ExchangeType = .any,
                 languageCode: String? = nil) {
         ChangeNOW.apiKey = apiKey
+        IntegrationsManager.current = integrations
         if let theme = theme {
             ThemeManager.current = theme
         }

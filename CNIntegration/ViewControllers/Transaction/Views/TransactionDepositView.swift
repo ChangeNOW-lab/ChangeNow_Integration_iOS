@@ -241,10 +241,12 @@ final class TransactionDepositView: UIView {
         containerView.addSubview(extraIdLabel)
         containerView.addSubview(showQRButton)
         containerView.addSubview(shareButton)
-        containerView.addSubview(appsTitleLabel)
-        containerView.addSubview(trustWalletButton)
 
-        trustWalletButton.addSubview(trustWalletIcon)
+        if IntegrationsManager.current.contains(.trustWallet) {
+            containerView.addSubview(appsTitleLabel)
+            containerView.addSubview(trustWalletButton)
+            trustWalletButton.addSubview(trustWalletIcon)
+        }
     }
 
     private func setConstraints() {
@@ -300,30 +302,35 @@ final class TransactionDepositView: UIView {
             $0.trailing.equalToSuperview().offset(-Consts.side)
             $0.height.equalTo(showQRButton.snp.height)
             $0.width.equalTo(showQRButton.snp.width)
+            if !IntegrationsManager.current.contains(.trustWallet) {
+                $0.bottom.equalToSuperview().offset(-Consts.side)
+            }
         }
 
-        let appsTopOffset: CGFloat
-        switch Device.model {
-        case .iPhone5, .iPhone6:
-            appsTopOffset = Consts.side
-        default:
-            appsTopOffset = 24
-        }
-        appsTitleLabel.snp.makeConstraints {
-            $0.top.equalTo(showQRButton.snp.bottom).offset(appsTopOffset)
-            $0.leading.equalToSuperview().offset(Consts.side)
-            $0.trailing.equalToSuperview().offset(-Consts.side)
-        }
-        trustWalletButton.snp.makeConstraints {
-            $0.top.equalTo(appsTitleLabel.snp.bottom).offset(7)
-            $0.leading.equalToSuperview().offset(Consts.side)
-            $0.trailing.equalToSuperview().offset(-Consts.side)
-            $0.height.equalTo(44)
-            $0.bottom.equalToSuperview().offset(-Consts.side)
-        }
-        trustWalletIcon.snp.makeConstraints {
-            $0.centerY.equalToSuperview()
-            $0.trailing.equalToSuperview().offset(-12)
+        if IntegrationsManager.current.contains(.trustWallet) {
+            let appsTopOffset: CGFloat
+            switch Device.model {
+            case .iPhone5, .iPhone6:
+                appsTopOffset = Consts.side
+            default:
+                appsTopOffset = 24
+            }
+            appsTitleLabel.snp.makeConstraints {
+                $0.top.equalTo(showQRButton.snp.bottom).offset(appsTopOffset)
+                $0.leading.equalToSuperview().offset(Consts.side)
+                $0.trailing.equalToSuperview().offset(-Consts.side)
+            }
+            trustWalletButton.snp.makeConstraints {
+                $0.top.equalTo(appsTitleLabel.snp.bottom).offset(7)
+                $0.leading.equalToSuperview().offset(Consts.side)
+                $0.trailing.equalToSuperview().offset(-Consts.side)
+                $0.height.equalTo(44)
+                $0.bottom.equalToSuperview().offset(-Consts.side)
+            }
+            trustWalletIcon.snp.makeConstraints {
+                $0.centerY.equalToSuperview()
+                $0.trailing.equalToSuperview().offset(-12)
+            }
         }
     }
 
