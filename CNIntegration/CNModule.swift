@@ -117,6 +117,7 @@ public class CNModule: ModuleManager {
         resolver.register { ExchangeDefaultService() as ExchangeService }.scope(scope)
         resolver.register { TransactionDefaultService() as TransactionService }.scope(scope)
         resolver.register { ValidatorDefaultService() as ValidatorService }.scope(scope)
+        resolver.register { BIPDecoderDefaultService() as BIPDecoderService }.scope(scope)
         resolver.register { ReachabilityService() }.scope(scope)
     }
 }

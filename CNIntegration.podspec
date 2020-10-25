@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "CNIntegration"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = 'ChangeNOW client SDK for iOS.'
 
   s.authors           = "ChangeNOW"

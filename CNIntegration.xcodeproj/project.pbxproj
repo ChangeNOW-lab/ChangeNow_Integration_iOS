@@ -186,6 +186,7 @@
 		5A9F6BA824CF3651008B5762 /* DefaultCoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6BA724CF3651008B5762 /* DefaultCoordinatorService.swift */; };
 		5A9F6BAA24CF572A008B5762 /* EmbedCoordinatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9F6BA924CF572A008B5762 /* EmbedCoordinatorService.swift */; };
 		5AC43FE8254596660063CF75 /* IntegrationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC43FE7254596660063CF75 /* IntegrationType.swift */; };
+		5AF9B8C52545DD3200E03EA8 /* BIPDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF9B8C42545DD3200E03EA8 /* BIPDecoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -398,6 +399,7 @@
 		5A9F6BA724CF3651008B5762 /* DefaultCoordinatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCoordinatorService.swift; sourceTree = "<group>"; };
 		5A9F6BA924CF572A008B5762 /* EmbedCoordinatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedCoordinatorService.swift; sourceTree = "<group>"; };
 		5AC43FE7254596660063CF75 /* IntegrationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationType.swift; sourceTree = "<group>"; };
+		5AF9B8C42545DD3200E03EA8 /* BIPDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIPDecoder.swift; sourceTree = "<group>"; };
 		74D711B2641B5497DAA902DB /* Pods-CNIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.release.xcconfig"; path = "Target Support Files/Pods-CNIntegration/Pods-CNIntegration.release.xcconfig"; sourceTree = "<group>"; };
 		8F08E8BBFBF9414B417F1112 /* Pods_CNIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CNIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FD36C9FE54FE34717163477 /* Pods-CNIntegration.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CNIntegration.adhoc.xcconfig"; path = "Target Support Files/Pods-CNIntegration/Pods-CNIntegration.adhoc.xcconfig"; sourceTree = "<group>"; };
@@ -949,6 +951,7 @@
 				5A9F6A7024CD746F008B5762 /* ValidatorDecoder.swift */,
 				5A9F6A7124CD746F008B5762 /* ValidatorService.swift */,
 				5A9F6A7224CD746F008B5762 /* CurrencyValidationRule.swift */,
+				5AF9B8C42545DD3200E03EA8 /* BIPDecoder.swift */,
 			);
 			path = Validator;
 			sourceTree = "<group>";
@@ -1210,6 +1213,7 @@
 				5A9F6ADD24CD746F008B5762 /* ValidationRuleLatinSymbols.swift in Sources */,
 				5A9F6B3624CD746F008B5762 /* SVGProcessor.swift in Sources */,
 				5A9F6B7224CD76BB008B5762 /* CNModule.swift in Sources */,
+				5AF9B8C52545DD3200E03EA8 /* BIPDecoder.swift in Sources */,
 				5A9F6AD524CD746F008B5762 /* TapActionView.swift in Sources */,
 				5A9F6A9624CD746F008B5762 /* Export.swift in Sources */,
 				5A9F6AE324CD746F008B5762 /* ValidationRuleContains.swift in Sources */,
@@ -1540,7 +1544,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1573,7 +1577,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1699,7 +1703,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.1;
+				MARKETING_VERSION = 0.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = io.changenow.CNIntegration;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

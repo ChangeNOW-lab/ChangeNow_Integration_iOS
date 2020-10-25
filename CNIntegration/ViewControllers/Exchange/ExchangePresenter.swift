@@ -14,6 +14,7 @@ final class ExchangePresenter: NSObject {
     private let exchangeService: ExchangeService
 
     @Injected private var reachabilityService: ReachabilityService
+    @Injected private var bipDecoderService: BIPDecoderService
 
     // MARK: - Public
 
@@ -308,7 +309,7 @@ extension ExchangePresenter: ChooseCurrencyDelegate {
 extension ExchangePresenter: ScannerDelegate {
 
     func scannerFoundReadableCodeObject(value: String) {
-        viewController.set(address: value)
+        viewController.set(address: bipDecoderService.decode(uri: value) ?? value)
     }
 }
 
